@@ -5,7 +5,7 @@ interface Message {
   content: string;
 }
 
-function getReply(messages: Message[]): string {
+function getReply(messages: Message[], userName?: string, selectedService?: string): string {
   const lastMsg = messages[messages.length - 1]?.content?.toLowerCase() || "";
   const allUserText = messages
     .filter((m) => m.role === "user")
@@ -103,8 +103,8 @@ function getReply(messages: Message[]): string {
 
 export async function POST(req: NextRequest) {
   try {
-    const { messages } = await req.json();
-    const reply = getReply(messages);
+    const { messages, userName, selectedService } = await req.json();
+    const reply = getReply(messages, userName, selectedService);
     return NextResponse.json({ reply });
   } catch {
     return NextResponse.json({
