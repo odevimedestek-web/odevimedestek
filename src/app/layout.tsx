@@ -7,6 +7,10 @@ export const metadata: Metadata = {
     "Tez, makale, SPSS analizi, editörlük ve akademik danışmanlık hizmetleri. Profesyonel ekibimizle akademik çalışmalarınızda yanınızdayız.",
   keywords:
     "tez danışmanlık, SPSS analizi, makale yazımı, akademik destek, editörlük, Turnitin, intihal kontrolü",
+  icons: {
+    icon: "/logo-odevime-destek.png",
+    apple: "/logo-odevime-destek.png",
+  },
   openGraph: {
     title: "Ödevime Destek | Akademik Danışmanlık",
     description:
