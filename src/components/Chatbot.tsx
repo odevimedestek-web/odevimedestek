@@ -16,13 +16,22 @@ const services = [
   "Sunum Hazırlama",
 ];
 
-type Step = "name" | "service" | "chat";
+const levels = [
+  "Ön Lisans",
+  "Lisans",
+  "Tezli Yüksek Lisans",
+  "Tezsiz Yüksek Lisans",
+  "Doktora",
+];
+
+type Step = "name" | "service" | "level" | "chat";
 
 export default function Chatbot() {
   const [open, setOpen] = useState(false);
   const [step, setStep] = useState<Step>("name");
   const [userName, setUserName] = useState("");
   const [selectedService, setSelectedService] = useState("");
+  const [selectedLevel, setSelectedLevel] = useState("");
   const [nameInput, setNameInput] = useState("");
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
@@ -47,18 +56,33 @@ export default function Chatbot() {
 
   const handleServiceSelect = (service: string) => {
     setSelectedService(service);
+    if (service === "Tez Danışmanlığı") {
+      setStep("level");
+    } else {
+      startChat(service, "");
+    }
+  };
+
+  const handleLevelSelect = (level: string) => {
+    setSelectedLevel(level);
+    startChat(selectedService, level);
+  };
+
+  const startChat = (service: string, level: string) => {
+    const levelText = level ? ` (${level})` : "";
     setMessages([
       {
         role: "assistant",
-        content: `Merhaba ${userName}, ${service.toLowerCase()} konusunda size yardımcı olabiliriz. Çalışmanız hakkında biraz bilgi verir misiniz? Hangi seviyede (lisans, yüksek lisans, doktora) ve hangi aşamadasınız?`,
+        content: `Merhaba ${userName}, ${service.toLowerCase()}${levelText} konusunda size yardımcı olabiliriz. Çalışmanız hakkında biraz bilgi verir misiniz? Hangi aşamadasınız?`,
       },
     ]);
     setStep("chat");
   };
 
   const getWhatsAppLink = () => {
+    const levelText = selectedLevel ? `\nSeviye: ${selectedLevel}` : "";
     const text = encodeURIComponent(
-      `Merhaba, siteniz üzerinden yazıyorum.\nAd: ${userName}\nHizmet: ${selectedService}\nDestek almak istiyorum.`
+      `Merhaba, siteniz üzerinden yazıyorum.\nAd: ${userName}\nHizmet: ${selectedService}${levelText}\nDestek almak istiyorum.`
     );
     return `https://wa.me/905384164676?text=${text}`;
   };
@@ -226,6 +250,25 @@ export default function Chatbot() {
                       className="px-3 py-3 bg-navy-700 border border-slate-600 text-slate-200 rounded-xl text-sm font-medium hover:bg-gold-500/20 hover:border-gold-500/50 hover:text-gold-400 transition-all text-left"
                     >
                       {service}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {step === "level" && (
+              <div className="space-y-3">
+                <div className="bg-navy-700 text-slate-200 px-4 py-3 rounded-2xl rounded-bl-md text-sm leading-relaxed">
+                  Hangi seviyede tez çalışmanız var?
+                </div>
+                <div className="grid grid-cols-1 gap-2">
+                  {levels.map((level) => (
+                    <button
+                      key={level}
+                      onClick={() => handleLevelSelect(level)}
+                      className="px-4 py-3 bg-navy-700 border border-slate-600 text-slate-200 rounded-xl text-sm font-medium hover:bg-gold-500/20 hover:border-gold-500/50 hover:text-gold-400 transition-all text-left"
+                    >
+                      {level}
                     </button>
                   ))}
                 </div>
