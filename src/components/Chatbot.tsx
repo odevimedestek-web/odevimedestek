@@ -24,7 +24,7 @@ const levels = [
   "Doktora",
 ];
 
-type Step = "name" | "service" | "level" | "chat";
+type Step = "name" | "service" | "level" | "department" | "topic" | "deadline" | "chat";
 
 export default function Chatbot() {
   const [open, setOpen] = useState(false);
@@ -32,6 +32,11 @@ export default function Chatbot() {
   const [userName, setUserName] = useState("");
   const [selectedService, setSelectedService] = useState("");
   const [selectedLevel, setSelectedLevel] = useState("");
+  const [department, setDepartment] = useState("");
+  const [topic, setTopic] = useState("");
+  const [deadlineDay, setDeadlineDay] = useState("");
+  const [deadlineMonth, setDeadlineMonth] = useState("");
+  const [deadlineYear, setDeadlineYear] = useState("");
   const [nameInput, setNameInput] = useState("");
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
@@ -65,15 +70,38 @@ export default function Chatbot() {
 
   const handleLevelSelect = (level: string) => {
     setSelectedLevel(level);
-    startChat(selectedService, level);
+    setStep("department");
   };
 
-  const startChat = (service: string, level: string) => {
-    const levelText = level ? ` (${level})` : "";
+  const handleDepartmentSubmit = () => {
+    const dept = department.trim();
+    if (!dept) return;
+    setStep("topic");
+  };
+
+  const handleTopicSubmit = () => {
+    const t = topic.trim();
+    if (!t) return;
+    setStep("deadline");
+  };
+
+  const handleDeadlineSubmit = () => {
+    if (!deadlineDay || !deadlineMonth || !deadlineYear) return;
+    const deadline = `${deadlineDay}.${deadlineMonth}.${deadlineYear}`;
     setMessages([
       {
         role: "assistant",
-        content: `Merhaba ${userName}, ${service.toLowerCase()}${levelText} konusunda size yardımcı olabiliriz. Çalışmanız hakkında biraz bilgi verir misiniz? Hangi aşamadasınız?`,
+        content: `Teşekkürler ${userName}, bilgilerinizi aldık.\n\nHizmet: ${selectedService}\nSeviye: ${selectedLevel}\nBölüm: ${department}\nKonu: ${topic}\nTeslim Tarihi: ${deadline}\n\nDetaylı bilgi ve fiyat için sizi ekibimizle buluşturalım.\n\nhttps://wa.me/905384164676`,
+      },
+    ]);
+    setStep("chat");
+  };
+
+  const startChat = (service: string, _level: string) => {
+    setMessages([
+      {
+        role: "assistant",
+        content: `Merhaba ${userName}, ${service.toLowerCase()} konusunda size yardımcı olabiliriz. Çalışmanız hakkında biraz bilgi verir misiniz? Hangi aşamadasınız?`,
       },
     ]);
     setStep("chat");
@@ -81,8 +109,11 @@ export default function Chatbot() {
 
   const getWhatsAppLink = () => {
     const levelText = selectedLevel ? `\nSeviye: ${selectedLevel}` : "";
+    const deptText = department ? `\nBölüm: ${department}` : "";
+    const topicText = topic ? `\nKonu: ${topic}` : "";
+    const deadlineText = deadlineDay ? `\nTeslim: ${deadlineDay}.${deadlineMonth}.${deadlineYear}` : "";
     const text = encodeURIComponent(
-      `Merhaba, siteniz üzerinden yazıyorum.\nAd: ${userName}\nHizmet: ${selectedService}${levelText}\nDestek almak istiyorum.`
+      `Merhaba, siteniz üzerinden yazıyorum.\nAd: ${userName}\nHizmet: ${selectedService}${levelText}${deptText}${topicText}${deadlineText}\nDestek almak istiyorum.`
     );
     return `https://wa.me/905384164676?text=${text}`;
   };
@@ -272,6 +303,128 @@ export default function Chatbot() {
                     </button>
                   ))}
                 </div>
+              </div>
+            )}
+
+            {step === "department" && (
+              <div className="space-y-4">
+                <div className="bg-navy-700 text-slate-200 px-4 py-3 rounded-2xl rounded-bl-md text-sm leading-relaxed">
+                  Hangi bölümde okuyorsunuz?
+                  <span className="block text-slate-400 text-xs mt-1">
+                    (İşletme, İktisat, Klinik Psikoloji, Hemşirelik, Eğitim Bilimleri vb.)
+                  </span>
+                </div>
+                <form
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    handleDepartmentSubmit();
+                  }}
+                  className="flex gap-2"
+                >
+                  <input
+                    type="text"
+                    value={department}
+                    onChange={(e) => setDepartment(e.target.value)}
+                    placeholder="Bölümünüzü yazın"
+                    className="flex-1 bg-navy-700 border border-slate-600 text-white placeholder-slate-400 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-gold-500/50 transition-colors"
+                    autoFocus
+                  />
+                  <button
+                    type="submit"
+                    disabled={!department.trim()}
+                    className="px-4 py-3 bg-gold-500 text-navy-900 rounded-xl font-semibold text-sm hover:bg-gold-400 transition-colors disabled:opacity-40"
+                  >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </button>
+                </form>
+              </div>
+            )}
+
+            {step === "topic" && (
+              <div className="space-y-4">
+                <div className="bg-navy-700 text-slate-200 px-4 py-3 rounded-2xl rounded-bl-md text-sm leading-relaxed">
+                  Tez konunuz nedir? Kısaca yazabilir misiniz?
+                </div>
+                <form
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    handleTopicSubmit();
+                  }}
+                  className="flex gap-2"
+                >
+                  <input
+                    type="text"
+                    value={topic}
+                    onChange={(e) => setTopic(e.target.value)}
+                    placeholder="Tez konunuzu yazın"
+                    className="flex-1 bg-navy-700 border border-slate-600 text-white placeholder-slate-400 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-gold-500/50 transition-colors"
+                    autoFocus
+                  />
+                  <button
+                    type="submit"
+                    disabled={!topic.trim()}
+                    className="px-4 py-3 bg-gold-500 text-navy-900 rounded-xl font-semibold text-sm hover:bg-gold-400 transition-colors disabled:opacity-40"
+                  >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </button>
+                </form>
+              </div>
+            )}
+
+            {step === "deadline" && (
+              <div className="space-y-4">
+                <div className="bg-navy-700 text-slate-200 px-4 py-3 rounded-2xl rounded-bl-md text-sm leading-relaxed">
+                  Teslim tarihiniz ne zaman?
+                </div>
+                <div className="flex gap-2">
+                  <select
+                    value={deadlineDay}
+                    onChange={(e) => setDeadlineDay(e.target.value)}
+                    className="flex-1 bg-navy-700 border border-slate-600 text-white rounded-xl px-3 py-3 text-sm focus:outline-none focus:border-gold-500/50 transition-colors"
+                  >
+                    <option value="">Gün</option>
+                    {Array.from({ length: 31 }, (_, i) => (
+                      <option key={i + 1} value={String(i + 1).padStart(2, "0")}>
+                        {i + 1}
+                      </option>
+                    ))}
+                  </select>
+                  <select
+                    value={deadlineMonth}
+                    onChange={(e) => setDeadlineMonth(e.target.value)}
+                    className="flex-1 bg-navy-700 border border-slate-600 text-white rounded-xl px-3 py-3 text-sm focus:outline-none focus:border-gold-500/50 transition-colors"
+                  >
+                    <option value="">Ay</option>
+                    {["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"].map((ay, i) => (
+                      <option key={i} value={String(i + 1).padStart(2, "0")}>
+                        {ay}
+                      </option>
+                    ))}
+                  </select>
+                  <select
+                    value={deadlineYear}
+                    onChange={(e) => setDeadlineYear(e.target.value)}
+                    className="flex-1 bg-navy-700 border border-slate-600 text-white rounded-xl px-3 py-3 text-sm focus:outline-none focus:border-gold-500/50 transition-colors"
+                  >
+                    <option value="">Yıl</option>
+                    {[2026, 2027, 2028, 2029].map((y) => (
+                      <option key={y} value={String(y)}>
+                        {y}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+                <button
+                  onClick={handleDeadlineSubmit}
+                  disabled={!deadlineDay || !deadlineMonth || !deadlineYear}
+                  className="w-full py-3 bg-gold-500 text-navy-900 rounded-xl font-semibold text-sm hover:bg-gold-400 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+                >
+                  Devam Et
+                </button>
               </div>
             )}
 
