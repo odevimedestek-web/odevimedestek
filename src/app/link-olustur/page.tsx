@@ -9,7 +9,7 @@ function randomCode() {
 }
 
 export default function LinkOlusturPage() {
-  const [kod, setKod] = useState(randomCode());
+  const [kod] = useState(randomCode());
   const [hizmet, setHizmet] = useState("");
   const [tutar, setTutar] = useState("");
   const [copied, setCopied] = useState(false);
@@ -88,29 +88,6 @@ export default function LinkOlusturPage() {
               />
             </div>
 
-            <div>
-              <label className="block text-sm font-medium text-slate-700 mb-1.5">
-                Referans Kodu
-              </label>
-              <div className="flex gap-2">
-                <input
-                  type="text"
-                  value={kod}
-                  onChange={(e) => setKod(e.target.value)}
-                  className="flex-1 px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent font-mono"
-                />
-                <button
-                  type="button"
-                  onClick={() => setKod(randomCode())}
-                  className="px-3 py-2.5 rounded-lg border border-slate-300 text-slate-500 hover:bg-slate-50 transition-colors text-sm"
-                >
-                  Yenile
-                </button>
-              </div>
-              <p className="text-xs text-slate-400 mt-1">
-                İstersen müşteri adına göre değiştirebilirsin (örn. AHMET01).
-              </p>
-            </div>
           </div>
 
           {hazir && (
