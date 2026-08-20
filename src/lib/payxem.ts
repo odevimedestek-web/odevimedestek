@@ -18,6 +18,13 @@ import { convertTryToUsd } from "./exchangeRate";
 const MIN_USD = 5;
 const MAX_USD = 5000;
 
+// PayXem, ödeme ekranında USD tutarını kendi (bizimkinden biraz yüksek) kuruyla
+// tekrar TL'ye çevirip gösteriyor. Gözlemlenen fark tutarlı şekilde ~%3,75
+// civarında çıktığı için, PayXem'in ekranında görünen TL rakamının müşteriye
+// gösterdiğimiz orijinal tutara yakın kalması için gönderilen USD tutarından
+// bu payı düşüyoruz. Yaklaşık bir düzeltme; kur farkı zamanla değişebilir.
+const PAYXEM_RATE_MARKUP = 1.0375;
+
 export interface PaymentRequest {
   amountTry: number;
 }
@@ -43,7 +50,8 @@ export async function createPaymentLink(
     );
   }
 
-  const amountUsd = await convertTryToUsd(request.amountTry);
+  const rawAmountUsd = await convertTryToUsd(request.amountTry);
+  const amountUsd = Math.round((rawAmountUsd / PAYXEM_RATE_MARKUP) * 100) / 100;
 
   if (amountUsd < MIN_USD || amountUsd > MAX_USD) {
     throw new PaymentValidationError(
