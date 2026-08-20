@@ -3,10 +3,10 @@ import { createPaymentLink, PaymentValidationError } from "@/lib/payxem";
 
 export async function POST(req: NextRequest) {
   try {
-    const { kod, hizmet, tutar, ad, telefon } = await req.json();
+    const { kod, hizmet, tutar } = await req.json();
 
     const amountTry = Number(tutar);
-    if (!kod || !hizmet || !ad || !telefon || !Number.isFinite(amountTry) || amountTry <= 0) {
+    if (!kod || !hizmet || !Number.isFinite(amountTry) || amountTry <= 0) {
       return NextResponse.json(
         { error: "Eksik veya geçersiz bilgi." },
         { status: 400 }

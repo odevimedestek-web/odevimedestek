@@ -11,14 +11,11 @@ export default function PaymentForm({
   hizmet: string;
   tutar: number;
 }) {
-  const [ad, setAd] = useState("");
-  const [telefon, setTelefon] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [paymentUrl, setPaymentUrl] = useState<string | null>(null);
 
-  async function handleSubmit(e: React.FormEvent) {
-    e.preventDefault();
+  async function handleClick() {
     setError(null);
     setLoading(true);
 
@@ -30,7 +27,7 @@ export default function PaymentForm({
       const res = await fetch("/api/odeme", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ kod, hizmet, tutar, ad, telefon }),
+        body: JSON.stringify({ kod, hizmet, tutar }),
       });
 
       const data = await res.json();
@@ -75,43 +72,7 @@ export default function PaymentForm({
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
-      <div>
-        <label
-          htmlFor="ad"
-          className="block text-sm font-medium text-slate-700 mb-1.5"
-        >
-          Ad Soyad
-        </label>
-        <input
-          id="ad"
-          type="text"
-          required
-          value={ad}
-          onChange={(e) => setAd(e.target.value)}
-          className="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent"
-          placeholder="Adınız ve soyadınız"
-        />
-      </div>
-
-      <div>
-        <label
-          htmlFor="telefon"
-          className="block text-sm font-medium text-slate-700 mb-1.5"
-        >
-          Telefon
-        </label>
-        <input
-          id="telefon"
-          type="tel"
-          required
-          value={telefon}
-          onChange={(e) => setTelefon(e.target.value)}
-          className="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent"
-          placeholder="05XX XXX XX XX"
-        />
-      </div>
-
+    <div className="space-y-4">
       {error && (
         <div className="rounded-lg bg-red-50 border border-red-200 text-red-700 text-sm p-3 space-y-3">
           <p>{error}</p>
@@ -132,12 +93,13 @@ export default function PaymentForm({
       )}
 
       <button
-        type="submit"
+        type="button"
+        onClick={handleClick}
         disabled={loading}
         className="block w-full text-center px-5 py-3.5 bg-gold-500 text-navy-900 font-semibold rounded-lg hover:bg-gold-400 transition-all hover:shadow-lg disabled:opacity-60 disabled:cursor-not-allowed"
       >
         {loading ? "Hazırlanıyor..." : "Ödemeye Geç"}
       </button>
-    </form>
+    </div>
   );
 }
