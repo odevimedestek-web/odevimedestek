@@ -7,16 +7,16 @@
 //
 // Site fiyatları müşteriye TL olarak gösterilir; PayXem yalnızca USD kabul
 // ettiği için gönderilen TL tutarı linki oluşturmadan hemen önce güncel kur
-// ile USD'ye çevrilir. PayXem canlı desteğine göre minimum tutar 1 USD
-// (üst sınır PayXem tarafından belirtilmedi, 5000 USD güvenli bir üst sınır
-// olarak korunuyor).
+// ile USD'ye çevrilir. PayXem'in ödeme linki minimumu 5 USD (üst sınır
+// PayXem tarafından belirtilmedi, 5000 USD güvenli bir üst sınır olarak
+// korunuyor).
 //
 // PAYXEM_USERNAME, .env.local içinde tanımlanmalı (PayXem panelindeki
 // "SDK'yı inceleyin" kodunda "u=" parametresinin gerçek değeri).
 
 import { convertTryToUsd } from "./exchangeRate";
 
-const MIN_USD = 1;
+const MIN_USD = 5;
 const MAX_USD = 5000;
 
 // PayXem, ödeme ekranında USD tutarını kendi (bizimkinden biraz yüksek) kuruyla
