@@ -28,12 +28,14 @@ export default async function OdemePage({
   const amount = tutar ? Number(tutar) : NaN;
   const hasValidLink = Boolean(hizmet) && Number.isFinite(amount) && amount > 0;
 
-  let feeTry: number | null = null;
+  let vergiTry: number | null = null;
+  let islemUcretiTry: number | null = null;
   let totalAmount = amount;
   if (hasValidLink) {
     try {
       const result = await calculateGrossAmount(amount);
-      feeTry = result.feeTry;
+      vergiTry = result.vergiTry;
+      islemUcretiTry = result.islemUcretiTry;
       totalAmount = result.totalTry;
     } catch {
       // Kur bilgisi alınamazsa orijinal tutarı göster; asıl hesaplama
@@ -95,11 +97,19 @@ export default async function OdemePage({
                     {formatAmount(amount)}
                   </span>
                 </div>
-                {feeTry !== null && (
+                {vergiTry !== null && (
                   <div className="flex justify-between text-sm">
                     <span className="text-slate-500">Vergi</span>
                     <span className="font-medium text-navy-900">
-                      {formatAmount(feeTry)}
+                      {formatAmount(vergiTry)}
+                    </span>
+                  </div>
+                )}
+                {islemUcretiTry !== null && islemUcretiTry > 0 && (
+                  <div className="flex justify-between text-sm">
+                    <span className="text-slate-500">İşlem Ücreti</span>
+                    <span className="font-medium text-navy-900">
+                      {formatAmount(islemUcretiTry)}
                     </span>
                   </div>
                 )}

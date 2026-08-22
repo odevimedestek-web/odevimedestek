@@ -26,11 +26,15 @@ const MAX_USD = 5000;
 // bu payı düşüyoruz. Yaklaşık bir düzeltme; kur farkı zamanla değişebilir.
 const PAYXEM_RATE_MARKUP = 1.0375;
 
-// PayXem'in gerçek komisyonu (~%8-21, tutara göre değişir) müşteriye çok
-// yüksek görünmemesi için, müşteriden sadece sabit %5'lik bir "vergi" payı
-// isteniyor. PayXem'in kestiği gerçek komisyon bundan fazlaysa, aradaki fark
-// arka planda Ekrem'in hesabından karşılanır — müşteriye yansıtılmaz.
+// Müşteriden sabit %5'lik bir "vergi" isteniyor (görünür kalem). PayXem'in
+// destek ekibinin doğruladığı gerçek komisyon formülü ise (Payxem %2,4+0,35$,
+// işlemci 0,30$+%5) sabit %5'ten her zaman daha yüksek çıkar. Aradaki fark
+// ayrıca "İşlem Ücreti" adıyla ikinci bir kalem olarak ekleniyor, böylece
+// toplamda müşteriden tam kapsayan tutar tahsil edilir ve sana her zaman
+// istediğin net TL tutarı kalır.
 const VERGI_RATE = 0.05;
+const PAYXEM_FIXED_FEE_USD = 0.35 + 0.3;
+const PAYXEM_VARIABLE_FEE_RATE = 0.024 + 0.05;
 
 export interface PaymentRequest {
   amountTry: number;
@@ -39,7 +43,8 @@ export interface PaymentRequest {
 export interface PaymentLink {
   url: string;
   amountUsd: number;
-  feeTry: number;
+  vergiTry: number;
+  islemUcretiTry: number;
   totalTry: number;
 }
 
@@ -48,16 +53,30 @@ export interface PaymentLink {
 // gibi) API katmanında genel bir mesajla değiştirilir.
 export class PaymentValidationError extends Error {}
 
-// "Hizmet Bedeli" üzerine sabit %5 vergi ekleyip toplam TL tutarını ve
-// bunun karşılığı USD tutarını hesaplar.
+// "Hizmet Bedeli" üzerine, PayXem'in gerçek komisyonunu tam karşılayacak
+// toplam tutarı hesaplar; bu toplamı "Vergi" (sabit %5) ve "İşlem Ücreti"
+// (kalan fark) olmak üzere iki görünür kaleme ayırır.
 export async function calculateGrossAmount(amountTry: number) {
-  const feeTry = Math.round(amountTry * VERGI_RATE);
-  const totalTry = amountTry + feeTry;
+  const netUsd = await convertTryToUsd(amountTry);
+  const compensatedNetUsd = Math.round((netUsd / PAYXEM_RATE_MARKUP) * 100) / 100;
 
-  const rawAmountUsd = await convertTryToUsd(totalTry);
-  const grossUsd = Math.round((rawAmountUsd / PAYXEM_RATE_MARKUP) * 100) / 100;
+  const grossUsd =
+    Math.round(
+      ((compensatedNetUsd + PAYXEM_FIXED_FEE_USD) / (1 - PAYXEM_VARIABLE_FEE_RATE)) * 100
+    ) / 100;
 
-  return { grossUsd, feeTry, totalTry };
+  const totalFeeUsd = Math.round((grossUsd - compensatedNetUsd) * 100) / 100;
+
+  // TL karşılığını göstermek için aynı oranı (tutar / net dolar) kullanıyoruz,
+  // böylece ekrandaki TL rakamları tutarlı kalır.
+  const tryPerUsd = amountTry / netUsd;
+  const totalFeeTry = Math.round(totalFeeUsd * tryPerUsd);
+
+  const vergiTry = Math.round(amountTry * VERGI_RATE);
+  const islemUcretiTry = Math.max(totalFeeTry - vergiTry, 0);
+  const totalTry = amountTry + vergiTry + islemUcretiTry;
+
+  return { grossUsd, vergiTry, islemUcretiTry, totalTry };
 }
 
 export async function createPaymentLink(
@@ -71,9 +90,8 @@ export async function createPaymentLink(
     );
   }
 
-  const { grossUsd, feeTry, totalTry } = await calculateGrossAmount(
-    request.amountTry
-  );
+  const { grossUsd, vergiTry, islemUcretiTry, totalTry } =
+    await calculateGrossAmount(request.amountTry);
 
   if (grossUsd < MIN_USD || grossUsd > MAX_USD) {
     throw new PaymentValidationError(
@@ -87,5 +105,5 @@ export async function createPaymentLink(
     "&amount=" +
     encodeURIComponent(grossUsd.toFixed(2));
 
-  return { url, amountUsd: grossUsd, feeTry, totalTry };
+  return { url, amountUsd: grossUsd, vergiTry, islemUcretiTry, totalTry };
 }
