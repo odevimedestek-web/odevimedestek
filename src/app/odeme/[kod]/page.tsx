@@ -28,11 +28,13 @@ export default async function OdemePage({
   const amount = tutar ? Number(tutar) : NaN;
   const hasValidLink = Boolean(hizmet) && Number.isFinite(amount) && amount > 0;
 
-  let displayAmount = amount;
+  let feeTry: number | null = null;
+  let totalAmount = amount;
   if (hasValidLink) {
     try {
-      const { totalTry } = await calculateGrossAmount(amount);
-      displayAmount = totalTry;
+      const result = await calculateGrossAmount(amount);
+      feeTry = result.feeTry;
+      totalAmount = result.totalTry;
     } catch {
       // Kur bilgisi alınamazsa orijinal tutarı göster; asıl hesaplama
       // ödeme linki oluşturulurken tekrar yapılacak.
@@ -87,12 +89,26 @@ export default async function OdemePage({
                   <span className="text-slate-500">Hizmet</span>
                   <span className="font-medium text-navy-900">{hizmet}</span>
                 </div>
+                <div className="flex justify-between text-sm pt-3 border-t border-slate-200">
+                  <span className="text-slate-500">Hizmet Bedeli</span>
+                  <span className="font-medium text-navy-900">
+                    {formatAmount(amount)}
+                  </span>
+                </div>
+                {feeTry !== null && (
+                  <div className="flex justify-between text-sm">
+                    <span className="text-slate-500">Vergi</span>
+                    <span className="font-medium text-navy-900">
+                      {formatAmount(feeTry)}
+                    </span>
+                  </div>
+                )}
                 <div className="flex justify-between text-base pt-3 border-t border-slate-200">
                   <span className="text-slate-600 font-medium">
                     Ödenecek Tutar
                   </span>
                   <span className="font-bold text-navy-900">
-                    {formatAmount(displayAmount)}
+                    {formatAmount(totalAmount)}
                   </span>
                 </div>
               </div>
