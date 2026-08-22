@@ -26,6 +26,15 @@ const MAX_USD = 5000;
 // bu payı düşüyoruz. Yaklaşık bir düzeltme; kur farkı zamanla değişebilir.
 const PAYXEM_RATE_MARKUP = 1.0375;
 
+// PayXem destek ekibinin doğruladığı komisyon formülü:
+// Payxem ücreti: %2,4 + 0,35$ sabit
+// İşlemci (Stripe/PayPal) ücreti: 0,30$ sabit + %3-5 arası komisyon
+// Sonucun sana her zaman en az istediğin net tutarı bırakması için işlemci
+// tarafında aralığın üst sınırı (%5) kullanılıyor — böylece müşteriden
+// hesaplanandan az değil, en fazla birkaç kuruş fazla tahsil edilir.
+const PAYXEM_FIXED_FEE_USD = 0.35 + 0.3;
+const PAYXEM_VARIABLE_FEE_RATE = 0.024 + 0.05;
+
 export interface PaymentRequest {
   amountTry: number;
 }
@@ -33,12 +42,38 @@ export interface PaymentRequest {
 export interface PaymentLink {
   url: string;
   amountUsd: number;
+  feeUsd: number;
+  feeTry: number;
+  totalTry: number;
 }
 
 // Müşteriye gösterilmesi güvenli olan hatalar (tutar aralığı gibi iş
 // kuralları) bu sınıfla işaretlenir; diğer hatalar (yapılandırma eksikliği
 // gibi) API katmanında genel bir mesajla değiştirilir.
 export class PaymentValidationError extends Error {}
+
+// Sen "1500 TL almak istiyorum" dediğinde, PayXem'in keseceği komisyonu
+// müşteriye yansıtmak için gönderilecek brüt USD tutarını hesaplar. Böylece
+// komisyon düşüldükten sonra sana net olarak istediğin TL karşılığı kalır.
+export async function calculateGrossAmount(amountTry: number) {
+  const netUsd = await convertTryToUsd(amountTry);
+  const compensatedNetUsd = Math.round((netUsd / PAYXEM_RATE_MARKUP) * 100) / 100;
+
+  const grossUsd =
+    Math.round(
+      ((compensatedNetUsd + PAYXEM_FIXED_FEE_USD) / (1 - PAYXEM_VARIABLE_FEE_RATE)) * 100
+    ) / 100;
+
+  const feeUsd = Math.round((grossUsd - compensatedNetUsd) * 100) / 100;
+
+  // TL karşılığını göstermek için aynı oranı (tutar / net dolar) kullanıyoruz,
+  // böylece ekrandaki TL rakamları tutarlı kalır.
+  const tryPerUsd = amountTry / netUsd;
+  const feeTry = Math.round(feeUsd * tryPerUsd);
+  const totalTry = amountTry + feeTry;
+
+  return { netUsd: compensatedNetUsd, grossUsd, feeUsd, feeTry, totalTry };
+}
 
 export async function createPaymentLink(
   request: PaymentRequest
@@ -51,10 +86,11 @@ export async function createPaymentLink(
     );
   }
 
-  const rawAmountUsd = await convertTryToUsd(request.amountTry);
-  const amountUsd = Math.round((rawAmountUsd / PAYXEM_RATE_MARKUP) * 100) / 100;
+  const { grossUsd, feeUsd, feeTry, totalTry } = await calculateGrossAmount(
+    request.amountTry
+  );
 
-  if (amountUsd < MIN_USD || amountUsd > MAX_USD) {
+  if (grossUsd < MIN_USD || grossUsd > MAX_USD) {
     throw new PaymentValidationError(
       `Bu tutar için ödeme oluşturulamıyor (izin verilen aralık: ${MIN_USD}-${MAX_USD} USD karşılığı). Lütfen bizimle iletişime geçin.`
     );
@@ -64,7 +100,7 @@ export async function createPaymentLink(
     "https://app.payxem.com/paylink?u=" +
     encodeURIComponent(username) +
     "&amount=" +
-    encodeURIComponent(amountUsd.toFixed(2));
+    encodeURIComponent(grossUsd.toFixed(2));
 
-  return { url, amountUsd };
+  return { url, amountUsd: grossUsd, feeUsd, feeTry, totalTry };
 }

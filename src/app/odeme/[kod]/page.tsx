@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import PaymentForm from "@/components/PaymentForm";
+import { calculateGrossAmount } from "@/lib/payxem";
 
 export const metadata = {
   title: "Ödeme | Ödevime Destek",
@@ -26,6 +27,17 @@ export default async function OdemePage({
 
   const amount = tutar ? Number(tutar) : NaN;
   const hasValidLink = Boolean(hizmet) && Number.isFinite(amount) && amount > 0;
+
+  let displayAmount = amount;
+  if (hasValidLink) {
+    try {
+      const { totalTry } = await calculateGrossAmount(amount);
+      displayAmount = totalTry;
+    } catch {
+      // Kur bilgisi alınamazsa orijinal tutarı göster; asıl hesaplama
+      // ödeme linki oluşturulurken tekrar yapılacak.
+    }
+  }
 
   return (
     <div className="min-h-screen bg-navy-900 flex flex-col">
@@ -80,7 +92,7 @@ export default async function OdemePage({
                     Ödenecek Tutar
                   </span>
                   <span className="font-bold text-navy-900">
-                    {formatAmount(amount)}
+                    {formatAmount(displayAmount)}
                   </span>
                 </div>
               </div>
