@@ -26,15 +26,10 @@ const MAX_USD = 5000;
 // bu payı düşüyoruz. Yaklaşık bir düzeltme; kur farkı zamanla değişebilir.
 const PAYXEM_RATE_MARKUP = 1.0375;
 
-// Müşteriden sabit %5'lik bir "vergi" isteniyor (görünür kalem). PayXem'in
-// destek ekibinin doğruladığı gerçek komisyon formülü ise (Payxem %2,4+0,35$,
-// işlemci 0,30$+%5) sabit %5'ten her zaman daha yüksek çıkar. Aradaki fark
-// ayrıca "İşlem Ücreti" adıyla ikinci bir kalem olarak ekleniyor, böylece
-// toplamda müşteriden tam kapsayan tutar tahsil edilir ve sana her zaman
-// istediğin net TL tutarı kalır.
-const VERGI_RATE = 0.05;
-const PAYXEM_FIXED_FEE_USD = 0.35 + 0.3;
-const PAYXEM_VARIABLE_FEE_RATE = 0.024 + 0.05;
+// Müşteriye yansıtılan iki sabit kalem: %10 vergi ve 15 TL sabit işlem
+// ücreti. Vergi ekranda yüzde olarak değil, sadece tutar olarak gösterilir.
+const VERGI_RATE = 0.1;
+const ISLEM_UCRETI_TRY = 15;
 
 export interface PaymentRequest {
   amountTry: number;
@@ -53,28 +48,15 @@ export interface PaymentLink {
 // gibi) API katmanında genel bir mesajla değiştirilir.
 export class PaymentValidationError extends Error {}
 
-// "Hizmet Bedeli" üzerine, PayXem'in gerçek komisyonunu tam karşılayacak
-// toplam tutarı hesaplar; bu toplamı "Vergi" (sabit %5) ve "İşlem Ücreti"
-// (kalan fark) olmak üzere iki görünür kaleme ayırır.
+// "Hizmet Bedeli" üzerine %10 vergi ve 15 TL sabit işlem ücreti ekleyip
+// toplam TL tutarını ve bunun karşılığı USD tutarını hesaplar.
 export async function calculateGrossAmount(amountTry: number) {
-  const netUsd = await convertTryToUsd(amountTry);
-  const compensatedNetUsd = Math.round((netUsd / PAYXEM_RATE_MARKUP) * 100) / 100;
-
-  const grossUsd =
-    Math.round(
-      ((compensatedNetUsd + PAYXEM_FIXED_FEE_USD) / (1 - PAYXEM_VARIABLE_FEE_RATE)) * 100
-    ) / 100;
-
-  const totalFeeUsd = Math.round((grossUsd - compensatedNetUsd) * 100) / 100;
-
-  // TL karşılığını göstermek için aynı oranı (tutar / net dolar) kullanıyoruz,
-  // böylece ekrandaki TL rakamları tutarlı kalır.
-  const tryPerUsd = amountTry / netUsd;
-  const totalFeeTry = Math.round(totalFeeUsd * tryPerUsd);
-
   const vergiTry = Math.round(amountTry * VERGI_RATE);
-  const islemUcretiTry = Math.max(totalFeeTry - vergiTry, 0);
+  const islemUcretiTry = ISLEM_UCRETI_TRY;
   const totalTry = amountTry + vergiTry + islemUcretiTry;
+
+  const rawAmountUsd = await convertTryToUsd(totalTry);
+  const grossUsd = Math.round((rawAmountUsd / PAYXEM_RATE_MARKUP) * 100) / 100;
 
   return { grossUsd, vergiTry, islemUcretiTry, totalTry };
 }
