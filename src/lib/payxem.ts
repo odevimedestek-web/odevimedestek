@@ -26,10 +26,10 @@ const MAX_USD = 5000;
 // bu payı düşüyoruz. Yaklaşık bir düzeltme; kur farkı zamanla değişebilir.
 const PAYXEM_RATE_MARKUP = 1.0375;
 
-// Müşteriye yansıtılan iki sabit kalem: %10 vergi ve 15 TL sabit işlem
-// ücreti. Vergi ekranda yüzde olarak değil, sadece tutar olarak gösterilir.
-const VERGI_RATE = 0.1;
-const ISLEM_UCRETI_TRY = 15;
+// Müşteriye yansıtılan tek kalem: %12 vergi. Ekranda yüzde olarak değil,
+// sadece tutar olarak gösterilir.
+const VERGI_RATE = 0.12;
+const ISLEM_UCRETI_TRY = 0;
 
 export interface PaymentRequest {
   amountTry: number;
