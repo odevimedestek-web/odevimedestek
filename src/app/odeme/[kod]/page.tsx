@@ -67,13 +67,13 @@ export default async function OdemePage({
         </div>
       </header>
 
-      <main className="flex-1 max-w-md w-full mx-auto px-4 sm:px-6 py-16 flex flex-col justify-center">
-        <div className="bg-white rounded-2xl shadow-xl p-8">
-          <h1 className="text-2xl font-bold text-navy-900 mb-1">
+      <main className="flex-1 max-w-md w-full mx-auto px-4 sm:px-6 py-8 sm:py-16 flex flex-col justify-center">
+        <div className="bg-white rounded-2xl shadow-xl p-5 sm:p-8">
+          <h1 className="text-xl sm:text-2xl font-bold text-navy-900 mb-1">
             Ödeme Bilgileri
           </h1>
           <p className="text-slate-500 text-sm mb-6">
-            Referans kodu: <span className="font-mono">{kod}</span>
+            Referans kodu: <span className="font-mono break-all">{kod}</span>
           </p>
 
           {!hasValidLink && (
@@ -87,37 +87,39 @@ export default async function OdemePage({
           {hasValidLink && (
             <>
               <div className="space-y-4 mb-6">
-                <div className="flex justify-between text-sm">
-                  <span className="text-slate-500">Hizmet</span>
-                  <span className="font-medium text-navy-900">{hizmet}</span>
+                <div className="flex justify-between gap-3 text-sm">
+                  <span className="text-slate-500 shrink-0">Hizmet</span>
+                  <span className="font-medium text-navy-900 text-right break-words">
+                    {hizmet}
+                  </span>
                 </div>
-                <div className="flex justify-between text-sm pt-3 border-t border-slate-200">
-                  <span className="text-slate-500">Hizmet Bedeli</span>
-                  <span className="font-medium text-navy-900">
+                <div className="flex justify-between gap-3 text-sm pt-3 border-t border-slate-200">
+                  <span className="text-slate-500 shrink-0">Hizmet Bedeli</span>
+                  <span className="font-medium text-navy-900 text-right whitespace-nowrap">
                     {formatAmount(amount)}
                   </span>
                 </div>
                 {vergiTry !== null && (
-                  <div className="flex justify-between text-sm">
-                    <span className="text-slate-500">Vergi</span>
-                    <span className="font-medium text-navy-900">
+                  <div className="flex justify-between gap-3 text-sm">
+                    <span className="text-slate-500 shrink-0">Vergi</span>
+                    <span className="font-medium text-navy-900 text-right whitespace-nowrap">
                       {formatAmount(vergiTry)}
                     </span>
                   </div>
                 )}
                 {islemUcretiTry !== null && islemUcretiTry > 0 && (
-                  <div className="flex justify-between text-sm">
-                    <span className="text-slate-500">İşlem Ücreti</span>
-                    <span className="font-medium text-navy-900">
+                  <div className="flex justify-between gap-3 text-sm">
+                    <span className="text-slate-500 shrink-0">İşlem Ücreti</span>
+                    <span className="font-medium text-navy-900 text-right whitespace-nowrap">
                       {formatAmount(islemUcretiTry)}
                     </span>
                   </div>
                 )}
-                <div className="flex justify-between text-base pt-3 border-t border-slate-200">
-                  <span className="text-slate-600 font-medium">
+                <div className="flex justify-between gap-3 text-base pt-3 border-t border-slate-200">
+                  <span className="text-slate-600 font-medium shrink-0">
                     Ödenecek Tutar
                   </span>
-                  <span className="font-bold text-navy-900">
+                  <span className="font-bold text-navy-900 text-right whitespace-nowrap">
                     {formatAmount(totalAmount)}
                   </span>
                 </div>
