@@ -26,9 +26,9 @@ const MAX_USD = 5000;
 // bu payı düşüyoruz. Yaklaşık bir düzeltme; kur farkı zamanla değişebilir.
 const PAYXEM_RATE_MARKUP = 1.0375;
 
-// Müşteriye yansıtılan tek kalem: %12 vergi. Ekranda yüzde olarak değil,
+// Müşteriye yansıtılan tek kalem: %5 vergi. Ekranda yüzde olarak değil,
 // sadece tutar olarak gösterilir.
-const VERGI_RATE = 0.12;
+const VERGI_RATE = 0.05;
 const ISLEM_UCRETI_TRY = 0;
 
 export interface PaymentRequest {
@@ -48,7 +48,7 @@ export interface PaymentLink {
 // gibi) API katmanında genel bir mesajla değiştirilir.
 export class PaymentValidationError extends Error {}
 
-// "Hizmet Bedeli" üzerine %10 vergi ve 15 TL sabit işlem ücreti ekleyip
+// "Hizmet Bedeli" üzerine %5 vergi ve sabit işlem ücreti ekleyip
 // toplam TL tutarını ve bunun karşılığı USD tutarını hesaplar.
 export async function calculateGrossAmount(amountTry: number) {
   const vergiTry = Math.round(amountTry * VERGI_RATE);
