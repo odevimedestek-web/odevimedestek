@@ -13,7 +13,7 @@ const services = [
   "SPSS Analizi",
   "Editörlük",
   "Kaynak Gösterme ve APA",
-  "Sunum Hazırlama",
+  "Sunum Desteği",
 ];
 
 const levels = [

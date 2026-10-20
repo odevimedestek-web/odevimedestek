@@ -45,7 +45,7 @@ const services = [
     ),
   },
   {
-    title: "Sunum Hazırlama",
+    title: "Sunum Desteği",
     desc: "Tez savunması, konferans ve seminer sunumlarınızın düzeni ve tasarımı için destek.",
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">

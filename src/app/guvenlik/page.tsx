@@ -49,8 +49,8 @@ export default function GuvenlikPage() {
       <h2>Akademik Etik</h2>
       <p>
         Hizmetlerimiz akademik etik kuralları çerçevesinde sunuluyor.
-        Çalışmalar danışmanlık ve rehberlik amacıyla hazırlanıyor.
-        Özgünlük kontrolleri profesyonel araçlarla yapılıyor.
+        Öğrencinin yerine çalışma hazırlamıyoruz; yalnızca danışmanlık ve
+        rehberlik veriyoruz.
       </p>
 
       <h2>Bir Sorun Olursa</h2>

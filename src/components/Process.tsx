@@ -7,7 +7,7 @@ const steps = [
   {
     num: "02",
     title: "Detayları Belirleyelim",
-    desc: "Çalışmanızın kapsamı, teslim süresi ve gereksinimlerinizi birlikte netleştirelim.",
+    desc: "Çalışmanızın kapsamı, görüşme takvimi ve ihtiyaçlarınızı birlikte netleştirelim.",
   },
   {
     num: "03",
