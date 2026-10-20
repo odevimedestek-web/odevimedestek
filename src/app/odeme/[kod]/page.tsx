@@ -23,10 +23,12 @@ export default async function OdemePage({
   searchParams: Promise<{ hizmet?: string; tutar?: string }>;
 }) {
   const { kod } = await params;
-  const { hizmet, tutar } = await searchParams;
+  const { hizmet: hizmetParam, tutar } = await searchParams;
+  // Hizmet adı WhatsApp'ta kesilmiş olsa bile tutar varsa ödeme açılır.
+  const hizmet = hizmetParam?.trim() || "Hizmet Bedeli";
 
   const amount = tutar ? Number(tutar) : NaN;
-  const hasValidLink = Boolean(hizmet) && Number.isFinite(amount) && amount > 0;
+  const hasValidLink = Number.isFinite(amount) && amount > 0;
 
   let vergiTry: number | null = null;
   let islemUcretiTry: number | null = null;

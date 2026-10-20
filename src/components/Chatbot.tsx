@@ -9,10 +9,10 @@ interface Message {
 
 const services = [
   "Tez Danışmanlığı",
-  "Makale Yazımı",
+  "Makale Danışmanlığı",
   "SPSS Analizi",
   "Editörlük",
-  "Özgünlük Kontrolü",
+  "Kaynak Gösterme ve APA",
   "Sunum Hazırlama",
 ];
 
@@ -91,7 +91,7 @@ export default function Chatbot() {
     setMessages([
       {
         role: "assistant",
-        content: `Teşekkürler ${userName}, bilgilerinizi aldık.\n\nHizmet: ${selectedService}\nSeviye: ${selectedLevel}\nBölüm: ${department}\nKonu: ${topic}\nTeslim Tarihi: ${deadline}\n\nDetaylı bilgi ve fiyat için sizi ekibimizle buluşturalım.\n\nhttps://wa.me/905384164676`,
+        content: `Teşekkürler ${userName}, bilgilerinizi aldık.\n\nHizmet: ${selectedService}\nSeviye: ${selectedLevel}\nBölüm: ${department}\nKonu: ${topic}\nHedef Tarih: ${deadline}\n\nAşağıdaki butona bastığınızda bu özet WhatsApp'tan bize iletilir.\n\nhttps://wa.me/905384164676`,
       },
     ]);
     setStep("chat");
@@ -111,9 +111,15 @@ export default function Chatbot() {
     const levelText = selectedLevel ? `\nSeviye: ${selectedLevel}` : "";
     const deptText = department ? `\nBölüm: ${department}` : "";
     const topicText = topic ? `\nKonu: ${topic}` : "";
-    const deadlineText = deadlineDay ? `\nTeslim: ${deadlineDay}.${deadlineMonth}.${deadlineYear}` : "";
+    const deadlineText = deadlineDay ? `\nHedef Tarih: ${deadlineDay}.${deadlineMonth}.${deadlineYear}` : "";
+    const userNotes = messages
+      .filter((m) => m.role === "user")
+      .map((m) => `- ${m.content.slice(0, 200)}`)
+      .join("\n")
+      .slice(0, 1200);
+    const notesText = userNotes ? `\n\nSohbette yazdıklarım:\n${userNotes}` : "";
     const text = encodeURIComponent(
-      `Merhaba, siteniz üzerinden yazıyorum.\nAd: ${userName}\nHizmet: ${selectedService}${levelText}${deptText}${topicText}${deadlineText}\nDestek almak istiyorum.`
+      `Merhaba, siteniz üzerinden yazıyorum.\n\n*Görüşme Özeti*\nAd: ${userName}\nHizmet: ${selectedService}${levelText}${deptText}${topicText}${deadlineText}${notesText}\n\nDanışmanlık almak istiyorum.`
     );
     return `https://wa.me/905384164676?text=${text}`;
   };
@@ -378,7 +384,7 @@ export default function Chatbot() {
             {step === "deadline" && (
               <div className="space-y-4">
                 <div className="bg-navy-700 text-slate-200 px-4 py-3 rounded-2xl rounded-bl-md text-sm leading-relaxed">
-                  Teslim tarihiniz ne zaman?
+                  Hedeflediğiniz tarih nedir?
                 </div>
                 <div className="flex gap-2">
                   <select
@@ -495,6 +501,17 @@ export default function Chatbot() {
 
           {step === "chat" && (
             <div className="px-4 py-3 border-t border-slate-700/50 bg-navy-900/50">
+              <a
+                href={getWhatsAppLink()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 w-full mb-2 py-2.5 bg-green-600 text-white rounded-xl font-semibold text-sm hover:bg-green-500 transition-colors"
+              >
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
+                Özeti WhatsApp&apos;tan Gönder
+              </a>
               <form
                 onSubmit={(e) => {
                   e.preventDefault();

@@ -18,9 +18,9 @@ export default function KullanimSartlariPage() {
 
       <h2>Ne Yapıyoruz?</h2>
       <p>
-        Akademik danışmanlık hizmeti veriyoruz. SPSS analizi, tez ve makale
-        yazım desteği, editörlük, özgünlük kontrolü ve sunum hazırlama
-        bunların başında geliyor. Sunduğumuz hizmetler danışmanlık ve
+        Akademik danışmanlık hizmeti veriyoruz. SPSS danışmanlığı, tez ve makale
+        rehberliği, akademik editörlük, kaynak gösterme ve sunum desteği
+        bunların başında geliyor. Öğrencinin yerine çalışma hazırlamıyoruz. Sunduğumuz hizmetler danışmanlık ve
         rehberlik niteliğindedir.
       </p>
 
@@ -32,33 +32,32 @@ export default function KullanimSartlariPage() {
         sorunlardan biz sorumlu olamıyoruz.
       </p>
 
-      <h2>Teslim Edilen Çalışmalar</h2>
+      <h2>Paylaştığınız Çalışmalar</h2>
       <p>
-        Ödemeniz tamamlandığında çalışmanın tüm hakları size geçer. Biz o
-        çalışmayı bir daha kullanmayız, başkasıyla paylaşmayız, arşivde
-        tutmayız. Sizin çalışmanız, sizin kalır.
+        Çalışmanın yazarı ve sahibi sizsiniz. Bize ilettiğiniz metin ve
+        verileri yalnızca rehberlik için kullanırız; başkasıyla paylaşmayız,
+        arşivde tutmayız.
       </p>
 
-      <h2>Teslim Süreleri</h2>
+      <h2>Görüşme Takvimi</h2>
       <p>
-        İlk görüşmede birlikte belirlediğimiz tarihe sadık kalıyoruz.
-        Beklenmedik bir durum olursa sizi mutlaka önceden bilgilendiriyoruz.
-        Acil talepler için de çözüm üretebiliyoruz, bunu ön görüşmede
-        konuşabiliriz.
+        Danışmanlık görüşmelerini ilk görüşmede birlikte belirlediğimiz
+        takvime göre yürütüyoruz. Beklenmedik bir durum olursa sizi
+        önceden bilgilendiriyoruz.
       </p>
 
-      <h2>Revizyon Hakkı</h2>
+      <h2>İade</h2>
       <p>
-        Teslimden sonra bir şeyler eksik kaldıysa veya farklı olmasını
-        istediğiniz noktalar varsa, ücretsiz revizyon hakkınız var. Teslim
-        tarihinden itibaren 14 gün içinde talebinizi iletmeniz yeterli.
+        Danışmanlık hizmetinden memnun kalmazsanız ödediğiniz ücretin
+        tamamını iade ediyoruz. Ayrıntılar İade Politikası sayfasında yer
+        alır.
       </p>
 
       <h2>Akademik Etik</h2>
       <p>
-        Akademik etik kurallarına uygun çalışıyoruz. Hazırladığımız
-        çalışmalar kaynak ve referans materyali olarak kullanılmak üzere
-        hazırlanmaktadır.
+        Akademik etik kurallarına uygun çalışıyoruz. Öğrencinin yerine
+        ödev, tez veya makale hazırlamıyoruz; bu yöndeki talepleri kabul
+        etmiyoruz.
       </p>
 
       <h2>Sonuç Garantisi</h2>

@@ -12,13 +12,13 @@ const highlights = [
     icon: "M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z",
   },
   {
-    title: "Zamanında Teslim",
-    desc: "Belirlenen tarihlere sadık kalarak çalışmanızı teslim ediyoruz.",
+    title: "Planlı Süreç",
+    desc: "Görüşme ve geri bildirimleri birlikte belirlediğimiz takvimle yürütüyoruz.",
     icon: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z",
   },
   {
-    title: "Ücretsiz Revizyon",
-    desc: "Teslim sonrası gerekli düzeltmeler ek ücret olmadan yapılır.",
+    title: "Akademik Dürüstlük",
+    desc: "Öğrencinin yerine çalışma hazırlamıyoruz; öğrenmesine rehberlik ediyoruz.",
     icon: "M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15",
   },
 ];
@@ -54,8 +54,8 @@ export default function About() {
             <p className="text-slate-600 leading-relaxed mb-6">
               Ödevime Destek olarak, öğrencilerin ve araştırmacıların akademik
               çalışmalarında profesyonel danışmanlık hizmeti sunuyoruz. Ön lisanstan
-              doktoraya kadar her seviyede, SPSS analizinden makale yazımına kadar
-              geniş bir yelpazede destek veriyoruz.
+              doktoraya kadar her seviyede, SPSS analizinden yayın sürecine kadar
+              geniş bir yelpazede rehberlik ediyoruz.
             </p>
             <p className="text-slate-600 leading-relaxed">
               Misyonumuz, akademik süreçlerde rehberlik ederek öğrencilerin

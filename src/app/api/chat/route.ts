@@ -22,23 +22,23 @@ function getReply(messages: Message[], userName?: string, selectedService?: stri
 
   if (/spss|analiz|istatistik|veri|regresyon|korelasyon|anova|t-test|güvenilirlik|frekans|faktör/.test(lastMsg)) {
     if (/ne.*yapıyor|nasıl|nedir/.test(lastMsg)) {
-      return "SPSS analizi kapsamında frekans, güvenilirlik, korelasyon, regresyon, t-testi, ANOVA ve faktör analizi gibi tüm istatistiksel testleri yapıyoruz. Verilerinizi bize iletmeniz yeterli. Hangi seviyede bir çalışma bu, lisans mı yüksek lisans mı?";
+      return "SPSS danışmanlığında frekans, güvenilirlik, korelasyon, regresyon, t-testi, ANOVA ve faktör analizi gibi testlerin seçimini ve yorumlanmasını adım adım anlatıyoruz. Hangi seviyede bir çalışma bu, lisans mı yüksek lisans mı?";
     }
     return "SPSS analizi konusunda size yardımcı olabiliriz. Çalışmanız hangi seviyede — lisans, yüksek lisans yoksa doktora mı?";
   }
 
   if (/tez/.test(lastMsg)) {
     if (/doktora/.test(allUserText)) {
-      return "Doktora tezi konusunda konu belirleme, literatür tarama, yöntem bölümü, analiz ve yazım desteği veriyoruz. Detaylı bilgi için WhatsApp üzerinden görüşelim mi?\n\nhttps://wa.me/905384164676";
+      return "Doktora tezi konusunda konu belirleme, literatür tarama, yöntem planlama ve analiz konusunda rehberlik ediyoruz. Detaylı bilgi için WhatsApp üzerinden görüşelim mi?\n\nhttps://wa.me/905384164676";
     }
     if (/yüksek.*lisans|yükseklisans|yl/.test(allUserText)) {
-      return "Yüksek lisans tezi için kapsamlı destek sağlıyoruz — konu belirleme, literatür, yöntem, analiz ve yazım dahil. Konunuz belli mi, hangi alanda çalışıyorsunuz?";
+      return "Yüksek lisans tezi için konu belirleme, literatür, yöntem ve analiz konularında rehberlik ediyoruz. Konunuz belli mi, hangi alanda çalışıyorsunuz?";
     }
     return "Tez danışmanlığı hizmetimiz var. Ön lisanstan doktoraya kadar her seviyede destek veriyoruz. Hangi seviyede bir tez çalışmanız var?";
   }
 
   if (/makale|yayın|dergi|article/.test(lastMsg)) {
-    return "Ulusal ve uluslararası dergilere uygun formatta makale hazırlama desteği veriyoruz. Yayın sürecinde de yardımcı oluyoruz. Hangi alanda bir makale düşünüyorsunuz?";
+    return "Dergi seçimi, yazım kuralları ve yayın süreci konusunda rehberlik ediyoruz. Hangi alanda bir makale düşünüyorsunuz?";
   }
 
   if (/editör|düzelt|düzenle|yazım|dil\s*bilgisi|biçim/.test(lastMsg)) {
@@ -46,27 +46,27 @@ function getReply(messages: Message[], userName?: string, selectedService?: stri
   }
 
   if (/intihal|turnitin|benzerlik|özgünlük|plagiarism/.test(lastMsg)) {
-    return "Turnitin ile intihal kontrolü yapıyoruz. Benzerlik oranını düşürmek için kaynak düzenleme ve akademik yazım iyileştirme desteği de veriyoruz. Çalışmanızın benzerlik oranı şu an ne durumda?";
+    return "Doğru atıf yapma, alıntı kuralları ve kaynakça düzenleme konusunda rehberlik ediyoruz. Akademik dürüstlük kurallarına aykırı talepleri kabul etmiyoruz. Hangi yazım kılavuzunu kullanıyorsunuz?";
   }
 
   if (/sunum|powerpoint|ppt|slayt|savunma/.test(lastMsg)) {
-    return "Tez savunması, konferans ve seminer sunumlarınız için profesyonel PowerPoint tasarımı yapıyoruz. Kaç slaytlık bir sunum düşünüyorsunuz?";
+    return "Tez savunması, konferans ve seminer sunumlarınızın düzeni ve tasarımı için destek veriyoruz. Kaç slaytlık bir sunum düşünüyorsunuz?";
   }
 
   if (/lisans|ön\s*lisans|önlisans/.test(lastMsg)) {
-    return "Ön lisans ve lisans düzeyinde ödev, proje ve bitirme tezi desteği sağlıyoruz. Ne tür bir çalışmanız var?";
+    return "Ön lisans ve lisans düzeyinde proje ve bitirme tezi süreçlerinde rehberlik ediyoruz. Ne tür bir çalışmanız var?";
   }
 
   if (/doktora/.test(lastMsg)) {
-    return "Doktora düzeyinde tez, makale ve analiz desteği veriyoruz. Hangi aşamadasınız — konu mu belirliyorsunuz yoksa yazım aşamasında mısınız?";
+    return "Doktora düzeyinde tez, makale ve analiz süreçlerinde rehberlik ediyoruz. Hangi aşamadasınız — konu mu belirliyorsunuz yoksa yazım aşamasında mısınız?";
   }
 
   if (/yüksek.*lisans|yl|master/.test(lastMsg)) {
-    return "Yüksek lisans düzeyinde tez, makale ve SPSS desteği veriyoruz. Tezli mi tezsiz mi yüksek lisans yapıyorsunuz?";
+    return "Yüksek lisans düzeyinde tez, makale ve SPSS konularında rehberlik ediyoruz. Tezli mi tezsiz mi yüksek lisans yapıyorsunuz?";
   }
 
   if (/süre|ne.*zaman|teslim|deadline|acil/.test(lastMsg)) {
-    return "Teslim süresi çalışmanın kapsamına göre değişiyor. Acil talepler için de çözüm üretiyoruz. Detayları WhatsApp üzerinden konuşalım mı?\n\nhttps://wa.me/905384164676";
+    return "Süreç çalışmanın kapsamına göre değişiyor; görüşme takvimini birlikte belirliyoruz. Detayları WhatsApp üzerinden konuşalım mı?\n\nhttps://wa.me/905384164676";
   }
 
   if (/whatsapp|telefon|ara|iletişim|numara|ulaş/.test(lastMsg)) {
@@ -82,15 +82,19 @@ function getReply(messages: Message[], userName?: string, selectedService?: stri
   }
 
   if (/hizmet|ne.*yapıyor|neler/.test(lastMsg)) {
-    return "Hizmetlerimiz:\n• SPSS ve veri analizi\n• Tez danışmanlığı (ön lisans — doktora)\n• Makale yazımı\n• Editörlük ve düzeltme\n• Turnitin özgünlük kontrolü\n• Sunum hazırlama\n\nHangi konuda destek almak istiyorsunuz?";
+    return "Hizmetlerimiz:\n• SPSS ve veri analizi\n• Tez danışmanlığı (ön lisans — doktora)\n• Makale danışmanlığı\n• Akademik editörlük\n• Kaynak gösterme ve APA\n• Sunum desteği\n\nWhatsApp kanalımız: https://whatsapp.com/channel/0029Vb9KOnH0Qeahcy0Ois2f\n\nHangi konuda destek almak istiyorsunuz?";
   }
 
   if (/güvenli|gizli|paylaş|kimse/.test(lastMsg)) {
     return "Tüm çalışmalar ve kişisel bilgileriniz kesinlikle gizli tutulur. Hiçbir şekilde üçüncü kişilerle paylaşılmaz, bu konuda garanti veriyoruz.";
   }
 
+  if (/iade|para.*geri|memnun/.test(lastMsg)) {
+    return "Danışmanlık hizmetimizden memnun kalmazsanız ödediğiniz ücretin tamamını iade ediyoruz. Talebinizi WhatsApp üzerinden yazılı olarak iletmeniz yeterli.";
+  }
+
   if (/revizyon|düzeltme|değişiklik/.test(lastMsg)) {
-    return "Teslim sonrası gerekli revizyonlar ek ücret olmaksızın yapılır. Memnuniyetiniz bizim için önemli.";
+    return "Hazırladığınız bölümler için geri bildirim görüşmeleri süreç boyunca devam eder.";
   }
 
   // Genel yanıt

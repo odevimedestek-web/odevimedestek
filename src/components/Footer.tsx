@@ -24,9 +24,9 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-slate-400">
               <li>SPSS Analizi</li>
               <li>Tez Danışmanlığı</li>
-              <li>Makale Yazımı</li>
+              <li>Makale Danışmanlığı</li>
               <li>Editörlük</li>
-              <li>Özgünlük Kontrolü</li>
+              <li>Kaynak Gösterme ve APA</li>
             </ul>
           </div>
 
@@ -36,6 +36,7 @@ export default function Footer() {
               <li><a href="#hizmetler" className="text-slate-400 hover:text-gold-400 transition-colors">Hizmetler</a></li>
               <li><a href="#surec" className="text-slate-400 hover:text-gold-400 transition-colors">Nasıl Çalışıyoruz</a></li>
               <li><a href="#hakkimizda" className="text-slate-400 hover:text-gold-400 transition-colors">Hakkımızda</a></li>
+              <li><a href="#kanal" className="text-slate-400 hover:text-gold-400 transition-colors">WhatsApp Kanalı</a></li>
               <li><a href="#sss" className="text-slate-400 hover:text-gold-400 transition-colors">SSS</a></li>
               <li><a href="#iletisim" className="text-slate-400 hover:text-gold-400 transition-colors">İletişim</a></li>
             </ul>
@@ -50,13 +51,8 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/odevime_destek/" target="_blank" rel="noopener noreferrer" className="hover:text-gold-400 transition-colors">
-                  @odevime_destek
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/akademik_spss_uzmani/" target="_blank" rel="noopener noreferrer" className="hover:text-gold-400 transition-colors">
-                  @akademik_spss_uzmani
+                <a href="https://whatsapp.com/channel/0029Vb9KOnH0Qeahcy0Ois2f" target="_blank" rel="noopener noreferrer" className="hover:text-gold-400 transition-colors">
+                  WhatsApp Kanalı
                 </a>
               </li>
             </ul>

@@ -4,9 +4,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Ödevime Destek | Akademik Danışmanlık ve SPSS Analiz Hizmetleri",
   description:
-    "Tez, makale, SPSS analizi, editörlük ve akademik danışmanlık hizmetleri. Profesyonel ekibimizle akademik çalışmalarınızda yanınızdayız.",
+    "Tez ve makale rehberliği, SPSS analiz danışmanlığı, akademik editörlük ve öğretici WhatsApp kanalı.",
   keywords:
-    "tez danışmanlık, SPSS analizi, makale yazımı, akademik destek, editörlük, Turnitin, intihal kontrolü",
+    "tez danışmanlığı, SPSS danışmanlığı, akademik rehberlik, APA, editörlük, WhatsApp kanal",
   icons: {
     icon: "/logo-odevime-destek.png",
     apple: "/logo-odevime-destek.png",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Ödevime Destek | Akademik Danışmanlık",
     description:
-      "Tez, makale, SPSS analizi ve akademik danışmanlık hizmetleri.",
+      "Tez ve makale rehberliği, SPSS danışmanlığı ve akademik editörlük.",
     url: "https://www.odevimedestek.com",
     siteName: "Ödevime Destek",
     type: "website",

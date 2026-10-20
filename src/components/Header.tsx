@@ -8,6 +8,7 @@ const navLinks = [
   { href: "#hizmetler", label: "Hizmetler" },
   { href: "#surec", label: "Nasıl Çalışıyoruz" },
   { href: "#hakkimizda", label: "Hakkımızda" },
+  { href: "#kanal", label: "Kanal" },
   { href: "#sss", label: "SSS" },
   { href: "#iletisim", label: "İletişim" },
 ];

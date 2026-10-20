@@ -11,13 +11,13 @@ const steps = [
   },
   {
     num: "03",
-    title: "Çalışmaya Başlayalım",
-    desc: "Uzman ekibimiz çalışmanıza başlar. Süreç boyunca sizi bilgilendiririz.",
+    title: "Rehberlik Görüşmeleri",
+    desc: "Danışmanınız her aşamada yöntem, analiz ve yazım kuralları konusunda size yol gösterir.",
   },
   {
     num: "04",
-    title: "Teslim ve Revizyon",
-    desc: "Çalışmanız zamanında teslim edilir. Gerekli revizyonlar ücretsiz yapılır.",
+    title: "Geri Bildirim",
+    desc: "Hazırladığınız bölümleri inceleyip geliştirmeniz için geri bildirim veririz.",
   },
 ];
 

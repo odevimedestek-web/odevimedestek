@@ -8,20 +8,24 @@ const faqs = [
     a: "Ön lisans, lisans, tezli/tezsiz yüksek lisans ve doktora seviyelerinde destek sağlıyoruz.",
   },
   {
-    q: "SPSS analizi nasıl yapılıyor?",
-    a: "Verilerinizi bize ilettiğinizde, uygun istatistiksel testleri belirleyip analizi gerçekleştiriyoruz. Frekans, güvenilirlik, korelasyon, regresyon ve daha birçok test için destek veriyoruz.",
+    q: "SPSS danışmanlığı nasıl ilerliyor?",
+    a: "Araştırma sorunuza uygun testleri birlikte belirliyor, analizlerin nasıl yapıldığını ve çıktıların nasıl yorumlandığını adım adım anlatıyoruz.",
   },
   {
-    q: "Teslim süresi ne kadar?",
-    a: "Çalışmanın kapsamına göre değişir. Ön görüşmede teslim tarihini birlikte belirleyip kesin süre bildiriyoruz.",
+    q: "Benim yerime tez veya ödev hazırlıyor musunuz?",
+    a: "Hayır. Hizmetlerimiz danışmanlık ve eğitim niteliğindedir. Çalışmanın yazarı sizsiniz; biz rehberlik ve geri bildirim veriyoruz.",
+  },
+  {
+    q: "Süreç ne kadar sürüyor?",
+    a: "Çalışmanın kapsamına göre değişir. Ön görüşmede görüşme takvimini birlikte belirliyoruz.",
   },
   {
     q: "Gizlilik konusunda ne yapıyorsunuz?",
     a: "Tüm çalışmalar ve kişisel bilgileriniz kesinlikle gizli tutulur. Hiçbir şekilde üçüncü kişilerle paylaşılmaz.",
   },
   {
-    q: "Revizyon hakkım var mı?",
-    a: "Evet, teslim sonrası makul revizyonlar ek ücret olmaksızın yapılmaktadır.",
+    q: "WhatsApp kanalınız var mı?",
+    a: "Evet. \"Akademik Danışmanlık\" kanalımızda her gün tez yazımı, APA ve SPSS üzerine öğretici paylaşımlar yapıyoruz. Sayfadaki \"Kanalı Takip Et\" butonuyla katılabilirsiniz.",
   },
   {
     q: "Ödeme nasıl yapılıyor?",

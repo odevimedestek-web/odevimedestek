@@ -21,8 +21,8 @@ export default function Hero() {
           </h1>
 
           <p className="text-lg sm:text-xl text-slate-300 leading-relaxed mb-10 max-w-2xl">
-            Tez, makale, SPSS analizi ve editörlük hizmetleriyle akademik
-            yolculuğunuzda güvenilir bir partner. Her aşamada uzman kadromuzla
+            Tez ve makale süreçlerinde rehberlik, SPSS analiz danışmanlığı ve
+            akademik editörlük ile çalışmanızı kendiniz yürütürken her aşamada
             yanınızdayız.
           </p>
 
@@ -39,6 +39,14 @@ export default function Hero() {
               Ücretsiz Ön Görüşme
             </a>
             <a
+              href="https://whatsapp.com/channel/0029Vb9KOnH0Qeahcy0Ois2f"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-green-500 text-white font-bold rounded-xl hover:bg-green-600 transition-all text-lg"
+            >
+              Kanalı Takip Et
+            </a>
+            <a
               href="#hizmetler"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-xl hover:border-white/60 hover:bg-white/10 transition-all text-lg"
             >
@@ -49,20 +57,6 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="mt-16 grid grid-cols-3 gap-8 max-w-lg">
-            {[
-              { num: "500+", label: "Tamamlanan Proje" },
-              { num: "5 Yıl", label: "Deneyim" },
-              { num: "%98", label: "Memnuniyet" },
-            ].map((stat) => (
-              <div key={stat.label}>
-                <div className="text-2xl sm:text-3xl font-bold text-gold-400">
-                  {stat.num}
-                </div>
-                <div className="text-sm text-slate-400 mt-1">{stat.label}</div>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>
