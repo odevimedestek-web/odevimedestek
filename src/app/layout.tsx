@@ -1,26 +1,93 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import GoogleAds from "@/components/GoogleAds";
+import { faqs } from "@/lib/faqs";
+
+const SITE_URL = "https://www.odevimedestek.com";
+const LINKEDIN_URL = "https://www.linkedin.com/company/akademik-danismanlik-merkezi";
+const DESCRIPTION =
+  "Lisansüstü öğrencilere SPSS ve istatistik danışmanlığı, araştırma yöntemi rehberliği, akademik editörlük, APA ve şablon biçimlendirme ile sunum desteği. İlk görüşme ücretsiz.";
 
 export const metadata: Metadata = {
-  title: "Ödevime Destek | Akademik Danışmanlık ve SPSS Analiz Hizmetleri",
-  description:
-    "Tez ve makale rehberliği, SPSS analiz danışmanlığı, akademik editörlük ve öğretici WhatsApp kanalı.",
-  keywords:
-    "tez danışmanlığı, SPSS danışmanlığı, akademik rehberlik, APA, editörlük, WhatsApp kanal",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "SPSS ve Akademik Danışmanlık | Ödevime Destek",
+    template: "%s | Ödevime Destek",
+  },
+  description: DESCRIPTION,
+  keywords: [
+    "SPSS danışmanlığı",
+    "istatistik danışmanlığı",
+    "SPSS analiz eğitimi",
+    "akademik danışmanlık",
+    "araştırma yöntemleri danışmanlığı",
+    "akademik editörlük",
+    "APA kaynak gösterme",
+    "tez şablonu biçimlendirme",
+    "tez savunma sunumu",
+  ],
+  alternates: { canonical: "/" },
+  robots: { index: true, follow: true },
   icons: {
     icon: "/logo-odevime-destek.png",
     apple: "/logo-odevime-destek.png",
   },
   openGraph: {
-    title: "Ödevime Destek | Akademik Danışmanlık",
-    description:
-      "Tez ve makale rehberliği, SPSS danışmanlığı ve akademik editörlük.",
-    url: "https://www.odevimedestek.com",
+    title: "SPSS ve Akademik Danışmanlık | Ödevime Destek",
+    description: DESCRIPTION,
+    url: SITE_URL,
     siteName: "Ödevime Destek",
     type: "website",
     locale: "tr_TR",
+    images: [{ url: "/logo-odevime-destek.png", alt: "Ödevime Destek" }],
+  },
+  twitter: {
+    card: "summary",
+    title: "SPSS ve Akademik Danışmanlık | Ödevime Destek",
+    description: DESCRIPTION,
   },
 };
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    name: "Ödevime Destek",
+    alternateName: "Akademik Danışmanlık Merkezi",
+    url: SITE_URL,
+    logo: `${SITE_URL}/logo-odevime-destek.png`,
+    image: `${SITE_URL}/logo-odevime-destek.png`,
+    description: DESCRIPTION,
+    telephone: "+905384164676",
+    email: "odevimedestek@gmail.com",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Ankara",
+      addressCountry: "TR",
+    },
+    areaServed: "TR",
+    knowsAbout: [
+      "SPSS",
+      "İstatistik",
+      "Araştırma yöntemleri",
+      "Akademik editörlük",
+      "APA",
+    ],
+    sameAs: [
+      LINKEDIN_URL,
+      "https://whatsapp.com/channel/0029Vb9KOnH0Qeahcy0Ois2f",
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  },
+];
 
 export default function RootLayout({
   children,
@@ -41,7 +108,16 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
+        {children}
+        <GoogleAds />
+      </body>
     </html>
   );
 }

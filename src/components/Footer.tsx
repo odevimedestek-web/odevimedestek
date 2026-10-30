@@ -55,6 +55,11 @@ export default function Footer() {
                   WhatsApp Kanalı
                 </a>
               </li>
+              <li>
+                <a href="https://www.linkedin.com/company/akademik-danismanlik-merkezi" target="_blank" rel="noopener noreferrer" className="hover:text-gold-400 transition-colors">
+                  LinkedIn
+                </a>
+              </li>
             </ul>
           </div>
         </div>
