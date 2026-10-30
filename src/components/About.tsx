@@ -33,7 +33,7 @@ export default function About() {
               Hakkımızda
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-navy-900 mt-3 mb-6">
-              5 Yıldır Akademik Dünyada{" "}
+              15 Yıldır Akademik Dünyada{" "}
               <span className="text-gold-500">Güvenilir Partneriniz</span>
             </h2>
 

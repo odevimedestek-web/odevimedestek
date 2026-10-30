@@ -14,7 +14,7 @@ export default function Footer() {
               <span className="text-xl font-bold">Ödevime Destek</span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed">
-              Akademik danışmanlık ve profesyonel destek hizmetleri. 5 yıllık
+              Akademik danışmanlık ve profesyonel destek hizmetleri. 15 yıllık
               deneyimimizle yanınızdayız.
             </p>
           </div>

@@ -56,7 +56,7 @@ export default function Page() {
 
       <h2>Neden Bizimle Çalışmalısınız?</h2>
       <p>
-        5 yıllık deneyimimizle farklı üniversitelerin tez kılavuzlarına ve jüri
+        15 yıllık deneyimimizle farklı üniversitelerin tez kılavuzlarına ve jüri
         beklentilerine hakimiz. Tüm görüşmeler ve dosyalarınız gizli tutulur;
         hizmetten memnun kalmazsanız ücretin tamamı iade edilir.
       </p>
