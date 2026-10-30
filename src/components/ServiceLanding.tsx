@@ -1,4 +1,5 @@
 import PolicyLayout from "@/components/PolicyLayout";
+import { hizmetSayfalari } from "@/lib/hizmetler";
 
 export type ServiceFaq = { q: string; a: string };
 
@@ -55,9 +56,9 @@ export default function ServiceLanding({
 
       <h2>Diğer Hizmetlerimiz</h2>
       <ul>
-        <li><a href="/spss-analizi" className="text-gold-400">SPSS Analiz Danışmanlığı</a></li>
-        <li><a href="/tez-danismanligi" className="text-gold-400">Tez Danışmanlığı</a></li>
-        <li><a href="/makale-danismanligi" className="text-gold-400">Makale Danışmanlığı</a></li>
+        {hizmetSayfalari.map((h) => (
+          <li key={h.href}><a href={h.href} className="text-gold-400">{h.ad}</a></li>
+        ))}
       </ul>
     </PolicyLayout>
   );

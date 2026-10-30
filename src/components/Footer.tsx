@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { hizmetSayfalari } from "@/lib/hizmetler";
 
 export default function Footer() {
   return (
@@ -22,11 +23,9 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-5">Hizmetler</h4>
             <ul className="space-y-3 text-sm text-slate-400">
-              <li><Link href="/spss-analizi" className="hover:text-gold-400 transition-colors">SPSS Analizi</Link></li>
-              <li><Link href="/tez-danismanligi" className="hover:text-gold-400 transition-colors">Tez Danışmanlığı</Link></li>
-              <li><Link href="/makale-danismanligi" className="hover:text-gold-400 transition-colors">Makale Danışmanlığı</Link></li>
-              <li>Editörlük</li>
-              <li>Kaynak Gösterme ve APA</li>
+              {hizmetSayfalari.map((h) => (
+                <li key={h.href}><Link href={h.href} className="hover:text-gold-400 transition-colors">{h.ad}</Link></li>
+              ))}
             </ul>
           </div>
 
