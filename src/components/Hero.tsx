@@ -16,8 +16,8 @@ export default function Hero() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-            Akademik Çalışmalarınızda{" "}
-            <span className="text-gold-400">Profesyonel Destek</span>
+            Tez, Makale ve SPSS Analizinde{" "}
+            <span className="text-gold-400">Profesyonel Danışmanlık</span>
           </h1>
 
           <p className="text-lg sm:text-xl text-slate-300 leading-relaxed mb-10 max-w-2xl">

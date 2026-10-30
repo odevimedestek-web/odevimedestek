@@ -1,7 +1,7 @@
 import PolicyLayout from "@/components/PolicyLayout";
 
 export const metadata = {
-  title: "Güvenlik Koridoru | Ödevime Destek",
+  title: "Güvenlik Koridoru",
   description: "Ödevime Destek güvenlik politikası ve veri koruma önlemleri.",
 };
 

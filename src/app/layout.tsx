@@ -6,16 +6,19 @@ import { faqs } from "@/lib/faqs";
 const SITE_URL = "https://www.odevimedestek.com";
 const LINKEDIN_URL = "https://www.linkedin.com/company/akademik-danismanlik-merkezi";
 const DESCRIPTION =
-  "Lisansüstü öğrencilere SPSS ve istatistik danışmanlığı, araştırma yöntemi rehberliği, akademik editörlük, APA ve şablon biçimlendirme ile sunum desteği. İlk görüşme ücretsiz.";
+  "Yüksek lisans ve doktora öğrencilerine tez danışmanlığı, makale danışmanlığı, SPSS analiz ve istatistik desteği, akademik editörlük, APA ve şablon biçimlendirme. İlk görüşme ücretsiz.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "SPSS ve Akademik Danışmanlık | Ödevime Destek",
+    default: "Tez, Makale ve SPSS Analiz Danışmanlığı | Ödevime Destek",
     template: "%s | Ödevime Destek",
   },
   description: DESCRIPTION,
   keywords: [
+    "tez danışmanlığı",
+    "makale danışmanlığı",
+    "SPSS analizi",
     "SPSS danışmanlığı",
     "istatistik danışmanlığı",
     "SPSS analiz eğitimi",
@@ -33,7 +36,7 @@ export const metadata: Metadata = {
     apple: "/logo-odevime-destek.png",
   },
   openGraph: {
-    title: "SPSS ve Akademik Danışmanlık | Ödevime Destek",
+    title: "Tez, Makale ve SPSS Analiz Danışmanlığı | Ödevime Destek",
     description: DESCRIPTION,
     url: SITE_URL,
     siteName: "Ödevime Destek",
@@ -43,7 +46,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "SPSS ve Akademik Danışmanlık | Ödevime Destek",
+    title: "Tez, Makale ve SPSS Analiz Danışmanlığı | Ödevime Destek",
     description: DESCRIPTION,
   },
 };

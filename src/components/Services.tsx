@@ -1,6 +1,7 @@
-const services = [
+const services: { title: string; desc: string; href?: string; icon: React.ReactNode }[] = [
   {
     title: "SPSS Analizi",
+    href: "/spss-analizi",
     desc: "Doğru istatistiksel testin seçimi, frekans, güvenilirlik, regresyon gibi analizlerin anlatımı ve SPSS çıktılarını okumayı öğrenme.",
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -10,6 +11,7 @@ const services = [
   },
   {
     title: "Tez Danışmanlığı",
+    href: "/tez-danismanligi",
     desc: "Lisans, yüksek lisans ve doktora tezlerinde konu belirleme, literatür tarama ve yöntem planlama konusunda rehberlik.",
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -19,6 +21,7 @@ const services = [
   },
   {
     title: "Makale Danışmanlığı",
+    href: "/makale-danismanligi",
     desc: "Dergi seçimi, yazım kuralları ve yayın süreci hakkında rehberlik.",
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -88,6 +91,11 @@ export default function Services() {
               <p className="text-slate-500 leading-relaxed text-sm">
                 {s.desc}
               </p>
+              {s.href && (
+                <a href={s.href} className="inline-block mt-4 text-sm font-semibold text-gold-500 hover:text-gold-400">
+                  Detaylı bilgi →
+                </a>
+              )}
             </div>
           ))}
         </div>

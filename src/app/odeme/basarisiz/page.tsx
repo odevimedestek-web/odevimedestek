@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Ödeme Tamamlanamadı | Ödevime Destek",
+  title: "Ödeme Tamamlanamadı",
   description: "Ödeme işlemi tamamlanamadı.",
 };
 

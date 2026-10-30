@@ -1,7 +1,7 @@
 import PolicyLayout from "@/components/PolicyLayout";
 
 export const metadata = {
-  title: "İade Politikası | Ödevime Destek",
+  title: "İade Politikası",
   description: "Ödevime Destek iade koşulları: danışmanlıktan memnun kalmazsanız %100 iade.",
 };
 

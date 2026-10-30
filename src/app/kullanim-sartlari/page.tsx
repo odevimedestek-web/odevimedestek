@@ -1,7 +1,7 @@
 import PolicyLayout from "@/components/PolicyLayout";
 
 export const metadata = {
-  title: "Kullanım Şartları | Ödevime Destek",
+  title: "Kullanım Şartları",
   description: "Ödevime Destek kullanım şartları ve hizmet koşulları.",
 };
 

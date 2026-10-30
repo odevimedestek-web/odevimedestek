@@ -22,9 +22,9 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-5">Hizmetler</h4>
             <ul className="space-y-3 text-sm text-slate-400">
-              <li>SPSS Analizi</li>
-              <li>Tez Danışmanlığı</li>
-              <li>Makale Danışmanlığı</li>
+              <li><Link href="/spss-analizi" className="hover:text-gold-400 transition-colors">SPSS Analizi</Link></li>
+              <li><Link href="/tez-danismanligi" className="hover:text-gold-400 transition-colors">Tez Danışmanlığı</Link></li>
+              <li><Link href="/makale-danismanligi" className="hover:text-gold-400 transition-colors">Makale Danışmanlığı</Link></li>
               <li>Editörlük</li>
               <li>Kaynak Gösterme ve APA</li>
             </ul>

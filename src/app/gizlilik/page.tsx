@@ -1,7 +1,7 @@
 import PolicyLayout from "@/components/PolicyLayout";
 
 export const metadata = {
-  title: "Gizlilik Politikası | Ödevime Destek",
+  title: "Gizlilik Politikası",
   description: "Ödevime Destek gizlilik politikası ve kişisel verilerin korunması.",
 };
 
