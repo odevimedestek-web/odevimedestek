@@ -82,7 +82,7 @@ function getReply(messages: Message[], userName?: string, selectedService?: stri
   }
 
   if (/hizmet|ne.*yapıyor|neler/.test(lastMsg)) {
-    return "Hizmetlerimiz:\n• SPSS ve veri analizi\n• Tez danışmanlığı (ön lisans — doktora)\n• Makale danışmanlığı\n• Akademik editörlük\n• Kaynak gösterme ve APA\n• Sunum desteği\n\nWhatsApp kanalımız: https://whatsapp.com/channel/0029Vb9KOnH0Qeahcy0Ois2f\n\nHangi konuda destek almak istiyorsunuz?";
+    return "Hizmetlerimiz:\n• SPSS ve veri analizi\n• Tez danışmanlığı (ön lisans — doktora)\n• Makale danışmanlığı\n• Akademik editörlük\n• Kaynak gösterme ve APA\n• Sunum desteği\n\nLinkedIn sayfamız: https://www.linkedin.com/company/akademik-danismanlik-merkezi\n\nHangi konuda destek almak istiyorsunuz?";
   }
 
   if (/güvenli|gizli|paylaş|kimse/.test(lastMsg)) {

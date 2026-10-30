@@ -35,7 +35,7 @@ export default function Footer() {
               <li><a href="#hizmetler" className="text-slate-400 hover:text-gold-400 transition-colors">Hizmetler</a></li>
               <li><a href="#surec" className="text-slate-400 hover:text-gold-400 transition-colors">Nasıl Çalışıyoruz</a></li>
               <li><a href="#hakkimizda" className="text-slate-400 hover:text-gold-400 transition-colors">Hakkımızda</a></li>
-              <li><a href="#kanal" className="text-slate-400 hover:text-gold-400 transition-colors">WhatsApp Kanalı</a></li>
+              <li><a href="#linkedin" className="text-slate-400 hover:text-gold-400 transition-colors">LinkedIn</a></li>
               <li><a href="#sss" className="text-slate-400 hover:text-gold-400 transition-colors">SSS</a></li>
               <li><a href="#iletisim" className="text-slate-400 hover:text-gold-400 transition-colors">İletişim</a></li>
             </ul>
@@ -47,11 +47,6 @@ export default function Footer() {
               <li>
                 <a href="https://wa.me/905384164676" target="_blank" rel="noopener noreferrer" className="hover:text-gold-400 transition-colors">
                   0538 416 46 76
-                </a>
-              </li>
-              <li>
-                <a href="https://whatsapp.com/channel/0029Vb9KOnH0Qeahcy0Ois2f" target="_blank" rel="noopener noreferrer" className="hover:text-gold-400 transition-colors">
-                  WhatsApp Kanalı
                 </a>
               </li>
               <li>

@@ -39,12 +39,12 @@ export default function Hero() {
               Ücretsiz Ön Görüşme
             </a>
             <a
-              href="https://whatsapp.com/channel/0029Vb9KOnH0Qeahcy0Ois2f"
+              href="https://www.linkedin.com/company/akademik-danismanlik-merkezi"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-green-500 text-white font-bold rounded-xl hover:bg-green-600 transition-all text-lg"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#0A66C2] text-white font-bold rounded-xl hover:bg-[#004182] transition-all text-lg"
             >
-              Kanalı Takip Et
+              LinkedIn&apos;de Takip Et
             </a>
             <a
               href="#hizmetler"

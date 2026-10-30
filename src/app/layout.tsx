@@ -81,10 +81,7 @@ const jsonLd = [
       "Akademik editörlük",
       "APA",
     ],
-    sameAs: [
-      LINKEDIN_URL,
-      "https://whatsapp.com/channel/0029Vb9KOnH0Qeahcy0Ois2f",
-    ],
+    sameAs: [LINKEDIN_URL],
   },
   {
     "@context": "https://schema.org",

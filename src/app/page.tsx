@@ -5,7 +5,7 @@ import Process from "@/components/Process";
 import About from "@/components/About";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
-import WhatsAppChannel from "@/components/WhatsAppChannel";
+import LinkedInSection from "@/components/LinkedInSection";
 import Footer from "@/components/Footer";
 import Chatbot from "@/components/Chatbot";
 
@@ -18,7 +18,7 @@ export default function Home() {
         <Services />
         <Process />
         <About />
-        <WhatsAppChannel />
+        <LinkedInSection />
         <FAQ />
         <Contact />
       </main>

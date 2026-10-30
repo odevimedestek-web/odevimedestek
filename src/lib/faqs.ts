@@ -20,8 +20,8 @@ export const faqs = [
     a: "Tüm çalışmalar ve kişisel bilgileriniz kesinlikle gizli tutulur. Hiçbir şekilde üçüncü kişilerle paylaşılmaz.",
   },
   {
-    q: "WhatsApp kanalınız var mı?",
-    a: "Evet. \"Akademik Danışmanlık\" kanalımızda her gün tez yazımı, APA ve SPSS üzerine öğretici paylaşımlar yapıyoruz. Sayfadaki \"Kanalı Takip Et\" butonuyla katılabilirsiniz.",
+    q: "LinkedIn sayfanız var mı?",
+    a: "Evet. \"Akademik Danışmanlık Merkezi\" LinkedIn sayfamızda tez yazımı, APA ve SPSS üzerine öğretici paylaşımlar yapıyoruz. Sayfadaki \"LinkedIn'de Takip Et\" butonuyla takip edebilirsiniz.",
   },
   {
     q: "Ödeme nasıl yapılıyor?",

@@ -32,18 +32,18 @@ export default function Contact() {
           </a>
 
           <a
-            href="https://whatsapp.com/channel/0029Vb9KOnH0Qeahcy0Ois2f"
+            href="https://www.linkedin.com/company/akademik-danismanlik-merkezi"
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex flex-col items-center p-8 bg-white border border-slate-200 rounded-2xl hover:shadow-xl hover:border-green-400/50 transition-all duration-300"
+            className="group flex flex-col items-center p-8 bg-white border border-slate-200 rounded-2xl hover:shadow-xl hover:border-[#0A66C2]/50 transition-all duration-300"
           >
-            <div className="w-16 h-16 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-green-500 group-hover:text-white transition-all duration-300">
-              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
+            <div className="w-16 h-16 bg-blue-50 text-[#0A66C2] rounded-2xl flex items-center justify-center mb-4 group-hover:bg-[#0A66C2] group-hover:text-white transition-all duration-300">
+              <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
               </svg>
             </div>
-            <span className="text-navy-900 font-semibold mb-1">WhatsApp Kanalı</span>
-            <span className="text-slate-500 text-sm">Kanalı Takip Et</span>
+            <span className="text-navy-900 font-semibold mb-1">LinkedIn</span>
+            <span className="text-slate-500 text-sm">Sayfamızı Takip Edin</span>
           </a>
         </div>
       </div>
