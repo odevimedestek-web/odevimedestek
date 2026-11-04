@@ -45,10 +45,16 @@ export default function Header() {
               </a>
             ))}
             <a
+              href="https://rapor-paneli.vercel.app"
+              className="hidden xl:inline-block ml-4 px-5 py-2.5 border border-navy-900/20 text-navy-900 font-semibold text-sm rounded-lg hover:border-gold-400 hover:text-gold-500 transition-all"
+            >
+              Rapor Girişi
+            </a>
+            <a
               href="https://wa.me/905384164676"
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-4 px-5 py-2.5 bg-navy-900 text-white font-semibold text-sm rounded-lg hover:bg-navy-800 transition-all hover:shadow-lg"
+              className="ml-2 px-5 py-2.5 bg-navy-900 text-white font-semibold text-sm rounded-lg hover:bg-navy-800 transition-all hover:shadow-lg"
             >
               WhatsApp ile Ulaşın
             </a>
@@ -83,6 +89,12 @@ export default function Header() {
                 {link.label}
               </a>
             ))}
+            <a
+              href="https://rapor-paneli.vercel.app"
+              className="block mt-3 px-4 py-3 border border-navy-900/20 text-navy-900 font-semibold rounded-lg text-center"
+            >
+              Rapor Girişi
+            </a>
             <a
               href="https://wa.me/905384164676"
               target="_blank"

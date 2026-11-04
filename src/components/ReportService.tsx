@@ -89,6 +89,15 @@ export default function ReportService() {
           >
             Örnek raporu indir (PDF, 129 KB) →
           </a>
+          <p className="mt-3 text-sm text-slate-600">
+            Hesabınız var mı?{" "}
+            <a
+              href="https://rapor-paneli.vercel.app"
+              className="font-semibold text-navy-900 underline hover:text-gold-500"
+            >
+              Giriş yapın
+            </a>
+          </p>
         </div>
 
         <div className="min-w-0 flex justify-center lg:justify-end pb-4">
