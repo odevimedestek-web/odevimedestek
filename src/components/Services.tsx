@@ -100,25 +100,6 @@ export default function Services() {
             </div>
           ))}
         </div>
-
-        <div className="mt-6 p-6 bg-white border border-slate-200 rounded-2xl flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-          <div>
-            <h3 className="text-lg font-semibold text-navy-900">
-              Benzerlik raporu nasıl görünür?
-            </h3>
-            <p className="text-slate-500 text-sm mt-1">
-              Örnek raporun genel sonuç ve kaynak sayfalarını inceleyin. Kişisel
-              bilgiler ve çalışma metni çıkarılmıştır.
-            </p>
-          </div>
-          <a
-            href="/ornek-benzerlik-raporu.pdf"
-            download
-            className="shrink-0 inline-flex items-center justify-center px-5 py-3 text-sm font-semibold text-navy-900 border border-navy-900/20 rounded-xl hover:border-gold-400 hover:text-gold-500 transition-colors"
-          >
-            Örnek raporu indir (PDF, 129 KB)
-          </a>
-        </div>
       </div>
     </section>
   );
