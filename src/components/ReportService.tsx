@@ -4,13 +4,13 @@ const pages = [
   {
     src: "/ornek-rapor-1.jpg",
     alt: "Örnek benzerlik raporu: genel sonuç sayfası",
-    label: "Benzerlik raporu",
+    label: "İntihal raporu",
     position: "-rotate-3",
   },
   {
     src: "/ornek-rapor-2.jpg",
     alt: "Örnek benzerlik raporu: kaynak listesi sayfası",
-    label: "Kaynak listesi",
+    label: "İntihal kaynakları",
     position: "rotate-2 mt-12 lg:mt-20 -ml-16 sm:-ml-24 lg:-ml-32",
   },
 ];
@@ -87,7 +87,7 @@ export default function ReportService() {
             download
             className="inline-block mt-6 text-sm font-semibold text-gold-500 hover:text-gold-400"
           >
-            Örnek raporu indir (PDF, 129 KB) →
+            Örnek raporu indir (PDF, 312 KB) →
           </a>
           <p className="mt-3 text-sm text-slate-600">
             Hesabınız var mı?{" "}
@@ -104,10 +104,9 @@ export default function ReportService() {
           {pages.map((page) => (
             <a
               key={page.src}
-              href={page.src}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={`${page.alt} (tam boy aç)`}
+              href="/ornek-benzerlik-raporu.pdf"
+              download
+              aria-label={`${page.alt} (PDF indir)`}
               className={`relative z-0 block shrink w-[60%] lg:w-[23rem] ${page.position} bg-white rounded-xl border border-slate-200 shadow-2xl shadow-navy-900/20 motion-safe:transition-all motion-safe:duration-200 hover:z-20 hover:rotate-0 hover:scale-105 focus-visible:z-20 focus-visible:rotate-0 focus-visible:scale-105`}
             >
               <Image
