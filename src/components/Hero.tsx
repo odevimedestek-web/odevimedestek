@@ -1,15 +1,13 @@
-import ReportOffer from "@/components/ReportOffer";
-
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center pt-20 bg-gradient-to-br from-navy-900 via-navy-800 to-navy-700">
-      <div className="absolute inset-0 opacity-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-gradient-to-br from-navy-900 via-navy-800 to-navy-700">
+      <div className="absolute inset-0 opacity-20">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gold-400/20 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gold-400/10 rounded-full blur-3xl" />
       </div>
 
-      <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid lg:grid-cols-[minmax(0,1fr)_28rem] gap-12 items-center">
-        <div className="min-w-0">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 border border-white/20 rounded-full mb-8">
             <span className="w-2 h-2 bg-gold-400 rounded-full animate-pulse" />
             <span className="text-sm text-gold-300 font-medium">
@@ -28,7 +26,7 @@ export default function Hero() {
             yanınızdayız.
           </p>
 
-          <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4">
+          <div className="flex flex-col sm:flex-row gap-4">
             <a
               href="https://wa.me/905384164676?text=Merhaba,%20akademik%20destek%20almak%20istiyorum."
               target="_blank"
@@ -60,8 +58,6 @@ export default function Hero() {
           </div>
 
         </div>
-
-        <ReportOffer />
       </div>
     </section>
   );
