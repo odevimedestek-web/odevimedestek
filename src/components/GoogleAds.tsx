@@ -5,8 +5,10 @@ import { useEffect } from "react";
 
 // Vercel ortam değişkenleri: NEXT_PUBLIC_GOOGLE_ADS_ID (AW-XXXXXXXXX)
 // ve NEXT_PUBLIC_GOOGLE_ADS_CONVERSION (AW-XXXXXXXXX/etiket). Boşsa hiçbir şey yüklenmez.
-const ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID;
-const CONVERSION = process.env.NEXT_PUBLIC_GOOGLE_ADS_CONVERSION;
+const ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID || "AW-18557544811";
+const CONVERSION =
+  process.env.NEXT_PUBLIC_GOOGLE_ADS_CONVERSION ||
+  "AW-18557544811/rwokCO2CxbIdEOvS9pBF";
 
 declare global {
   interface Window {
@@ -21,7 +23,11 @@ export default function GoogleAds() {
     const onClick = (e: MouseEvent) => {
       const link = (e.target as HTMLElement).closest("a");
       if (link && /wa\.me\//.test(link.href)) {
-        window.gtag?.("event", "conversion", { send_to: CONVERSION });
+        window.gtag?.("event", "conversion", {
+          send_to: CONVERSION,
+          value: 1.0,
+          currency: "TRY",
+        });
       }
     };
     document.addEventListener("click", onClick);
