@@ -45,15 +45,6 @@ export default function ReportService() {
             >
               Bilgi Almak İçin Yazın
             </a>
-            <p className="text-sm text-slate-600">
-              Hesabınız var mı?{" "}
-              <a
-                href="https://rapor-paneli.vercel.app"
-                className="font-semibold text-navy-900 underline hover:text-gold-500"
-              >
-                Giriş yapın
-              </a>
-            </p>
           </div>
           </div>
 
