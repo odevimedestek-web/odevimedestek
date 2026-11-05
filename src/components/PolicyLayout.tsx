@@ -19,7 +19,7 @@ export default function PolicyLayout({
                 alt="Ödevime Destek"
                 width={48}
                 height={48}
-                className="w-12 h-12 object-contain mix-blend-multiply"
+                className="w-12 h-12 object-contain rounded-xl bg-white p-1"
               />
             </Link>
             <Link
@@ -42,9 +42,15 @@ export default function PolicyLayout({
       </main>
 
       <footer className="border-t border-slate-800 py-8">
-        <div className="max-w-3xl mx-auto px-4 text-center text-sm text-slate-500">
-          &copy; {new Date().getFullYear()} Ödevime Destek. Tüm hakları
-          saklıdır.
+        <div className="max-w-3xl mx-auto px-4 text-center text-sm text-slate-500 space-y-3">
+          <p>Ankara, Türkiye · 0538 416 46 76 · odevimedestek@gmail.com</p>
+          <p className="flex flex-wrap justify-center gap-x-5 gap-y-2">
+            <Link href="/gizlilik" className="hover:text-gold-400">Gizlilik Politikası</Link>
+            <Link href="/kullanim-sartlari" className="hover:text-gold-400">Kullanım Şartları</Link>
+            <Link href="/iade-politikasi" className="hover:text-gold-400">İade Politikası</Link>
+            <Link href="/guvenlik" className="hover:text-gold-400">Güvenlik</Link>
+          </p>
+          <p>&copy; {new Date().getFullYear()} Ödevime Destek. Tüm hakları saklıdır.</p>
         </div>
       </footer>
     </div>

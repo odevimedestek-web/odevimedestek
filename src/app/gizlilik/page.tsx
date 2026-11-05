@@ -8,12 +8,11 @@ export const metadata = {
 export default function GizlilikPage() {
   return (
     <PolicyLayout title="Gizlilik Politikası">
-      <p>Son güncelleme: Haziran 2026</p>
+      <p>Son güncelleme: Kasım 2026</p>
 
       <p>
-        Bizimle çalışırken paylaştığınız her bilgi, her dosya ve her detay
-        aramızda kalır. Bu konuda net olmak istiyoruz: Gizlilik bizim için
-        bir formalite değil, işimizin temel taşı.
+        Bizimle çalışırken paylaştığınız bilgi ve dosyaları gizli tutuyoruz.
+        Hangi durumda kimlerle paylaşıldığını aşağıda açıkça yazdık.
       </p>
 
       <h2>Ne Tür Bilgiler Alıyoruz?</h2>
@@ -34,9 +33,11 @@ export default function GizlilikPage() {
 
       <h2>Kimlerle Paylaşıyoruz?</h2>
       <p>
-        Kimseyle. Çalışmanız sadece size atanan uzman tarafından görülür.
-        Mahkeme kararı gibi yasal bir zorunluluk olmadığı sürece bilgileriniz
-        kesinlikle dışarıya çıkmaz.
+        Danışmanlık sürecinde çalışmanızı yalnızca size atanan uzman görür.
+        Benzerlik veya yapay zekâ raporu almak isterseniz dosyanız, raporun
+        üretilmesi için hizmet sağlayıcımıza ve dosyaların saklandığı altyapı
+        sağlayıcımıza aktarılır. Bunların ve mahkeme kararı gibi yasal
+        zorunlulukların dışında bilgilerinizi kimseyle paylaşmıyoruz.
       </p>
 
       <h2>Bilgileriniz Ne Kadar Güvende?</h2>
@@ -49,9 +50,11 @@ export default function GizlilikPage() {
 
       <h2>Çerezler</h2>
       <p>
-        Sitemiz, daha iyi bir deneyim sunmak için çerez kullanabiliyor.
-        Tarayıcı ayarlarınızdan bunları kapatabilirsiniz, siteyi kullanmanızı
-        etkilemez.
+        Sitemiz, daha iyi bir deneyim sunmak ve Google Ads reklamlarımızın
+        sonucunu ölçmek için çerez kullanabiliyor. Örneğin reklamdan gelen bir
+        ziyaretçinin WhatsApp bağlantısına tıklayıp tıklamadığı ölçülür ve bu
+        veri Google tarafından işlenir. Tarayıcı ayarlarınızdan çerezleri
+        kapatabilirsiniz, siteyi kullanmanızı etkilemez.
       </p>
 
       <h2>KVKK Kapsamındaki Haklarınız</h2>

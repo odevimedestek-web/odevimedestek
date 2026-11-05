@@ -8,7 +8,7 @@ export const metadata = {
 export default function KullanimSartlariPage() {
   return (
     <PolicyLayout title="Kullanım Şartları">
-      <p>Son güncelleme: Haziran 2026</p>
+      <p>Son güncelleme: Kasım 2026</p>
 
       <p>
         Bu sayfada hizmetlerimizi kullanırken geçerli olan temel kuralları
@@ -35,8 +35,10 @@ export default function KullanimSartlariPage() {
       <h2>Paylaştığınız Çalışmalar</h2>
       <p>
         Çalışmanın yazarı ve sahibi sizsiniz. Bize ilettiğiniz metin ve
-        verileri yalnızca rehberlik için kullanırız; başkasıyla paylaşmayız,
-        arşivde tutmayız.
+        verileri yalnızca size hizmet vermek için kullanırız ve hizmet
+        tamamlandıktan 30 gün sonra sileriz. Rapor hizmeti dışında başkasıyla
+        paylaşmayız; rapor hizmetindeki aktarım Gizlilik Politikası'nda
+        açıklanır.
       </p>
 
       <h2>Görüşme Takvimi</h2>

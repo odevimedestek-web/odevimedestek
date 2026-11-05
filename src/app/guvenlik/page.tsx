@@ -8,7 +8,7 @@ export const metadata = {
 export default function GuvenlikPage() {
   return (
     <PolicyLayout title="Güvenlik Koridoru">
-      <p>Son güncelleme: Haziran 2026</p>
+      <p>Son güncelleme: Kasım 2026</p>
 
       <p>
         Bize bir dosya gönderdiğinizde veya çalışmanızın detaylarını
@@ -20,8 +20,8 @@ export default function GuvenlikPage() {
       <p>
         Bize gönderdiğiniz her dosya şifreli kanallar üzerinden aktarılıyor.
         Sunucularımızda güvenli şekilde saklanıyor ve sadece çalışmanıza
-        atanan uzman tarafından görüntülenebiliyor. Başka hiç kimse
-        dosyalarınıza erişemiyor.
+        atanan uzman tarafından görüntülenebiliyor. Rapor hizmetini seçerseniz
+        dosyanız, raporun üretilmesi için hizmet sağlayıcımıza da aktarılıyor.
       </p>
 
       <h2>Dosyalar Ne Kadar Saklanıyor?</h2>
@@ -32,7 +32,7 @@ export default function GuvenlikPage() {
         bize yazmanız yeterli — anında hallederiz.
       </p>
 
-      <h2>Kimse Göremez</h2>
+      <h2>Çalışmanız Sizindir</h2>
       <p>
         Çalışmanız başka müşterilerle paylaşılmaz, tekrar kullanılmaz,
         bir yerde sergilenmez. Sizin çalışmanız sizindir ve sadece sizin

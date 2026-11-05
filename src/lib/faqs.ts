@@ -17,7 +17,7 @@ export const faqs = [
   },
   {
     q: "Gizlilik konusunda ne yapıyorsunuz?",
-    a: "Tüm çalışmalar ve kişisel bilgileriniz kesinlikle gizli tutulur. Hiçbir şekilde üçüncü kişilerle paylaşılmaz.",
+    a: "Çalışmalarınızı ve kişisel bilgilerinizi gizli tutuyoruz. Danışmanlık sürecinde üçüncü kişilerle paylaşılmaz; rapor hizmetini seçerseniz dosyanızın hangi sağlayıcılara aktarıldığı Gizlilik Politikası'nda açıklanır.",
   },
   {
     q: "LinkedIn sayfanız var mı?",

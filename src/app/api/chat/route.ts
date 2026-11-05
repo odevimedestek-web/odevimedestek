@@ -86,7 +86,7 @@ function getReply(messages: Message[], userName?: string, selectedService?: stri
   }
 
   if (/güvenli|gizli|paylaş|kimse/.test(lastMsg)) {
-    return "Tüm çalışmalar ve kişisel bilgileriniz kesinlikle gizli tutulur. Hiçbir şekilde üçüncü kişilerle paylaşılmaz, bu konuda garanti veriyoruz.";
+    return "Çalışmalarınızı ve kişisel bilgilerinizi gizli tutuyoruz. Danışmanlık sürecinde üçüncü kişilerle paylaşılmaz; rapor hizmetinde dosyanın aktarıldığı sağlayıcılar Gizlilik Politikası'nda açıklanır.";
   }
 
   if (/iade|para.*geri|memnun/.test(lastMsg)) {

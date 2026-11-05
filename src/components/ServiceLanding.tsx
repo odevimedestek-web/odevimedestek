@@ -43,6 +43,12 @@ export default function ServiceLanding({
       >
         Ücretsiz Ön Görüşme (WhatsApp)
       </a>
+      <p className="text-sm text-slate-400">
+        İlk görüşme ücretsiz. Koşullar için{" "}
+        <a href="/iade-politikasi" className="text-gold-400 underline">İade Politikası</a>{" "}
+        ve{" "}
+        <a href="/gizlilik" className="text-gold-400 underline">Gizlilik Politikası</a>.
+      </p>
 
       {children}
 
@@ -53,6 +59,15 @@ export default function ServiceLanding({
           <p>{f.a}</p>
         </div>
       ))}
+
+      <a
+        href={`https://wa.me/905384164676?text=${encodeURIComponent(waText)}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center justify-center mt-4 px-8 py-4 bg-gold-400 text-navy-900 font-bold rounded-xl hover:bg-gold-300 transition-all no-underline"
+      >
+        WhatsApp&apos;tan Yazın
+      </a>
 
       <h2>Diğer Hizmetlerimiz</h2>
       <ul>

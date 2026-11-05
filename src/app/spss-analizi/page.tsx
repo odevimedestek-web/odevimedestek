@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "SPSS analiz danışmanlığında hangi testlerde destek veriyorsunuz?",
-    a: "Tanımlayıcı istatistikler, normallik testleri, güvenilirlik (Cronbach alfa), t-testi, ANOVA, ki-kare, korelasyon, regresyon, Mann-Whitney U, Kruskal-Wallis ve açımlayıcı/doğrulayıcı faktör analizi başta olmak üzere tez ve makalelerde kullanılan testlerin tamamında destek veriyoruz.",
+    a: "Tanımlayıcı istatistikler, normallik testleri, güvenilirlik (Cronbach alfa), t-testi, ANOVA, ki-kare, korelasyon, regresyon, Mann-Whitney U, Kruskal-Wallis ve açımlayıcı/doğrulayıcı faktör analizi başta olmak üzere tez ve makalelerde yaygın kullanılan testlerde destek veriyoruz.",
   },
   {
     q: "SPSS bilmiyorum, yine de destek alabilir miyim?",
@@ -35,15 +35,15 @@ export default function Page() {
       waText="Merhaba, SPSS analiz danışmanlığı almak istiyorum."
       faqs={faqs}
     >
-      <h2>SPSS Analizinde Neler Yapıyoruz?</h2>
+      <h2>SPSS Analizinde Neleri Birlikte Çalışıyoruz?</h2>
       <ul>
         <li>Araştırma soruları ve hipotezlere uygun test seçimi</li>
-        <li>Veri girişi, değişken tanımlama ve veri temizliği</li>
-        <li>Normallik, güvenilirlik ve geçerlilik analizleri</li>
-        <li>t-testi, ANOVA, ki-kare, korelasyon ve regresyon analizleri</li>
+        <li>Veri girişi, değişken tanımlama ve veri temizliğinin nasıl yapılacağı</li>
+        <li>Normallik, güvenilirlik ve geçerlilik analizlerinin mantığı</li>
+        <li>t-testi, ANOVA, ki-kare, korelasyon ve regresyon analizlerini uygulama</li>
         <li>Parametrik olmayan testler (Mann-Whitney U, Kruskal-Wallis, Wilcoxon)</li>
         <li>Faktör analizi ve ölçek uyarlama çalışmaları</li>
-        <li>SPSS çıktılarının APA formatında tablolaştırılması ve yorumlanması</li>
+        <li>SPSS çıktılarını okuma ve APA formatında raporlama</li>
       </ul>
 
       <h2>Tez ve Makale İçin SPSS Desteği Nasıl İlerliyor?</h2>
