@@ -1,12 +1,11 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import ServiceLanding from "@/components/ServiceLanding";
 
-export const metadata: Metadata = {
-  title: "TÜBİTAK Proje Danışmanlığı – 2209-A, 2209-B, 1001, 1002 Proje Desteği",
-  description:
-    "TÜBİTAK 2209-A, 2209-B, 1001, 1002 ve BAP proje başvurularında proje önerisi, amaç, yöntem, iş-zaman planı, bütçe ve yaygın etki bölümleri için proje danışmanlığı. İlk görüşme ücretsiz.",
-  alternates: { canonical: "/tubitak-proje-danismanligi" },
-};
+export const metadata = pageMetadata(
+  "TÜBİTAK Proje Danışmanlığı – 2209-A, 2209-B, 1001, 1002 Proje Desteği",
+  "TÜBİTAK 2209-A, 2209-B, 1001, 1002 ve BAP proje başvurularında proje önerisi, amaç, yöntem, iş-zaman planı, bütçe ve yaygın etki bölümleri için proje danışmanlığı. İlk görüşme ücretsiz.",
+  "/tubitak-proje-danismanligi",
+);
 
 const faqs = [
   {

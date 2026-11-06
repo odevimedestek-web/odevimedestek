@@ -1,12 +1,11 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import ServiceLanding from "@/components/ServiceLanding";
 
-export const metadata: Metadata = {
-  title: "Tez Danışmanlığı – Yüksek Lisans ve Doktora Tez Desteği",
-  description:
-    "Yüksek lisans ve doktora tezinizde konu seçimi, tez önerisi, literatür tarama, yöntem, SPSS analizi, şablon biçimlendirme ve savunma sunumunda birebir tez danışmanlığı. İlk görüşme ücretsiz.",
-  alternates: { canonical: "/tez-danismanligi" },
-};
+export const metadata = pageMetadata(
+  "Tez Danışmanlığı – Yüksek Lisans ve Doktora Tez Desteği",
+  "Yüksek lisans ve doktora tezinizde konu seçimi, tez önerisi, literatür tarama, yöntem, SPSS analizi, şablon biçimlendirme ve savunma sunumunda birebir tez danışmanlığı. İlk görüşme ücretsiz.",
+  "/tez-danismanligi",
+);
 
 const faqs = [
   {

@@ -1,9 +1,11 @@
+import { pageMetadata } from "@/lib/seo";
 import PolicyLayout from "@/components/PolicyLayout";
 
-export const metadata = {
-  title: "İade Politikası",
-  description: "Ödevime Destek iade koşulları: danışmanlıktan memnun kalmazsanız %100 iade.",
-};
+export const metadata = pageMetadata(
+  "İade Politikası",
+  "Ödevime Destek iade koşulları: danışmanlıktan memnun kalmazsanız %100 iade.",
+  "/iade-politikasi",
+);
 
 export default function IadePolitikasiPage() {
   return (

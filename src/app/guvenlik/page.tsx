@@ -1,9 +1,11 @@
+import { pageMetadata } from "@/lib/seo";
 import PolicyLayout from "@/components/PolicyLayout";
 
-export const metadata = {
-  title: "Güvenlik Koridoru",
-  description: "Ödevime Destek güvenlik politikası ve veri koruma önlemleri.",
-};
+export const metadata = pageMetadata(
+  "Güvenlik Koridoru",
+  "Ödevime Destek güvenlik politikası ve veri koruma önlemleri.",
+  "/guvenlik",
+);
 
 export default function GuvenlikPage() {
   return (

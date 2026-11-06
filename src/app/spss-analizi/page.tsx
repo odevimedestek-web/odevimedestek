@@ -1,12 +1,11 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import ServiceLanding from "@/components/ServiceLanding";
 
-export const metadata: Metadata = {
-  title: "SPSS Analiz Danışmanlığı – Tez ve Makale İçin İstatistik Desteği",
-  description:
-    "Tez ve makaleniz için SPSS analiz danışmanlığı: doğru test seçimi, güvenilirlik, t-testi, ANOVA, korelasyon, regresyon ve faktör analizi çıktılarını birlikte yorumluyoruz. İlk görüşme ücretsiz.",
-  alternates: { canonical: "/spss-analizi" },
-};
+export const metadata = pageMetadata(
+  "SPSS Analiz Danışmanlığı – Tez ve Makale İçin İstatistik Desteği",
+  "Tez ve makaleniz için SPSS analiz danışmanlığı: doğru test seçimi, güvenilirlik, t-testi, ANOVA, korelasyon, regresyon ve faktör analizi çıktılarını birlikte yorumluyoruz. İlk görüşme ücretsiz.",
+  "/spss-analizi",
+);
 
 const faqs = [
   {

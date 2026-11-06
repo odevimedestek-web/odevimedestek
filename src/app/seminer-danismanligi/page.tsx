@@ -1,12 +1,11 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import ServiceLanding from "@/components/ServiceLanding";
 
-export const metadata: Metadata = {
-  title: "Seminer Danışmanlığı – Yüksek Lisans ve Doktora Seminer Desteği",
-  description:
-    "Yüksek lisans ve doktora seminer dersleri için konu seçimi, literatür tarama, seminer metninin enstitü kurallarına uyumu, APA kaynak gösterme ve seminer sunumu hazırlığında danışmanlık.",
-  alternates: { canonical: "/seminer-danismanligi" },
-};
+export const metadata = pageMetadata(
+  "Seminer Danışmanlığı – Yüksek Lisans ve Doktora Seminer Desteği",
+  "Yüksek lisans ve doktora seminer dersleri için konu seçimi, literatür tarama, seminer metninin enstitü kurallarına uyumu, APA kaynak gösterme ve seminer sunumu hazırlığında danışmanlık.",
+  "/seminer-danismanligi",
+);
 
 const faqs = [
   {

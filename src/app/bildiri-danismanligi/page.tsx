@@ -1,12 +1,11 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import ServiceLanding from "@/components/ServiceLanding";
 
-export const metadata: Metadata = {
-  title: "Bildiri Danışmanlığı – Kongre ve Sempozyum Bildiri Desteği",
-  description:
-    "Ulusal ve uluslararası kongre, sempozyum ve konferanslar için bildiri özeti, tam metin bildiri, kongre yazım kurallarına uyum ve bildiri sunumu hazırlığında danışmanlık. İlk görüşme ücretsiz.",
-  alternates: { canonical: "/bildiri-danismanligi" },
-};
+export const metadata = pageMetadata(
+  "Bildiri Danışmanlığı – Kongre ve Sempozyum Bildiri Desteği",
+  "Ulusal ve uluslararası kongre, sempozyum ve konferanslar için bildiri özeti, tam metin bildiri, kongre yazım kurallarına uyum ve bildiri sunumu hazırlığında danışmanlık. İlk görüşme ücretsiz.",
+  "/bildiri-danismanligi",
+);
 
 const faqs = [
   {

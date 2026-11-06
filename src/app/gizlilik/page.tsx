@@ -1,9 +1,11 @@
+import { pageMetadata } from "@/lib/seo";
 import PolicyLayout from "@/components/PolicyLayout";
 
-export const metadata = {
-  title: "Gizlilik Politikası",
-  description: "Ödevime Destek gizlilik politikası ve kişisel verilerin korunması.",
-};
+export const metadata = pageMetadata(
+  "Gizlilik Politikası",
+  "Ödevime Destek gizlilik politikası ve kişisel verilerin korunması.",
+  "/gizlilik",
+);
 
 export default function GizlilikPage() {
   return (

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import GoogleAds from "@/components/GoogleAds";
-import { faqs } from "@/lib/faqs";
 
 const SITE_URL = "https://www.odevimedestek.com";
 const LINKEDIN_URL = "https://www.linkedin.com/company/akademik-danismanlik-merkezi";
@@ -34,7 +33,6 @@ export const metadata: Metadata = {
     "tez şablonu biçimlendirme",
     "tez savunma sunumu",
   ],
-  alternates: { canonical: "/" },
   robots: { index: true, follow: true },
   icons: {
     icon: "/logo-odevime-destek.png",
@@ -83,15 +81,7 @@ const jsonLd = [
     ],
     sameAs: [LINKEDIN_URL],
   },
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((f) => ({
-      "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
-    })),
-  },
+
 ];
 
 export default function RootLayout({

@@ -25,6 +25,8 @@ export default function FAQ() {
               className="border border-slate-200 rounded-xl overflow-hidden bg-white hover:shadow-md transition-shadow"
             >
               <button
+                aria-expanded={openIndex === i}
+                aria-controls={`faq-answer-${i}`}
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
                 className="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-slate-50 transition-colors"
               >
@@ -45,11 +47,9 @@ export default function FAQ() {
                   />
                 </svg>
               </button>
-              {openIndex === i && (
-                <div className="px-6 pb-5 text-slate-600 leading-relaxed">
+                <div id={`faq-answer-${i}`} hidden={openIndex !== i} className="px-6 pb-5 text-slate-600 leading-relaxed">
                   {faq.a}
                 </div>
-              )}
             </div>
           ))}
         </div>

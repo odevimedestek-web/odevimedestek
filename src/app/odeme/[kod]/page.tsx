@@ -4,6 +4,7 @@ import PaymentForm from "@/components/PaymentForm";
 import { calculateGrossAmount } from "@/lib/payxem";
 
 export const metadata = {
+  robots: { index: false, follow: false },
   title: "Ödeme",
   description: "Ödevime Destek kişiye özel ödeme sayfası.",
 };

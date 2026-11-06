@@ -1,9 +1,11 @@
+import { pageMetadata } from "@/lib/seo";
 import PolicyLayout from "@/components/PolicyLayout";
 
-export const metadata = {
-  title: "Kullanım Şartları",
-  description: "Ödevime Destek kullanım şartları ve hizmet koşulları.",
-};
+export const metadata = pageMetadata(
+  "Kullanım Şartları",
+  "Ödevime Destek kullanım şartları ve hizmet koşulları.",
+  "/kullanim-sartlari",
+);
 
 export default function KullanimSartlariPage() {
   return (
@@ -37,7 +39,7 @@ export default function KullanimSartlariPage() {
         Çalışmanın yazarı ve sahibi sizsiniz. Bize ilettiğiniz metin ve
         verileri yalnızca size hizmet vermek için kullanırız ve hizmet
         tamamlandıktan 30 gün sonra sileriz. Rapor hizmeti dışında başkasıyla
-        paylaşmayız; rapor hizmetindeki aktarım Gizlilik Politikası'nda
+        paylaşmayız; rapor hizmetindeki aktarım Gizlilik Politikası&apos;nda
         açıklanır.
       </p>
 
