@@ -30,7 +30,8 @@ const services: { title: string; desc: string; href?: string; icon: React.ReactN
     ),
   },
   {
-    title: "Editörlük Hizmetleri",
+    title: "Editörlük ve Tez Biçimlendirme",
+    href: "/tez-bicimlendirme",
     desc: "Akademik yazım kurallarına uygunluk kontrolü, dil bilgisi düzeltme ve biçimlendirme.",
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -40,6 +41,7 @@ const services: { title: string; desc: string; href?: string; icon: React.ReactN
   },
   {
     title: "Kaynak Gösterme ve APA",
+    href: "/rehber/apa-7-kaynakca",
     desc: "Doğru atıf yapma, kaynakça düzenleme ve APA gibi yazım kılavuzlarını uygulama rehberliği.",
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">

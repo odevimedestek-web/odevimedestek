@@ -35,6 +35,7 @@ export default function Page() {
       waText="Merhaba, tez danışmanlığı almak istiyorum."
       faqs={faqs}
     >
+      <p>Metniniz hazırsa ve sayfa düzeni için destek arıyorsanız <Link href="/tez-bicimlendirme" className="text-gold-400 underline">tez biçimlendirme ve kılavuza uyum</Link> sayfasına geçebilirsiniz.</p>
       <h2>Tez Sürecinde Hangi Konularda Destek Veriyoruz?</h2>
       <ul>
         <li>Tez konusu belirleme ve tez önerisi (öneri formu) hazırlığı</li>

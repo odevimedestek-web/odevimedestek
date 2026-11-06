@@ -1,4 +1,5 @@
 import Link from "next/link";
+import QuoteBuilder from "@/components/QuoteBuilder";
 import { pageMetadata } from "@/lib/seo";
 import ServiceLanding from "@/components/ServiceLanding";
 
@@ -35,6 +36,11 @@ export default function Page() {
       waText="Merhaba, SPSS analiz danışmanlığı almak istiyorum."
       faqs={faqs}
     >
+      <div className="flex flex-wrap gap-3 text-sm">
+        <a href="#teklif-hazirla" className="rounded-lg border border-gold-400 px-4 py-3 text-gold-400">Ön görüşme talebi hazırla</a>
+        <Link href="/spss-analiz-ucretleri" className="rounded-lg border border-slate-600 px-4 py-3 text-gold-400">Ücret ve kapsam</Link>
+        <Link href="/spss-analiz-kontrolu" className="rounded-lg border border-slate-600 px-4 py-3 text-gold-400">Analizim hazır, kontrol istiyorum</Link>
+      </div>
       <h2>SPSS Analizinde Neleri Birlikte Çalışıyoruz?</h2>
       <ul>
         <li>Araştırma soruları ve hipotezlere uygun test seçimi</li>
@@ -97,6 +103,7 @@ export default function Page() {
         analizlerini yenilemesi gereken herkes için uygundur. Eğitim, sağlık,
         psikoloji, işletme ve sosyal bilimler alanlarında çalışıyoruz.
       </p>
+      <QuoteBuilder />
     </ServiceLanding>
   );
 }

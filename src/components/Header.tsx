@@ -10,6 +10,7 @@ const navLinks = [
   { href: "#hakkimizda", label: "Hakkımızda" },
   { href: "/rehber", label: "Rehberler" },
   { href: "#sss", label: "SSS" },
+  { href: "/spss-analiz-ucretleri", label: "Teklif Al" },
   { href: "#iletisim", label: "İletişim" },
 ];
 
@@ -34,7 +35,7 @@ export default function Header() {
             </span>
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-1">
+          <nav className="hidden xl:flex items-center gap-1">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -56,7 +57,7 @@ export default function Header() {
 
           <button
             onClick={() => setOpen(!open)}
-            className="lg:hidden p-2 text-slate-600 hover:text-navy-900"
+            className="xl:hidden p-2 text-slate-600 hover:text-navy-900"
             aria-label="Menüyü aç"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -71,7 +72,7 @@ export default function Header() {
       </div>
 
       {open && (
-        <div className="lg:hidden bg-white border-t border-slate-200">
+        <div className="xl:hidden bg-white border-t border-slate-200">
           <div className="px-4 py-4 space-y-1">
             {navLinks.map((link) => (
               <a
