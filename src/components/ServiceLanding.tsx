@@ -1,3 +1,4 @@
+import DeliveryPolicy from "@/components/DeliveryPolicy";
 import Link from "next/link";
 import { serviceExperience } from "@/lib/service-experience";
 import PolicyLayout from "@/components/PolicyLayout";
@@ -67,6 +68,7 @@ export default function ServiceLanding({
       </div>
       <div id="hizmet-kapsami" className="space-y-6">{children}</div>
 
+      <DeliveryPolicy />
       <section id="hizmet-sorulari" aria-label="Hizmet hakkında sorular">
         <h2>Sıkça Sorulan Sorular</h2>
         <div className="space-y-3">{allFaqs.map((f) => (

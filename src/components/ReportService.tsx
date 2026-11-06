@@ -1,3 +1,4 @@
+import { servicePolicy } from "@/lib/service-policy";
 import Image from "next/image";
 
 const samplePdf = "/ornek-benzerlik-raporu.pdf";
@@ -28,8 +29,8 @@ export default function ReportService() {
             payı taşır ve üniversitenizin kullandığı sistemle aynı sonucu
             vermeyebilir.
           </p>
-          <p className="text-slate-500 text-sm leading-relaxed mt-3">
-            Raporun üretilmesi için dosyanız hizmet sağlayıcımıza aktarılır.
+          <p className="text-slate-600 text-sm leading-relaxed mt-3">
+            {servicePolicy.report}
             Ayrıntılar{" "}
             <a href="/gizlilik" className="font-semibold text-navy-900 underline hover:text-gold-500">
               Gizlilik Politikası

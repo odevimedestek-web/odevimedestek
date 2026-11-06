@@ -30,6 +30,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-5">Hızlı Linkler</h4>
             <ul className="space-y-3 text-sm">
+              <li><Link href="/ornek-calismalar" className="text-slate-400 hover:text-gold-400">Temsili Çalışma Örnekleri</Link></li>
               <li><Link href="/spss-analiz-ucretleri" className="text-slate-400 hover:text-gold-400 transition-colors">SPSS Ücret ve Kapsam</Link></li>
               <li><Link href="/rehber" className="text-slate-400 hover:text-gold-400 transition-colors">Akademik Rehberler</Link></li>
               <li><a href="#hizmetler" className="text-slate-400 hover:text-gold-400 transition-colors">Hizmetler</a></li>

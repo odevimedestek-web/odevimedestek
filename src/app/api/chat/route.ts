@@ -1,3 +1,4 @@
+import { servicePolicy } from "@/lib/service-policy";
 import { NextRequest, NextResponse } from "next/server";
 
 interface Message {
@@ -11,6 +12,10 @@ function getReply(messages: Message[], userName?: string, selectedService?: stri
     .filter((m) => m.role === "user")
     .map((m) => m.content.toLowerCase())
     .join(" ");
+
+  if (/revizyon|düzeltme|değişiklik/.test(lastMsg)) return servicePolicy.revision;
+  if (/gizli|güvenli|paylaş|silin|siliyo|sakla/.test(lastMsg)) return servicePolicy.privacy + " " + servicePolicy.deletion + " " + servicePolicy.report;
+  if (/teslim|deadline/.test(lastMsg)) return servicePolicy.preview;
 
   if (/merhaba|selam|hey|naber|iyi günler|iyi akşamlar/.test(lastMsg)) {
     return "Merhaba! Hoş geldiniz. Tez, makale, SPSS analizi veya editörlük hizmetlerimiz hakkında bilgi almak ister misiniz?";
@@ -85,17 +90,11 @@ function getReply(messages: Message[], userName?: string, selectedService?: stri
     return "Hizmetlerimiz:\n• SPSS ve veri analizi\n• Tez danışmanlığı (ön lisans — doktora)\n• Makale danışmanlığı\n• Akademik editörlük\n• Kaynak gösterme ve APA\n• Sunum desteği\n\nLinkedIn sayfamız: https://www.linkedin.com/company/akademik-danismanlik-merkezi\n\nHangi konuda destek almak istiyorsunuz?";
   }
 
-  if (/güvenli|gizli|paylaş|kimse/.test(lastMsg)) {
-    return "Çalışmalarınızı ve kişisel bilgilerinizi gizli tutuyoruz. Danışmanlık sürecinde üçüncü kişilerle paylaşılmaz; rapor hizmetinde dosyanın aktarıldığı sağlayıcılar Gizlilik Politikası'nda açıklanır.";
-  }
 
   if (/iade|para.*geri|memnun/.test(lastMsg)) {
     return "Danışmanlık hizmetimizden memnun kalmazsanız ödediğiniz ücretin tamamını iade ediyoruz. Talebinizi WhatsApp üzerinden yazılı olarak iletmeniz yeterli.";
   }
 
-  if (/revizyon|düzeltme|değişiklik/.test(lastMsg)) {
-    return "Hazırladığınız bölümler için geri bildirim görüşmeleri süreç boyunca devam eder.";
-  }
 
   // Genel yanıt
   if (messages.filter((m) => m.role === "user").length <= 1) {

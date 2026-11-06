@@ -1,3 +1,4 @@
+import { servicePolicy } from "@/lib/service-policy";
 import { pageMetadata } from "@/lib/seo";
 import PolicyLayout from "@/components/PolicyLayout";
 
@@ -18,35 +19,17 @@ export default function GuvenlikPage() {
         istiyoruz. İşte tam olarak neler yapıyoruz:
       </p>
 
-      <h2>Dosyalarınız Nasıl Korunuyor?</h2>
-      <p>
-        Bize gönderdiğiniz her dosya şifreli kanallar üzerinden aktarılıyor.
-        Sunucularımızda güvenli şekilde saklanıyor ve sadece çalışmanıza
-        atanan uzman tarafından görüntülenebiliyor. Rapor hizmetini seçerseniz
-        dosyanız, raporun üretilmesi için hizmet sağlayıcımıza da aktarılıyor.
-      </p>
-
-      <h2>Dosyalar Ne Kadar Saklanıyor?</h2>
-      <p>
-        Çalışmanız tamamlandıktan 30 gün sonra tüm dosyalarınız
-        sistemimizden kalıcı olarak siliniyor. Geri getirilmesi mümkün
-        olmayacak şekilde imha ediliyor. Daha erken silinmesini isterseniz,
-        bize yazmanız yeterli — anında hallederiz.
-      </p>
-
+      <h2>Danışmanlıkta Sınırlı Erişim</h2>
+      <p>{servicePolicy.privacy}</p>
+      <h2>Danışmanlık Sonrası Silme</h2>
+      <p>{servicePolicy.deletion}</p>
       <h2>Çalışmanız Sizindir</h2>
-      <p>
-        Çalışmanız başka müşterilerle paylaşılmaz, tekrar kullanılmaz,
-        bir yerde sergilenmez. Sizin çalışmanız sizindir ve sadece sizin
-        kalır. Ekibimizin tamamı gizlilik sözleşmesi imzalamıştır.
-      </p>
-
-      <h2>İletişim Güvenliği</h2>
-      <p>
-        WhatsApp üzerinden yaptığımız tüm yazışmalar uçtan uca şifreli.
-        Site içindeki chatbot konuşmaları da güvenli sunucularda işleniyor.
-        Ödeme bilgilerinizi ise hiçbir şekilde sistemimizde saklamıyoruz.
-      </p>
+      <p>Çalışmanız başka müşterilerle paylaşılmaz, yeniden kullanılmaz veya örnek olarak yayımlanmaz. Sitedeki temsili değerlendirmeler müşteri dosyalarından alınmamıştır.</p>
+      <h2>Rapor Hizmeti İçin Ayrı Onay</h2>
+      <p>{servicePolicy.report}</p>
+      <p>Dış sağlayıcının kendi kayıtlarına ilişkin saklama ve silme koşulları ayrıca açıklanır. Danışmanlık dosyalarının tarafımızdan silinmesi bu sistemlerde otomatik silme taahhüdü değildir.</p>
+      <h2>Dosya Göndermeden Önce</h2>
+      <p>Çalışma için gerekmeyen ad, kimlik ve iletişim bilgilerini kaldırın. Katılımcı verilerini anonimleştirin. Site içindeki sohbet alanına araştırma verisi veya hassas kişisel bilgi yazmayın.</p>
 
       <h2>Akademik Etik</h2>
       <p>

@@ -1,3 +1,4 @@
+import { servicePolicy } from "@/lib/service-policy";
 import { pageMetadata } from "@/lib/seo";
 import PolicyLayout from "@/components/PolicyLayout";
 
@@ -35,20 +36,15 @@ export default function KullanimSartlariPage() {
       </p>
 
       <h2>Paylaştığınız Çalışmalar</h2>
-      <p>
-        Çalışmanın yazarı ve sahibi sizsiniz. Bize ilettiğiniz metin ve
-        verileri yalnızca size hizmet vermek için kullanırız ve hizmet
-        tamamlandıktan 30 gün sonra sileriz. Rapor hizmeti dışında başkasıyla
-        paylaşmayız; rapor hizmetindeki aktarım Gizlilik Politikası&apos;nda
-        açıklanır.
-      </p>
-
-      <h2>Görüşme Takvimi</h2>
-      <p>
-        Danışmanlık görüşmelerini ilk görüşmede birlikte belirlediğimiz
-        takvime göre yürütüyoruz. Beklenmedik bir durum olursa sizi
-        önceden bilgilendiriyoruz.
-      </p>
+      <p>Çalışmanın yazarı ve sahibi sizsiniz. {servicePolicy.privacy}</p>
+      <p>{servicePolicy.deletion}</p>
+      <h2>İsteğe Bağlı Rapor Hizmeti</h2>
+      <p>{servicePolicy.report}</p>
+      <h2>Ön Teslim ve İnceleme</h2>
+      <p>{servicePolicy.preview}</p>
+      <h2>Aynı Çalışma İçin Ücretsiz Ek Revizyon</h2>
+      <p>{servicePolicy.revision}</p>
+      <p>Dosyalar danışmanlık ve buna bağlı revizyon süreci tamamlandığında silinir. Silme sonrasında aynı çalışma için revizyon talebinde bulunursanız güncel dosyayı tekrar iletebilirsiniz; aynı çalışma için ücretsiz ek revizyon koşulu geçerlidir.</p>
 
       <h2>İade</h2>
       <p>

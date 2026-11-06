@@ -1,3 +1,4 @@
+import { servicePolicy } from "@/lib/service-policy";
 import { pageMetadata } from "@/lib/seo";
 import PolicyLayout from "@/components/PolicyLayout";
 
@@ -33,22 +34,14 @@ export default function GizlilikPage() {
         o kadar.
       </p>
 
-      <h2>Kimlerle Paylaşıyoruz?</h2>
-      <p>
-        Danışmanlık sürecinde çalışmanızı yalnızca size atanan uzman görür.
-        Benzerlik veya yapay zekâ raporu almak isterseniz dosyanız, raporun
-        üretilmesi için hizmet sağlayıcımıza ve dosyaların saklandığı altyapı
-        sağlayıcımıza aktarılır. Bunların ve mahkeme kararı gibi yasal
-        zorunlulukların dışında bilgilerinizi kimseyle paylaşmıyoruz.
-      </p>
-
-      <h2>Bilgileriniz Ne Kadar Güvende?</h2>
-      <p>
-        Dosyalarınız şifreli kanallar üzerinden aktarılıyor ve güvenli
-        sunucularda saklanıyor. Hizmet tamamlandıktan 30 gün sonra
-        dosyalarınız sistemden kalıcı olarak siliniyor. İsterseniz daha
-        erken silinmesini de talep edebilirsiniz.
-      </p>
+      <h2>Danışmanlık Dosyalarını Kim Görür?</h2>
+      <p>{servicePolicy.privacy}</p>
+      <h2>İsteğe Bağlı Rapor Hizmeti ve Ayrı Onay</h2>
+      <p>{servicePolicy.report}</p>
+      <p>Rapor sağlayıcısının kendi sistemindeki saklama ve silme koşulları, onay öncesinde ayrıca açıklanır. Tarafımızdaki dosyaların silinmesi, dış sağlayıcının sisteminde otomatik silme yapıldığı anlamına gelmez.</p>
+      <h2>Danışmanlık Verileri Ne Zaman Silinir?</h2>
+      <p>{servicePolicy.deletion}</p>
+      <p>Silme politikası danışmanlık dosyalarına ilişkindir. Kullanılan iletişim ve rapor hizmetlerinin kendi sistemlerindeki kayıtlar, ilgili sağlayıcının koşullarına tabidir.</p>
 
       <h2>Çerezler</h2>
       <p>

@@ -79,14 +79,14 @@ export const faqs = [
   {
     "category": "Ücret ve süreç",
     "q": "Çalışma ne kadar sürer? Acil bir tarihim varsa ne yapmalıyım?",
-    "a": "Süre, mevcut dosyalara ve istenen desteğe göre belirlenir. Danışmanınıza veya kurumunuza teslim etmeniz gereken tarihi ilk mesajda belirtin; bu tarihe göre uygulanabilir bir takvim olup olmadığını ön görüşmede değerlendirelim.",
+    "a": "Çalışmanızın son durumu, birlikte belirlenen teslim tarihinden 1–2 gün önce incelemeniz için paylaşılır. Böylece beğenmediğiniz noktaları belirtebilir ve değişiklik taleplerinizi iletebilirsiniz. Teslim tarihini ilk görüşmede birlikte belirleriz.",
     "href": "/#surec",
     "label": "Çalışma sürecini inceleyin"
   },
   {
     "category": "Ücret ve süreç",
     "q": "Danışmanımdan yeni düzeltme gelirse nasıl ilerleriz?",
-    "a": "Yeni notları belgenin güncel sürümüyle birlikte paylaşın. Hangi bölümün değişeceğini ve talebin üzerinde çalışılan kapsamla ilişkisini değerlendirelim. Yeni veri, farklı analiz veya ek bölüm gerektiren taleplerin kapsamını ayrıca netleştiririz.",
+    "a": "Aynı çalışma için talep ettiğiniz ek revizyonlardan ücret alınmaz. Değişmesini istediğiniz yerleri güncel dosya ve varsa danışman notlarıyla birlikte paylaşabilirsiniz.",
     "href": "/#iletisim",
     "label": "Geri bildiriminizi iletin"
   },
@@ -100,7 +100,7 @@ export const faqs = [
   {
     "category": "Gizlilik ve çalışma ilkeleri",
     "q": "Dosyalarımı paylaşmadan önce nelere dikkat etmeliyim?",
-    "a": "Dosyalardan ad, kimlik ve iletişim bilgileri gibi çalışma için gerekmeyen kişisel verileri ayıklayın. Katılımcı verilerini anonimleştirin. İşlenen bilgiler ve rapor hizmetinde kullanılan sağlayıcılar hakkındaki açıklamalar gizlilik politikasında yer alır.",
+    "a": "Danışmanlık kapsamında paylaştığınız çalışma ve veriler, çalışmanıza danışmanlık veren uzman hoca dışında kimseyle paylaşılmaz. Katılımcı verilerini anonimleştirin. Rapor hizmetinde dış sağlayıcıya aktarım için ayrıca onayınız alınır.",
     "href": "/gizlilik",
     "label": "Gizlilik politikasını inceleyin"
   },
@@ -124,5 +124,12 @@ export const faqs = [
     "a": "Rapor, incelenmesi gereken eşleşmeleri gösteren bir yardımcıdır. Eşleşmelerin alıntı, kaynakça veya metin içindeki kullanımını ayrıca değerlendirmek gerekir. Rapor hizmetinin kapsamını ve temsili örneğini ana sayfada inceleyebilirsiniz.",
     "href": "/#rapor-hizmeti",
     "label": "Rapor hizmetine bakın"
+  },
+  {
+    "category": "Gizlilik ve çalışma ilkeleri",
+    "q": "Danışmanlık tamamlandığında dosyalarıma ne oluyor?",
+    "a": "Danışmanlık ve buna bağlı revizyon süreci tamamlandıktan sonra bize ilettiğiniz çalışma dosyaları ve danışmanlık verileri tarafımızdan tamamen silinir. Daha sonra yeniden destek isterseniz dosyanızı tekrar paylaşmanız gerekir.",
+    "href": "/gizlilik",
+    "label": "Veri silme politikasını inceleyin"
   }
 ];
