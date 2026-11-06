@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
 import ServiceLanding from "@/components/ServiceLanding";
 
@@ -51,6 +52,43 @@ export default function Page() {
         beklentilerini konuşuyoruz. Ardından size özel bir çalışma takvimi
         çıkarıyor, her bölüm için geri bildirim veriyor ve danışman/jüri
         notlarını nasıl ele alacağınızı birlikte planlıyoruz.
+      </p>
+
+      <h2>İlk Görüşmeye Nasıl Hazırlanabilirsiniz?</h2>
+      <p>
+        Varsa tez öneri formunuzu, enstitünüzün yazım kılavuzunu, hazırladığınız
+        bölümleri ve danışmanınızın son notlarını bir araya getirin. Henüz konu
+        seçmediyseniz ilgi alanınızı ve program düzeyinizi belirtin. Görüşmede
+        mevcut aşamayı ve hangi konuda rehberliğe ihtiyaç duyduğunuzu
+        netleştirerek başlayabiliriz.
+      </p>
+      <p>
+        Öneri aşamasındaysanız <Link href="/rehber/tez-oneri-formu" className="text-gold-400 underline">tez öneri formu rehberini</Link>,{" "}
+        kaynakçanızı düzenliyorsanız <Link href="/rehber/apa-7-kaynakca" className="text-gold-400 underline">APA 7 başlangıç rehberini</Link>{" "}
+        inceleyebilirsiniz.
+      </p>
+
+      <h2>Bulunduğunuz Aşamaya Göre Destek</h2>
+      <ul>
+        <li>Öneri aşaması: konuyu daraltma, araştırma sorusu ve yöntem planlama konusunda rehberlik.</li>
+        <li>Yazım aşaması: hazırladığınız bölümler için geri bildirim ve kaynak gösterme desteği.</li>
+        <li>Analiz aşaması: <Link href="/spss-analizi" className="text-gold-400 underline">SPSS analiz danışmanlığı</Link> ile çıktıları anlama ve raporlama.</li>
+        <li>Teslim ve savunma aşaması: enstitü kılavuzuna göre biçimlendirme ve <Link href="/rehber/tez-savunma-sunumu" className="text-gold-400 underline">savunma sunumunu planlama</Link>.</li>
+      </ul>
+      <p>
+        Çalışmanın yazarı sizsiniz. Rehberlik ve geri bildirim, kendi metninizi
+        geliştirmenize yöneliktir. Danışmanınızın notlarını çalışma takvimiyle
+        birlikte ele alıyoruz.
+      </p>
+
+      <h2>Görüşme Takvimi ve Ücretlendirme</h2>
+      <p>
+        İlk görüşme ücretsizdir. Çalışmanın kapsamını, görüşme takvimini ve
+        ödeme ayrıntılarını ön görüşmede belirliyoruz. İhtiyaç duyduğunuz
+        aşamayı ve danışmanınızın beklediği tarihi paylaşmanız, kapsamı
+        birlikte netleştirmemizi sağlar. İade koşullarını{" "}
+        <Link href="/iade-politikasi" className="text-gold-400 underline">İade Politikası</Link>{" "}
+        sayfasından inceleyebilirsiniz.
       </p>
 
       <h2>Neden Bizimle Çalışmalısınız?</h2>
