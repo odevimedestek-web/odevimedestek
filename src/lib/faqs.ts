@@ -21,7 +21,7 @@ export const faqs = [
   },
   {
     q: "LinkedIn sayfanız var mı?",
-    a: "Evet. \"Akademik Danışmanlık Merkezi\" LinkedIn sayfamızda tez yazımı, APA ve SPSS üzerine öğretici paylaşımlar yapıyoruz. Sayfadaki \"LinkedIn'de Takip Et\" butonuyla takip edebilirsiniz.",
+    a: "Evet. İletişim bölümündeki LinkedIn bağlantısından Akademik Danışmanlık Merkezi sayfamıza ulaşabilirsiniz.",
   },
   {
     q: "Ödeme nasıl yapılıyor?",

@@ -63,16 +63,16 @@ const services: { title: string; desc: string; href?: string; icon: React.ReactN
 
 export default function Services() {
   return (
-    <section id="hizmetler" className="py-24 bg-slate-50">
+    <section id="hizmetler" className="py-16 sm:py-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="text-gold-500 font-semibold text-sm uppercase tracking-wider">
+          <span className="text-navy-600 font-semibold text-sm uppercase tracking-wider">
             Hizmetlerimiz
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-navy-900 mt-3">
-            Akademik İhtiyacınıza Uygun Çözümler
+            Çalışmanız için hangi destek gerekli?
           </h2>
-          <p className="text-slate-500 mt-4 max-w-2xl mx-auto">
+          <p className="text-slate-600 mt-4 max-w-2xl mx-auto">
             Hizmetlerimiz danışmanlık ve eğitim niteliğindedir. Çalışmanın
             sahibi ve yazarı her zaman sizsiniz; akademik dürüstlük kurallarına
             aykırı talepleri kabul etmiyoruz.
@@ -85,17 +85,17 @@ export default function Services() {
               key={s.title}
               className="group p-6 bg-white border border-slate-200 rounded-2xl hover:border-gold-400/50 hover:shadow-lg transition-all duration-300"
             >
-              <div className="w-14 h-14 bg-navy-900/5 text-navy-900 rounded-xl flex items-center justify-center mb-5 group-hover:bg-gold-400/10 group-hover:text-gold-500 transition-colors">
+              <div className="w-14 h-14 bg-navy-900/5 text-navy-900 rounded-xl flex items-center justify-center mb-5 group-hover:bg-gold-400/10 group-hover:text-navy-600 transition-colors">
                 {s.icon}
               </div>
               <h3 className="text-xl font-semibold text-navy-900 mb-3">
                 {s.title}
               </h3>
-              <p className="text-slate-500 leading-relaxed text-sm">
+              <p className="text-slate-600 leading-relaxed text-sm">
                 {s.desc}
               </p>
               {s.href && (
-                <a href={s.href} className="inline-block mt-4 text-sm font-semibold text-gold-500 hover:text-gold-400">
+                <a href={s.href} aria-label={`${s.title} hakkında detaylı bilgi`} className="inline-block mt-4 text-sm font-semibold text-navy-600 hover:text-gold-400">
                   Detaylı bilgi →
                 </a>
               )}

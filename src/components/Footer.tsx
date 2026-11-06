@@ -14,8 +14,7 @@ export default function Footer() {
               <span className="text-xl font-bold">Ödevime Destek</span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed">
-              Akademik danışmanlık ve profesyonel destek hizmetleri. 15 yıllık
-              deneyimimizle yanınızdayız.
+              Araştırma planlama, SPSS analizi, akademik editörlük ve tez biçimlendirme süreçlerinde danışmanlık.
             </p>
           </div>
 
@@ -60,14 +59,14 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-slate-800 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <span className="text-sm text-slate-500">
+          <span className="text-sm text-slate-400">
             &copy; {new Date().getFullYear()} Ödevime Destek. Tüm hakları saklıdır.
           </span>
           <div className="flex flex-wrap justify-center gap-6 text-sm">
-            <Link href="/gizlilik" className="text-slate-500 hover:text-gold-400 transition-colors">Gizlilik Politikası</Link>
-            <Link href="/kullanim-sartlari" className="text-slate-500 hover:text-gold-400 transition-colors">Kullanım Şartları</Link>
-            <Link href="/iade-politikasi" className="text-slate-500 hover:text-gold-400 transition-colors">İade Politikası</Link>
-            <Link href="/guvenlik" className="text-slate-500 hover:text-gold-400 transition-colors">Güvenlik</Link>
+            <Link href="/gizlilik" className="text-slate-400 hover:text-gold-400 transition-colors">Gizlilik Politikası</Link>
+            <Link href="/kullanim-sartlari" className="text-slate-400 hover:text-gold-400 transition-colors">Kullanım Şartları</Link>
+            <Link href="/iade-politikasi" className="text-slate-400 hover:text-gold-400 transition-colors">İade Politikası</Link>
+            <Link href="/guvenlik" className="text-slate-400 hover:text-gold-400 transition-colors">Güvenlik</Link>
           </div>
         </div>
       </div>

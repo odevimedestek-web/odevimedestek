@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -17,8 +17,19 @@ const navLinks = [
 export default function Header() {
   const [open, setOpen] = useState(false);
 
+  const menuButton = useRef<HTMLButtonElement>(null);
+  useEffect(() => {
+    if (!open) return;
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") { setOpen(false); menuButton.current?.focus(); }
+    };
+    document.addEventListener("keydown", closeOnEscape);
+    return () => document.removeEventListener("keydown", closeOnEscape);
+  }, [open]);
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+      <a href="#ana-icerik" className="skip-link">Ana içeriğe geç</a>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
           <Link href="/" className="group flex items-center gap-3">
@@ -29,13 +40,13 @@ export default function Header() {
               height={44}
               className="w-11 h-11 object-contain rounded-xl"
             />
-            <span className="text-2xl sm:text-3xl font-extrabold tracking-tight">
-              <span className="text-gold-500">Ödevime</span>
+            <span className="text-xl sm:text-2xl font-extrabold tracking-tight">
+              <span className="text-navy-600">Ödevime</span>
               <span className="text-navy-900"> Destek</span>
             </span>
           </Link>
 
-          <nav className="hidden xl:flex items-center gap-1">
+          <nav aria-label="Ana menü" className="hidden xl:flex items-center gap-1">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -58,7 +69,10 @@ export default function Header() {
           <button
             onClick={() => setOpen(!open)}
             className="xl:hidden p-2 text-slate-600 hover:text-navy-900"
-            aria-label="Menüyü aç"
+            ref={menuButton}
+            aria-label={open ? "Menüyü kapat" : "Menüyü aç"}
+            aria-expanded={open}
+            aria-controls="mobil-menu"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {open ? (
@@ -72,7 +86,7 @@ export default function Header() {
       </div>
 
       {open && (
-        <div className="xl:hidden bg-white border-t border-slate-200">
+        <nav id="mobil-menu" aria-label="Mobil menü" className="xl:hidden bg-white border-t border-slate-200 max-h-[calc(100dvh-4rem)] overflow-y-auto">
           <div className="px-4 py-4 space-y-1">
             {navLinks.map((link) => (
               <a
@@ -93,7 +107,7 @@ export default function Header() {
               WhatsApp ile Ulaşın
             </a>
           </div>
-        </div>
+        </nav>
       )}
     </header>
   );

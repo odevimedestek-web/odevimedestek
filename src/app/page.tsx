@@ -8,7 +8,7 @@ import Process from "@/components/Process";
 import About from "@/components/About";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
-import LinkedInSection from "@/components/LinkedInSection";
+import GuidePreview from "@/components/GuidePreview";
 import Footer from "@/components/Footer";
 import Chatbot from "@/components/Chatbot";
 
@@ -36,13 +36,13 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd).replace(/</g, "\\u003c") }}
       />
       <Header />
-      <main>
+      <main id="ana-icerik">
         <Hero />
         <Services />
         <Process />
         <About />
         <ReportService />
-        <LinkedInSection />
+        <GuidePreview />
         <FAQ />
         <Contact />
       </main>

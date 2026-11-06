@@ -31,7 +31,7 @@ export default function Page() {
   return (
     <ServiceLanding
       title="Tez Danışmanlığı"
-      intro="Yüksek lisans ve doktora tezinizin her aşamasında deneyimli ekibimizden birebir rehberlik alın. Konu seçiminden savunmaya kadar süreci planlı ve güvenle yürütmeniz için yanınızdayız."
+      intro="Tezinizin konusunu daraltmak, yöntemini planlamak veya hazırladığınız bölümleri gözden geçirmek için destek alabilirsiniz. Öneri formunuzu ve danışman notlarınızı esas alarak çalışılacak aşamaları birlikte belirliyoruz."
       waText="Merhaba, tez danışmanlığı almak istiyorum."
       faqs={faqs}
     >
@@ -92,11 +92,12 @@ export default function Page() {
         sayfasından inceleyebilirsiniz.
       </p>
 
-      <h2>Neden Bizimle Çalışmalısınız?</h2>
+      <h2>Danışman Notlarıyla Birlikte İlerleyelim</h2>
       <p>
-        15 yıllık deneyimimizle farklı üniversitelerin tez kılavuzlarına ve jüri
-        beklentilerine hakimiz. Tüm görüşmeler ve dosyalarınız gizli tutulur;
-        hizmetten memnun kalmazsanız ücretin tamamı iade edilir.
+        Danışmanınızdan yeni bir geri bildirim geldiğinde ilgili bölümle birlikte
+        paylaşın. İstenen değişikliğin mevcut kapsamla ilişkisini değerlendirelim
+        ve sonraki adımı belirleyelim. Böylece farklı belge sürümleri ve notlar
+        arasında hangi düzeltmenin yapıldığını takip edebilirsiniz.
       </p>
     </ServiceLanding>
   );
