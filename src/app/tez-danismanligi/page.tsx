@@ -29,7 +29,7 @@ const faqs = [
 
 export default function Page() {
   return (
-    <ServiceLanding
+    <ServiceLanding path="/tez-danismanligi"
       title="Tez Danışmanlığı"
       intro="Tezinizin konusunu daraltmak, yöntemini planlamak veya hazırladığınız bölümleri gözden geçirmek için destek alabilirsiniz. Öneri formunuzu ve danışman notlarınızı esas alarak çalışılacak aşamaları birlikte belirliyoruz."
       waText="Merhaba, tez danışmanlığı almak istiyorum."

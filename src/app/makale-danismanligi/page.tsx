@@ -28,7 +28,7 @@ const faqs = [
 
 export default function Page() {
   return (
-    <ServiceLanding
+    <ServiceLanding path="/makale-danismanligi"
       title="Makale Danışmanlığı"
       intro="Akademik makalenizin dergiye hazırlanmasından yayın sürecine kadar birebir rehberlik veriyoruz. Ulusal ve uluslararası dergilerin beklentilerine uygun bir makale için yanınızdayız."
       waText="Merhaba, makale danışmanlığı almak istiyorum."

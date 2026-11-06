@@ -24,7 +24,7 @@ const faqs = [
 
 export default function Page() {
   return (
-    <ServiceLanding
+    <ServiceLanding path="/sunum-hazirlama"
       title="Sunum Hazırlama Desteği"
       intro="Tez savunması, seminer, kongre ve proje sunumlarınızın sade, düzenli ve akılda kalıcı olması için sunum hazırlama desteği veriyoruz. Slayt düzeninden provaya kadar yanınızdayız."
       waText="Merhaba, sunum hazırlama desteği almak istiyorum."

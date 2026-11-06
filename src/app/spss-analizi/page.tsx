@@ -30,7 +30,7 @@ const faqs = [
 
 export default function Page() {
   return (
-    <ServiceLanding
+    <ServiceLanding path="/spss-analizi"
       title="SPSS Analiz Danışmanlığı"
       intro="Tez, makale veya proje verileriniz için doğru istatistiksel testi seçmekten SPSS çıktılarını yorumlamaya kadar her aşamada yanınızdayız. Lisans, yüksek lisans ve doktora öğrencilerine birebir SPSS danışmanlığı veriyoruz."
       waText="Merhaba, SPSS analiz danışmanlığı almak istiyorum."

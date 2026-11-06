@@ -8,7 +8,7 @@ const faqs=[
   {q:"Ön görüşmeye hangi belgeleri hazırlamalıyım?",a:"Varsa araştırma sorularınızı, anket veya ölçek formunu, veri dosyasını, mevcut analiz çıktılarını, bulgular metnini ve danışman notlarını bir araya getirmenizi öneriyoruz."},
   {q:"Analiz kontrolü yeni analiz yapılacağı anlamına gelir mi?",a:"Kontrol talebi ile yeni analiz ihtiyacı ayrı değerlendirilir. Ön görüşmede elinizdeki çalışmayı ve hangi aşamada desteğe ihtiyaç duyduğunuzu konuşuruz."},
 ];
-export default function Page(){return <ServiceLanding title="SPSS Analiz Kontrolü" intro="Analizleriniz tamamlandı ancak çıktıları yorumlamakta zorlanıyor veya danışmanınızın geri bildirimlerini nasıl uygulayacağınızı netleştirmek istiyorsunuz. Elinizdeki çalışma üzerinden başlayarak kontrol ihtiyacınızı belirleyin." waText="Merhaba, mevcut SPSS analizlerimin kontrolü hakkında ön görüşme istiyorum." faqs={faqs}>
+export default function Page(){return <ServiceLanding path="/spss-analiz-kontrolu" title="SPSS Analiz Kontrolü" intro="Analizleriniz tamamlandı ancak çıktıları yorumlamakta zorlanıyor veya danışmanınızın geri bildirimlerini nasıl uygulayacağınızı netleştirmek istiyorsunuz. Elinizdeki çalışma üzerinden başlayarak kontrol ihtiyacınızı belirleyin." waText="Merhaba, mevcut SPSS analizlerimin kontrolü hakkında ön görüşme istiyorum." faqs={faqs}>
   <h2>Hangi sorularla başlayabilirsiniz?</h2>
   <ul><li>Seçilen analiz araştırma soruma uygun mu?</li><li>Çıktıdaki değerler bulgular tablosuna doğru aktarılmış mı?</li><li>Tablo ile yazılı yorum birbiriyle uyumlu mu?</li><li>Danışmanımın notu açıklama mı, farklı bir analiz mi gerektiriyor?</li></ul>
   <h2>Dosyalarınızı birlikte değerlendirmeye hazırlayın</h2>

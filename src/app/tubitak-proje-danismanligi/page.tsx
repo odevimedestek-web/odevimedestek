@@ -28,7 +28,7 @@ const faqs = [
 
 export default function Page() {
   return (
-    <ServiceLanding
+    <ServiceLanding path="/tubitak-proje-danismanligi"
       title="TÜBİTAK Proje Danışmanlığı"
       intro="TÜBİTAK ve BAP proje başvurunuzu değerlendirme ölçütlerine uygun, güçlü bir öneriye dönüştürmeniz için birebir proje danışmanlığı veriyoruz. Fikir aşamasından sonuç raporuna kadar yanınızdayız."
       waText="Merhaba, TÜBİTAK proje danışmanlığı almak istiyorum."

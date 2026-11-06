@@ -24,7 +24,7 @@ const faqs = [
 
 export default function Page() {
   return (
-    <ServiceLanding
+    <ServiceLanding path="/seminer-danismanligi"
       title="Seminer Danışmanlığı"
       intro="Yüksek lisans ve doktora seminer dersinizde konu seçiminden sunuma kadar birebir rehberlik veriyoruz. Seminerinizi enstitü kurallarına uygun hazırlamanız ve rahatça sunmanız için yanınızdayız."
       waText="Merhaba, seminer danışmanlığı almak istiyorum."

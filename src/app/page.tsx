@@ -6,6 +6,7 @@ import ReportService from "@/components/ReportService";
 import Services from "@/components/Services";
 import Process from "@/components/Process";
 import About from "@/components/About";
+import ServiceConfidence from "@/components/ServiceConfidence";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import GuidePreview from "@/components/GuidePreview";
@@ -40,6 +41,7 @@ export default function Home() {
         <Hero />
         <Services />
         <Process />
+        <ServiceConfidence />
         <About />
         <ReportService />
         <GuidePreview />

@@ -1,59 +1,23 @@
-"use client";
-
-import { useState } from "react";
+import Link from "next/link";
 import { faqs } from "@/lib/faqs";
 
+const categories = [...new Set(faqs.map(faq => faq.category))];
 export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-  return (
-    <section id="sss" className="py-24 bg-white">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <span className="text-gold-500 font-semibold text-sm uppercase tracking-wider">
-            SSS
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-navy-900 mt-3">
-            Sıkça Sorulan Sorular
-          </h2>
-        </div>
-
-        <div className="space-y-3">
-          {faqs.map((faq, i) => (
-            <div
-              key={i}
-              className="border border-slate-200 rounded-xl overflow-hidden bg-white hover:shadow-md transition-shadow"
-            >
-              <button
-                aria-expanded={openIndex === i}
-                aria-controls={`faq-answer-${i}`}
-                onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                className="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-slate-50 transition-colors"
-              >
-                <span className="text-navy-900 font-medium pr-4">{faq.q}</span>
-                <svg
-                  className={`w-5 h-5 text-gold-500 shrink-0 transition-transform duration-200 ${
-                    openIndex === i ? "rotate-180" : ""
-                  }`}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </button>
-                <div id={`faq-answer-${i}`} hidden={openIndex !== i} className="px-6 pb-5 text-slate-600 leading-relaxed">
-                  {faq.a}
-                </div>
-            </div>
-          ))}
-        </div>
+  return <section id="sss" className="py-16 sm:py-24 bg-white">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-2xl mb-8"><p className="text-navy-600 text-sm font-semibold uppercase tracking-wider">Aklınızda soru kalmasın</p>
+        <h2 className="text-3xl sm:text-4xl font-bold text-navy-900 mt-3">Sıkça sorulan sorular</h2>
+        <p className="text-slate-600 mt-4 leading-relaxed">Hizmet seçimi, ücret, geri bildirim ve gizlilik hakkında merak ettikleriniz. Her yanıtın altından ilgili kapsamı ayrıntılı inceleyebilirsiniz.</p>
       </div>
-    </section>
-  );
+      <nav aria-label="Soru konuları" className="flex flex-wrap gap-3 mb-10">{categories.map((category,i)=><a key={category} href={`#soru-grubu-${i}`} className="rounded-full border border-slate-300 px-4 py-3 text-sm text-navy-900 hover:bg-slate-100">{category}</a>)}</nav>
+      <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">{categories.map((category,i)=><div id={`soru-grubu-${i}`} key={category}>
+        <h3 className="text-xl font-semibold text-navy-900 mb-4">{category}</h3>
+        <div className="space-y-3">{faqs.filter(f=>f.category===category).map(faq=><details key={faq.q} className="group border border-slate-200 rounded-xl open:bg-slate-50">
+          <summary className="cursor-pointer p-5 font-medium text-navy-900 leading-relaxed">{faq.q}</summary>
+          <div className="px-5 pb-5 text-slate-600 leading-relaxed"><p>{faq.a}</p><Link href={faq.href} className="inline-block mt-4 text-sm font-semibold underline underline-offset-4 text-navy-900">{faq.label} →</Link></div>
+        </details>)}</div>
+      </div>)}</div>
+      <p className="mt-10 text-slate-600">Sorunuz farklı mı? <a href="https://wa.me/905384164676" target="_blank" rel="noopener noreferrer" className="font-semibold text-navy-900 underline underline-offset-4">Çalışmanızın durumunu bize yazın.</a></p>
+    </div>
+  </section>;
 }

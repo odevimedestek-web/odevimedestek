@@ -9,7 +9,7 @@ const faqs=[
   {q:"Her tezde APA 7 mi uygulanır?",a:"Atıf ve kaynakça biçimi için üniversitenizin veya ilgili yayının istediği kurallar esas alınır. Ön görüşmede hangi kılavuza göre ilerleyeceğimizi netleştiririz."},
   {q:"Biçimlendirme ile içerik danışmanlığı aynı hizmet mi?",a:"Biçimlendirme, belgenin kılavuza göre düzenlenmesine odaklanır. Araştırma sorusu, yöntem ve bölüm içeriğiyle ilgili geri bildirim için tez danışmanlığı kapsamı ayrıca görüşülür."},
 ];
-export default function Page(){return <ServiceLanding title="Tez Biçimlendirme ve Kılavuza Uyum" intro="Tezinizin metni hazır olduğunda başlıklar, dizinler, tablo ve şekiller ile kaynakça düzenini birlikte gözden geçirin. Başlangıç noktası, kendi enstitünüzün yazım kılavuzu ve güncel tez dosyanızdır." waText="Merhaba, tez biçimlendirme ve kılavuza uyum desteği almak istiyorum." faqs={faqs}>
+export default function Page(){return <ServiceLanding path="/tez-bicimlendirme" title="Tez Biçimlendirme ve Kılavuza Uyum" intro="Tezinizin metni hazır olduğunda başlıklar, dizinler, tablo ve şekiller ile kaynakça düzenini birlikte gözden geçirin. Başlangıç noktası, kendi enstitünüzün yazım kılavuzu ve güncel tez dosyanızdır." waText="Merhaba, tez biçimlendirme ve kılavuza uyum desteği almak istiyorum." faqs={faqs}>
   <h2>Hangi alanlarda destek veriyoruz?</h2>
   <ul><li>Kılavuzda belirtilen sayfa düzeni ve kenar boşlukları.</li><li>Başlık düzeyleri ve numaralandırma.</li><li>İçindekiler ile belge başlıklarının uyumu.</li><li>Tablo ve şekil başlıkları ile numaralarının düzeni.</li><li>İstenen atıf stiline göre kaynakça biçimi.</li></ul>
   <h2>Ön görüşmeden önce hazırlayın</h2>

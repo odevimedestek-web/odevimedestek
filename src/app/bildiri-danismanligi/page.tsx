@@ -28,7 +28,7 @@ const faqs = [
 
 export default function Page() {
   return (
-    <ServiceLanding
+    <ServiceLanding path="/bildiri-danismanligi"
       title="Bildiri Danışmanlığı"
       intro="Ulusal ve uluslararası kongrelerde sunacağınız bildirinin özetinden sunumuna kadar birebir danışmanlık veriyoruz. Çalışmanızı kongre kurallarına uygun ve etkili biçimde sunmanız için yanınızdayız."
       waText="Merhaba, bildiri danışmanlığı almak istiyorum."

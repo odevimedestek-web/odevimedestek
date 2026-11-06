@@ -11,7 +11,7 @@ const faqs = [
   {q:"Formu doldurunca mesaj otomatik gönderilir mi?",a:"Hayır. Düğme WhatsApp’ta bir mesaj taslağı açar. Mesajı inceleyip gönderme kararını siz verirsiniz; form alanları siteye kaydedilmez."},
 ];
 export default function Page() {
-  return <ServiceLanding title="SPSS Analiz Ücretleri ve Teklif Kapsamı" intro="Fiyat teklifi istemeden önce ihtiyacınızı netleştirin: veri hazırlığı mı, analiz danışmanlığı mı, mevcut çıktıların kontrolü mü? Aşağıdaki karşılaştırma ve kısa talep alanı, ön görüşmeye hazırlanmanıza yardımcı olur." waText="Merhaba, SPSS analiz ücretleri ve kapsamı hakkında bilgi almak istiyorum." faqs={faqs}>
+  return <ServiceLanding path="/spss-analiz-ucretleri" title="SPSS Analiz Ücretleri ve Teklif Kapsamı" intro="Fiyat teklifi istemeden önce ihtiyacınızı netleştirin: veri hazırlığı mı, analiz danışmanlığı mı, mevcut çıktıların kontrolü mü? Aşağıdaki karşılaştırma ve kısa talep alanı, ön görüşmeye hazırlanmanıza yardımcı olur." waText="Merhaba, SPSS analiz ücretleri ve kapsamı hakkında bilgi almak istiyorum." faqs={faqs}>
     <p><a href="#teklif-hazirla" className="text-gold-400 underline font-semibold">Ön görüşme talebimi hazırlayayım →</a></p>
     <h2>İhtiyacınıza göre kapsamı ayırın</h2>
     <div className="grid gap-4 sm:grid-cols-3">
