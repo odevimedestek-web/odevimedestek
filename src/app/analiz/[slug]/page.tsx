@@ -40,7 +40,7 @@ export default async function AnalysisPage({ params }: Props) {
         </section>
       ))}
       <p className="text-sm text-slate-400">
-        Danışmanlık, sizin topladığınız veri üzerinde yürütülür; anket uygulama veya veri toplama hizmeti verilmez. Çalışmanın yazarı sizsiniz.
+        {page.note ?? "Danışmanlık, sizin topladığınız veri üzerinde yürütülür; anket uygulama veya veri toplama hizmeti verilmez. Çalışmanın yazarı sizsiniz."}
       </p>
       {guides.length > 0 && (
         <section>
@@ -51,7 +51,7 @@ export default async function AnalysisPage({ params }: Props) {
       <p>
         Genel kapsam için <Link href="/spss-analizi" className="text-gold-400 underline">SPSS analiz danışmanlığı</Link>, teklif için hangi bilgilerin gerektiğini görmek için <Link href="/spss-analiz-ucretleri" className="text-gold-400 underline">SPSS analiz ücretleri</Link> sayfasına bakabilirsiniz.
       </p>
-      <QuoteBuilder initialNeed={slug === "nitel-veri-analizi" ? "Kapsamı birlikte belirleyelim" : "SPSS analiz danışmanlığı"} />
+      <QuoteBuilder initialNeed={page.need ?? "SPSS analiz danışmanlığı"} />
       <section>
         <h2>Diğer analiz türleri</h2>
         <ul>{others.map((a) => <li key={a.slug}><Link href={`/analiz/${a.slug}`} className="text-gold-400 underline">{a.title}</Link></li>)}</ul>

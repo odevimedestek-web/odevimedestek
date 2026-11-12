@@ -8,6 +8,10 @@ export type AnalysisPage = {
   sections: { title: string; text: string; items?: string[] }[];
   faqs: { q: string; a: string }[];
   guides: string[];
+  /** Varsayılan veri notunun yerine geçer (ör. yayımlanmış çalışmalarla yürüyen analizler). */
+  note?: string;
+  /** Teklif formunda seçili gelecek ihtiyaç. */
+  need?: string;
 };
 
 export const analizler: AnalysisPage[] = [
@@ -292,5 +296,300 @@ export const analizler: AnalysisPage[] = [
       { q: "Kaç görüşme yeterli?", a: "Nitel çalışmalarda yeterlilik, veri doygunluğu ve desenin gereklerine göre tartışılır. Kendi çalışmanız için bunun yöntem bölümünde nasıl gerekçelendirileceğini birlikte ele alırız." },
     ],
     guides: ["tematik-analiz-adimlari"],
+    need: "Kapsamı birlikte belirleyelim",
+  },
+  {
+    slug: "cok-kriterli-karar-verme-ahp-topsis",
+    title: "Çok Kriterli Karar Verme Danışmanlığı (AHP, TOPSIS, DEMATEL)",
+    seoTitle: "AHP, TOPSIS ve DEMATEL Analizi Danışmanlığı",
+    description: "AHP, TOPSIS, DEMATEL, ENTROPİ ve CRITIC yöntemlerinde kriter ağırlıkları, tutarlılık oranı, sıralama ve raporlama için danışmanlık.",
+    intro: "Birden fazla kritere göre alternatifleri karşılaştırdığınız çalışmalarda (tedarikçi seçimi, yer seçimi, performans sıralaması gibi) çok kriterli karar verme yöntemleri kullanılır. Hangi yöntemin araştırma sorunuza uyduğunu, ağırlıkların nasıl belirleneceğini ve sonuçların nasıl yorumlanacağını birlikte planlıyoruz.",
+    waText: "Merhaba, AHP/TOPSIS gibi çok kriterli karar verme analizleri hakkında ön görüşme istiyorum.",
+    sections: [
+      {
+        title: "Hangi yöntem neye cevap verir?",
+        text: "Bu yöntemlerin bir kısmı kriterlerin ağırlığını belirler, bir kısmı alternatifleri sıralar. Çalışmalarda çoğu zaman bir ağırlıklandırma yöntemi ile bir sıralama yöntemi birlikte kullanılır.",
+        items: [
+          "AHP: Uzman ikili karşılaştırmalarıyla kriter ağırlıklarını belirler; tutarlılık oranı hesaplanır.",
+          "ENTROPİ ve CRITIC: Ağırlıkları uzman görüşü yerine verinin kendisinden hesaplar.",
+          "TOPSIS: Alternatifleri ideal çözüme yakınlıklarına göre sıralar.",
+          "DEMATEL: Kriterler arasındaki etki ilişkilerini ve neden-sonuç gruplarını ortaya koyar.",
+        ],
+      },
+      {
+        title: "Birlikte ele aldığımız adımlar",
+        text: "Kapsamı çalışmanızın aşamasına göre belirliyoruz.",
+        items: [
+          "Kriterlerin ve alternatiflerin literatüre dayanarak tanımlanması.",
+          "Uzman görüşü gerekiyorsa karşılaştırma formunun yapısı (formu uzmanlara siz uygularsınız).",
+          "AHP'de tutarlılık oranının kontrolü ve tutarsız yanıtların ele alınması.",
+          "Hesaplama adımlarının ve ara tabloların raporlanması.",
+          "Duyarlılık analiziyle sıralamanın ne kadar sağlam olduğunun gösterilmesi.",
+        ],
+      },
+      {
+        title: "Raporda dikkat edilmesi gerekenler",
+        text: "Hakemler bu çalışmalarda en çok yöntem seçiminin gerekçesini ve hesaplamaların izlenebilirliğini sorar. Karar matrisini, normalizasyon yöntemini ve ağırlıkları tablo hâlinde vermek, okurun sonuca nasıl ulaşıldığını görmesini sağlar.",
+      },
+    ],
+    faqs: [
+      { q: "Kaç uzman görüşü gerekir?", a: "Kesin bir sayı yoktur; alanyazında farklı uygulamalar bulunur. Uzman sayısını ve seçim ölçütlerini yöntem bölümünde nasıl gerekçelendireceğinizi birlikte konuşuruz." },
+      { q: "Farklı yöntemler farklı sıralama verirse ne olur?", a: "Bu durum sık görülür. Sonuçları karşılaştırıp farkın nereden kaynaklandığını açıklamak, çalışmanın değerini artırır." },
+    ],
+    guides: ["ahp-topsis-nedir"],
+    need: "Kapsamı birlikte belirleyelim",
+  },
+  {
+    slug: "veri-zarflama-analizi",
+    title: "Veri Zarflama Analizi (VZA) Danışmanlığı",
+    seoTitle: "Veri Zarflama Analizi (VZA/DEA) Danışmanlığı",
+    description: "VZA (DEA) ile etkinlik ölçümü: girdi-çıktı seçimi, CCR ve BCC modelleri, ölçek etkinliği, Malmquist endeksi ve raporlama.",
+    intro: "Veri zarflama analizi, benzer işi yapan birimlerin (hastane, okul, banka şubesi, belediye gibi) birden fazla girdi ve çıktıyı birlikte dikkate alarak ne kadar etkin çalıştığını ölçer. Girdi ve çıktıların seçimi sonucu doğrudan belirlediği için bu adımı birlikte planlıyoruz.",
+    waText: "Merhaba, veri zarflama analizi (VZA) hakkında ön görüşme istiyorum.",
+    sections: [
+      {
+        title: "VZA nasıl çalışır?",
+        text: "Charnes, Cooper ve Rhodes'un (1978) geliştirdiği yöntem, en iyi performans gösteren birimlerden bir etkinlik sınırı oluşturur ve diğer birimleri bu sınıra olan uzaklıklarına göre değerlendirir. Etkin birimlerin skoru 1'dir; diğerleri için skor, ne kadar iyileşme gerektiğini gösterir.",
+      },
+      {
+        title: "Model seçiminde karar verilecek konular",
+        text: "Analize başlamadan önce şu sorulara cevap vermek gerekir:",
+        items: [
+          "Girdi yönelimli mi, çıktı yönelimli mi?",
+          "Ölçeğe göre sabit getiri (CCR) mi, değişken getiri (BCC) mi?",
+          "Birim sayısı, girdi ve çıktı sayısına göre yeterli mi?",
+          "Birden fazla yıl varsa verimlilik değişimi için Malmquist endeksi gerekiyor mu?",
+        ],
+      },
+      {
+        title: "Sonuçların raporlanması",
+        text: "Etkinlik skorlarıyla birlikte etkin olmayan birimler için referans kümeleri ve hedef değerler raporlanır. Ölçek etkinliği, toplam etkinliğin teknik ve ölçek kaynaklı bölümlerini ayırmaya yardım eder.",
+      },
+    ],
+    faqs: [
+      { q: "Verileri ben mi toplamalıyım?", a: "Evet. Analiz, sizin derlediğiniz veya kamuya açık kaynaklardan aldığınız veri üzerinde yapılır. Hangi değişkenlerin uygun olduğunu ön görüşmede konuşuruz." },
+      { q: "Negatif değerli değişkenler kullanılabilir mi?", a: "Klasik VZA modelleri pozitif değer ister. Negatif değerler için farklı yaklaşımlar vardır; verinize göre birlikte değerlendiririz." },
+    ],
+    guides: [],
+    note: "Analiz, sizin derlediğiniz veri üzerinde yürütülür; veri toplama hizmeti verilmez. Çalışmanın yazarı sizsiniz.",
+    need: "Kapsamı birlikte belirleyelim",
+  },
+  {
+    slug: "panel-veri-analizi",
+    title: "Panel Veri Analizi Danışmanlığı",
+    seoTitle: "Panel Veri Analizi Danışmanlığı",
+    description: "Panel veride sabit ve rassal etkiler, Hausman testi, yatay kesit bağımlılığı, panel birim kök ve eşbütünleşme testlerinde danışmanlık.",
+    intro: "Aynı birimleri (ülke, şirket, il) birden fazla dönem boyunca izleyen çalışmalarda panel veri yöntemleri kullanılır. Doğru modeli seçmek için bir dizi ön testin sırayla yapılması ve her kararın gerekçelendirilmesi gerekir.",
+    waText: "Merhaba, panel veri analizi hakkında ön görüşme istiyorum.",
+    sections: [
+      {
+        title: "Model seçimi",
+        text: "Havuzlanmış, sabit etkiler ve rassal etkiler modelleri arasındaki seçim F testi, Breusch-Pagan LM testi ve Hausman testi gibi sınamalarla yapılır. Ardından değişen varyans, otokorelasyon ve yatay kesit bağımlılığı incelenir; bu sorunlar varsa dirençli tahmin yöntemleri kullanılır.",
+      },
+      {
+        title: "Birlikte ele aldığımız konular",
+        text: "Çalışmanızın sorusuna göre aşağıdaki adımları planlıyoruz.",
+        items: [
+          "Yatay kesit bağımlılığı ve eğim homojenliği testleri.",
+          "Birinci ve ikinci kuşak panel birim kök testleri.",
+          "Panel eşbütünleşme testleri ve uzun dönem katsayıları.",
+          "Panel nedensellik analizleri.",
+          "Tabloların ve test sonuçlarının raporlanması.",
+        ],
+      },
+      {
+        title: "Program seçimi",
+        text: "Panel veri analizleri farklı ekonometri programlarında yapılabilir. Danışmanınızın veya derginizin beklediği programı ön görüşmede netleştiririz.",
+      },
+    ],
+    faqs: [
+      { q: "Dengesiz panel verisi kullanılabilir mi?", a: "Birçok yöntem dengesiz panelle çalışabilir; bazı testler ise dengeli panel ister. Verinizin yapısına göre uygun testleri birlikte seçeriz." },
+      { q: "Kaç dönem ve kaç birim gerekir?", a: "Gereken büyüklük, kullanılacak yönteme bağlıdır. Zaman boyutu kısa ve birim sayısı fazla olan paneller ile tersi farklı yöntemler gerektirir." },
+    ],
+    guides: [],
+    note: "Analiz, sizin derlediğiniz veri üzerinde yürütülür; veri toplama hizmeti verilmez. Çalışmanın yazarı sizsiniz.",
+    need: "Kapsamı birlikte belirleyelim",
+  },
+  {
+    slug: "zaman-serisi-analizi",
+    title: "Zaman Serisi ve ARDL Analizi Danışmanlığı",
+    seoTitle: "Zaman Serisi ve ARDL Analizi Danışmanlığı",
+    description: "Birim kök testleri, ARDL sınır testi, eşbütünleşme, nedensellik, yapısal kırılma ve mevsimsellik analizlerinde danışmanlık.",
+    intro: "Aynı değişkenin zaman içinde ölçüldüğü ekonomi, finans ve işletme çalışmalarında zaman serisi yöntemleri kullanılır. Serilerin durağanlık durumu hangi modelin seçileceğini belirlediği için analize bu adımdan başlıyoruz.",
+    waText: "Merhaba, zaman serisi/ARDL analizi hakkında ön görüşme istiyorum.",
+    sections: [
+      {
+        title: "Durağanlık ve model seçimi",
+        text: "Birim kök testleri (ADF, PP, KPSS gibi) serilerin düzeyde mi yoksa farkı alındığında mı durağan olduğunu gösterir. Seriler farklı düzeylerde durağansa Pesaran, Shin ve Smith'in (2001) ARDL sınır testi yaklaşımı sık tercih edilir. Tüm seriler birinci farkta durağansa Johansen eşbütünleşme testi de seçenekler arasındadır.",
+      },
+      {
+        title: "Birlikte ele aldığımız konular",
+        text: "Analiz planını hipotezlerinize göre kuruyoruz.",
+        items: [
+          "Birim kök testleri ve yapısal kırılmalı birim kök testleri.",
+          "ARDL sınır testi, uzun ve kısa dönem katsayıları, hata düzeltme terimi.",
+          "Granger ve Toda-Yamamoto nedensellik analizleri.",
+          "Yapısal kırılma ve mevsimsellik incelemeleri.",
+          "Tanı testleri: otokorelasyon, değişen varyans, CUSUM ve CUSUMSQ.",
+        ],
+      },
+      {
+        title: "Raporlama",
+        text: "Test sonuçlarını tablo hâlinde verip her kararın hangi teste dayandığını yöntem bölümünde açıklamak, okurun ve hakemin analizi izlemesini kolaylaştırır.",
+      },
+    ],
+    faqs: [
+      { q: "Kaç gözlem gerekir?", a: "Yöntem ve değişken sayısına göre değişir; kısa serilerde bazı testlerin gücü düşer. Veri aralığınızı görerek uygun yaklaşımı konuşuruz." },
+      { q: "Verileri nereden almalıyım?", a: "Veriyi siz derlersiniz; çoğu çalışmada resmî istatistik kurumlarının ve uluslararası kuruluşların açık veri tabanları kullanılır." },
+    ],
+    guides: [],
+    note: "Analiz, sizin derlediğiniz veri üzerinde yürütülür; veri toplama hizmeti verilmez. Çalışmanın yazarı sizsiniz.",
+    need: "Kapsamı birlikte belirleyelim",
+  },
+  {
+    slug: "biyoistatistik-roc-sagkalim",
+    title: "Biyoistatistik Danışmanlığı: ROC ve Sağkalım Analizi",
+    seoTitle: "Biyoistatistik: ROC ve Sağkalım Analizi",
+    description: "Tıpta uzmanlık ve sağlık bilimleri tezlerinde ROC analizi, kesim noktası, Kaplan-Meier, log-rank ve Cox regresyonu danışmanlığı.",
+    intro: "Tıpta uzmanlık, hemşirelik ve sağlık bilimleri çalışmalarında tanı testlerinin başarısını ölçmek ya da olayın gerçekleşmesine kadar geçen süreyi incelemek için özel yöntemler kullanılır. Bu analizlerin varsayımlarını ve raporlama biçimini çalışmanız üzerinden ele alıyoruz.",
+    waText: "Merhaba, biyoistatistik (ROC/sağkalım) analizi hakkında ön görüşme istiyorum.",
+    sections: [
+      {
+        title: "ROC analizi ve kesim noktası",
+        text: "ROC eğrisi, bir testin veya ölçümün hastayı hasta olmayandan ayırma başarısını gösterir. Eğri altındaki alan (AUC) bu başarının özetidir (Hanley ve McNeil, 1982). Kesim noktası belirlenirken duyarlılık ve özgüllük birlikte değerlendirilir; Youden indeksi sık kullanılan ölçütlerdendir.",
+      },
+      {
+        title: "Sağkalım analizi",
+        text: "İzlem süresince olayın (ölüm, nüks, taburculuk gibi) ne zaman gerçekleştiğini inceleyen çalışmalarda sağkalım analizi kullanılır.",
+        items: [
+          "Kaplan-Meier yöntemiyle sağkalım eğrileri ve medyan sağkalım süresi (Kaplan ve Meier, 1958).",
+          "Grupları karşılaştırmak için log-rank testi.",
+          "Birden fazla değişkenin etkisini incelemek için Cox orantılı riskler regresyonu ve tehlike oranları (HR).",
+          "Orantılı riskler varsayımının kontrolü.",
+        ],
+      },
+      {
+        title: "Tıpta uzmanlık tezlerinde sık sorulanlar",
+        text: "Örneklem büyüklüğünün güç analiziyle gerekçelendirilmesi, etik kurul başvurusunda istatistik bölümünün yazılması ve bulguların tablolaştırılması bu çalışmalarda en çok destek istenen konulardır.",
+      },
+    ],
+    faqs: [
+      { q: "Retrospektif dosya verisiyle çalışıyorum, uygun mu?", a: "Evet, retrospektif verilerle de bu analizler yapılabilir. Eksik veri ve izlem süresi bilgilerinin nasıl kodlandığını ön görüşmede birlikte kontrol ederiz." },
+      { q: "Örneklem büyüklüğünü nasıl hesaplarım?", a: "Güç analiziyle hesaplanır. Ayrıntılar için örneklem büyüklüğü ve güç analizi sayfamıza bakabilirsiniz." },
+    ],
+    guides: ["orneklem-buyuklugu-hesaplama"],
+  },
+  {
+    slug: "orneklem-buyuklugu-guc-analizi",
+    title: "Örneklem Büyüklüğü ve G*Power Güç Analizi",
+    seoTitle: "Örneklem Büyüklüğü ve G*Power Güç Analizi",
+    description: "Tez önerisi ve etik kurul başvurusu için G*Power ile örneklem büyüklüğü hesabı: etki büyüklüğü, alfa, güç ve raporlama.",
+    intro: "Tez önerisi ve etik kurul başvurusunda örneklem büyüklüğünün nasıl belirlendiği sorulur. Güç analizi bu sorunun en savunulabilir cevabıdır. Planladığınız analize göre doğru hesaplama türünü seçip sonucu nasıl yazacağınızı birlikte ele alıyoruz.",
+    waText: "Merhaba, örneklem büyüklüğü/güç analizi hakkında ön görüşme istiyorum.",
+    sections: [
+      {
+        title: "Güç analizi için gereken dört bilgi",
+        text: "Örneklem büyüklüğü dört değer arasındaki ilişkiden hesaplanır. Bunlardan üçünü belirlediğinizde dördüncüsü bulunur.",
+        items: [
+          "Planlanan analiz (t-testi, ANOVA, korelasyon, regresyon, ki-kare vb.).",
+          "Beklenen etki büyüklüğü: benzer çalışmalardan ya da pilot veriden alınır.",
+          "Anlamlılık düzeyi (çoğunlukla α = .05).",
+          "İstenen güç (çoğunlukla .80 veya .90).",
+        ],
+      },
+      {
+        title: "G*Power ile hesaplama",
+        text: "G*Power, Faul ve arkadaşlarının (2007) tanıttığı ücretsiz bir programdır ve tez çalışmalarında en sık kullanılan araçtır. Doğru test ailesini ve analiz türünü seçmek sonucu doğrudan değiştirir; bu yüzden hesaplamayı analiz planınızla birlikte yapıyoruz.",
+      },
+      {
+        title: "Yöntem bölümünde yazımı",
+        text: "Hangi programla, hangi analiz için, hangi etki büyüklüğü, alfa ve güç değerleriyle hesaplama yaptığınızı ve etki büyüklüğünü nereden aldığınızı açıkça belirtin. Kayıp ihtimaline karşı örneklemi artırdıysanız bunu da yazın.",
+      },
+    ],
+    faqs: [
+      { q: "Etki büyüklüğünü bilmiyorsam ne yapmalıyım?", a: "Benzer çalışmalardan hesaplanabilir ya da Cohen'in küçük-orta-büyük sınıflaması gerekçesiyle kullanılabilir. Hangisinin savunulabilir olduğunu çalışmanıza göre birlikte değerlendiririz." },
+      { q: "Ölçek geliştirme çalışmasında da güç analizi gerekir mi?", a: "Faktör analizi çalışmalarında örneklem genellikle farklı ölçütlerle gerekçelendirilir. Yöntem bölümünde hangi ölçütü kullanacağınızı konuşuruz." },
+    ],
+    guides: ["orneklem-buyuklugu-hesaplama", "etki-buyuklugu-raporlama"],
+    need: "Kapsamı birlikte belirleyelim",
+  },
+  {
+    slug: "bibliyometrik-analiz",
+    title: "Bibliyometrik Analiz Danışmanlığı (VOSviewer, Biblioshiny)",
+    seoTitle: "Bibliyometrik Analiz: VOSviewer, Biblioshiny",
+    description: "Web of Science ve Scopus verisiyle bibliyometrik analiz: arama stratejisi, ortak yazarlık, ortak atıf, anahtar kelime ağları ve raporlama.",
+    intro: "Bibliyometrik analiz, bir alandaki yayınları sayısal olarak inceleyerek en etkili yazarları, dergileri, ülkeleri ve araştırma eğilimlerini ortaya koyar. Arama sorgusundan ağ haritalarının yorumuna kadar her adımın tekrar edilebilir biçimde raporlanması gerekir.",
+    waText: "Merhaba, bibliyometrik analiz hakkında ön görüşme istiyorum.",
+    sections: [
+      {
+        title: "Analizin adımları",
+        text: "Zupic ve Čater (2015) bibliyometrik çalışmaları araştırma tasarımı, veri derleme, analiz, görselleştirme ve yorum aşamalarıyla tanımlar.",
+        items: [
+          "Araştırma sorularının ve arama sorgusunun belirlenmesi.",
+          "Veri tabanı seçimi ve kayıtların indirilmesi (Web of Science, Scopus).",
+          "Yinelenen kayıtların ve yazar adı farklılıklarının temizlenmesi.",
+          "Performans analizi: yıllara göre yayın, en çok atıf alan çalışmalar, dergiler.",
+          "Bilim haritalama: ortak yazarlık, ortak atıf, bibliyografik eşleşme ve anahtar kelime ağları.",
+        ],
+      },
+      {
+        title: "Kullanılan araçlar",
+        text: "VOSviewer ağ haritaları için, R tabanlı Bibliometrix paketi ve arayüzü Biblioshiny ise performans analizi ve tematik haritalar için yaygın olarak kullanılır. Hangi aracın kullanılacağını sorularınız belirler.",
+      },
+      {
+        title: "Yorumlama",
+        text: "Ağ haritası tek başına bulgu değildir. Kümelerin hangi araştırma temalarını temsil ettiğini, zaman içinde nasıl değiştiğini ve alandaki boşlukları açıklamak, çalışmanın asıl katkısını oluşturur.",
+      },
+    ],
+    faqs: [
+      { q: "Web of Science ve Scopus verisi birleştirilebilir mi?", a: "Birleştirilebilir, ancak alan biçimleri farklı olduğu için dikkatli temizlik gerekir. Tek veri tabanıyla mı, ikisiyle mi ilerleyeceğinizi sorularınıza göre belirleriz." },
+      { q: "Veri tabanına erişimim yoksa ne yapmalıyım?", a: "Kayıtlar genellikle üniversite erişimiyle indirilir. Erişim ve indirme sizin tarafınızda yapılır; dosyaların biçimini ön görüşmede konuşuruz." },
+    ],
+    guides: ["bibliyometrik-analiz-adimlari"],
+    note: "Analiz, sizin indirdiğiniz yayın kayıtları üzerinde yürütülür. Çalışmanın yazarı sizsiniz.",
+    need: "Kapsamı birlikte belirleyelim",
+  },
+  {
+    slug: "meta-analiz-sistematik-derleme",
+    title: "Meta-Analiz ve Sistematik Derleme Danışmanlığı",
+    seoTitle: "Meta-Analiz ve Sistematik Derleme Desteği",
+    description: "PRISMA 2020'ye uygun sistematik derleme, etki büyüklüğü hesabı, heterojenlik, yayın yanlılığı ve orman grafiği yorumu.",
+    intro: "Meta-analiz, aynı soruyu inceleyen çalışmaların sonuçlarını istatistiksel olarak birleştirir. Sistematik derleme ise bu çalışmaların şeffaf ve tekrar edilebilir biçimde bulunup seçilmesini sağlar. İki aşamanın da raporlama standartlarına uygun yürütülmesi gerekir.",
+    waText: "Merhaba, meta-analiz/sistematik derleme hakkında ön görüşme istiyorum.",
+    sections: [
+      {
+        title: "Sistematik derleme aşaması",
+        text: "PRISMA 2020 bildirgesi (Page vd., 2021), sistematik derlemelerin nasıl raporlanacağını tanımlar. Akış şeması, taranan, elenen ve dahil edilen çalışma sayılarını gösterir.",
+        items: [
+          "Araştırma sorusu ve dahil etme-dışlama ölçütleri.",
+          "Veri tabanları ve arama sorgusu.",
+          "Başlık-özet ve tam metin taraması.",
+          "Veri çıkarma formu ve çalışma kalitesinin değerlendirilmesi.",
+        ],
+      },
+      {
+        title: "Meta-analiz aşaması",
+        text: "Dahil edilen çalışmalardan etki büyüklükleri hesaplanıp birleştirilir.",
+        items: [
+          "Etki büyüklüğü türünün seçimi (d, g, r, odds oranı vb.).",
+          "Sabit ve rastgele etkiler modelleri.",
+          "Heterojenlik: Q testi ve I² değeri.",
+          "Moderatör ve alt grup analizleri.",
+          "Yayın yanlılığı: huni grafiği ve ilgili testler.",
+          "Orman grafiğinin yorumlanması.",
+        ],
+      },
+      {
+        title: "Sık yapılan hatalar",
+        text: "Çok farklı çalışmaları tek bir etki büyüklüğünde birleştirmek, heterojenliği açıklamadan genel sonuca odaklanmak ve arama stratejisini tekrar edilemeyecek biçimde anlatmak hakemlerin en sık eleştirdiği konulardır.",
+      },
+    ],
+    faqs: [
+      { q: "Kaç çalışma gerekir?", a: "Meta-analiz teknik olarak az sayıda çalışmayla yapılabilir, ancak heterojenlik ve yayın yanlılığı analizleri için daha fazla çalışma gerekir. Alanınızdaki çalışma sayısını ön görüşmede birlikte değerlendiririz." },
+      { q: "Tarama ve veri çıkarmayı kim yapar?", a: "Tarama ve veri çıkarma sizin tarafınızda yapılır; ölçütleri, formu ve analizi birlikte planlarız." },
+    ],
+    guides: ["etki-buyuklugu-raporlama"],
+    note: "Analiz, sizin taradığınız ve seçtiğiniz yayımlanmış çalışmalar üzerinde yürütülür. Çalışmanın yazarı sizsiniz.",
+    need: "Kapsamı birlikte belirleyelim",
   },
 ];

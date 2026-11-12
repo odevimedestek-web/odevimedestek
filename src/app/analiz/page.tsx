@@ -5,7 +5,7 @@ import { analizler } from "@/lib/analizler";
 
 export const metadata = pageMetadata(
   "İstatistiksel Analiz Türleri ve Danışmanlık",
-  "Faktör analizi, AMOS-YEM, regresyon, aracı-düzenleyici etki, t-testi, ANOVA, korelasyon, ölçek geçerlik-güvenirlik ve nitel analiz danışmanlığı.",
+  "Faktör analizi, AMOS-YEM, regresyon, PROCESS, ANOVA, AHP-TOPSIS, VZA, panel veri, zaman serisi, ROC, G*Power, bibliyometri ve meta-analiz danışmanlığı.",
   "/analiz",
 );
 

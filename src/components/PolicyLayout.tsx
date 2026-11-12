@@ -80,6 +80,7 @@ export default function PolicyLayout({
             <Link href="/hakkimizda" className="hover:text-gold-400">Hakkımızda</Link>
             <Link href="/iletisim" className="hover:text-gold-400">İletişim</Link>
             <Link href="/analiz" className="hover:text-gold-400">Analiz Türleri</Link>
+            <Link href="/etik-ilkeler" className="hover:text-gold-400">Etik İlkeler</Link>
             <Link href="/rehber" className="hover:text-gold-400">Akademik Rehberler</Link>
             <Link href="/gizlilik" className="hover:text-gold-400">Gizlilik Politikası</Link>
             <Link href="/kullanim-sartlari" className="hover:text-gold-400">Kullanım Şartları</Link>

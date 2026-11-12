@@ -36,6 +36,7 @@ export default function Footer() {
               <li><Link href="/analiz" className="text-slate-400 hover:text-gold-400 transition-colors">Analiz Türleri</Link></li>
               <li><Link href="/rehber" className="text-slate-400 hover:text-gold-400 transition-colors">Akademik Rehberler</Link></li>
               <li><Link href="/hakkimizda" className="text-slate-400 hover:text-gold-400 transition-colors">Hakkımızda</Link></li>
+              <li><Link href="/etik-ilkeler" className="text-slate-400 hover:text-gold-400 transition-colors">Etik İlkeler</Link></li>
               <li><Link href="/iletisim" className="text-slate-400 hover:text-gold-400 transition-colors">İletişim Sayfası</Link></li>
               <li><a href="#hizmetler" className="text-slate-400 hover:text-gold-400 transition-colors">Hizmetler</a></li>
               <li><a href="#surec" className="text-slate-400 hover:text-gold-400 transition-colors">Nasıl Çalışıyoruz</a></li>

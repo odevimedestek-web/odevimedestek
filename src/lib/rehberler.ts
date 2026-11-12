@@ -411,4 +411,394 @@ export const rehberler: Guide[] = [
       },
     ],
   },
+  {
+    slug: "tez-bulgular-bolumu-nasil-yazilir",
+    title: "Tezde Bulgular Bölümü Nasıl Yazılır?",
+    seoTitle: "Tezde Bulgular Bölümü Nasıl Yazılır?",
+    published: "2026-11-12",
+    updated: "2026-11-12",
+    description: "Bulgular bölümünü araştırma sorularına göre düzenleme, tablo ve metni dengeleme, yorumu tartışmaya bırakma ve sık yapılan hatalar.",
+    service: { href: "/spss-analizi", label: "SPSS analiz danışmanlığı" },
+    analysis: { href: "/analiz", label: "Analiz türleri" },
+    sections: [
+      {
+        title: "Bulgular bölümü neyi anlatır?",
+        text: "Bulgular bölümü, analizlerden elde ettiğiniz sonuçları yorum katmadan ve araştırma sorularınıza cevap verecek biçimde sunar. Sonuçların neden böyle çıktığını ve alanyazınla nasıl ilişkilendiğini tartışma bölümüne bırakın. Bu ayrım, jürinin en sık dikkat ettiği noktalardan biridir.",
+      },
+      {
+        title: "Düzeni araştırma sorularına göre kurun",
+        text: "Bölümü analiz türlerine göre değil, araştırma sorularınızın ya da hipotezlerinizin sırasına göre düzenleyin. Her alt başlıkta önce hangi soruya cevap aradığınızı belirtin, ardından tabloyu ve kısa açıklamasını verin.",
+        items: [
+          "Katılımcılara ait betimsel bilgiler (demografik tablo).",
+          "Ölçeklerin betimsel istatistikleri ve güvenirlik değerleri.",
+          "Her araştırma sorusu veya hipotez için ayrı alt başlık.",
+          "Gerekiyorsa hipotez sonuçlarını özetleyen bir tablo.",
+        ],
+      },
+      {
+        title: "Tablo ile metni dengeleyin",
+        text: "Metin, tablodaki her sayıyı tekrar etmemelidir. Okura tablonun ne gösterdiğini, en önemli farkın ya da ilişkinin ne olduğunu ve sonucun hipotezi destekleyip desteklemediğini söyleyin. Test istatistiği, serbestlik derecesi, p değeri ve etki büyüklüğünü metinde bir kez vermek yeterlidir.",
+      },
+      {
+        title: "Sık yapılan hatalar",
+        text: "Bulgular bölümünü inceleyen danışman ve jüri üyelerinin en sık işaret ettiği sorunlar şunlardır:",
+        items: [
+          "SPSS çıktısını düzenlemeden doğrudan teze yapıştırmak.",
+          "Anlamlı çıkmayan sonuçları raporlamamak.",
+          "Korelasyon ya da regresyon sonucunu neden-sonuç ilişkisi gibi yorumlamak.",
+          "Tablodaki değerlerle metindeki değerlerin farklı olması.",
+          "Bulgular bölümünde alanyazına atıf yaparak tartışma yürütmek.",
+        ],
+      },
+      {
+        title: "Son kontrol",
+        text: "Her araştırma sorusunun bir cevabı olduğundan, tablo numaralarının sırayla ilerlediğinden ve her tablonun metinde anıldığından emin olun. Raporlama biçimi için SPSS çıktılarını APA 7'ye göre raporlama rehberimize bakabilirsiniz.",
+      },
+    ],
+  },
+  {
+    slug: "yontem-bolumu-istatistiksel-analiz",
+    title: "Yöntem Bölümünde Verilerin Analizi Kısmı Nasıl Yazılır?",
+    seoTitle: "Yöntem Bölümünde Verilerin Analizi Yazımı",
+    published: "2026-11-12",
+    updated: "2026-11-12",
+    description: "Yöntem bölümündeki verilerin analizi kısmında program, ön işlemler, varsayım kontrolleri, testler ve anlamlılık düzeyinin yazımı.",
+    service: { href: "/tez-danismanligi", label: "Tez danışmanlığı" },
+    analysis: { href: "/analiz", label: "Analiz türleri" },
+    sections: [
+      {
+        title: "Bu kısım neden önemli?",
+        text: "Verilerin analizi kısmı, okurun sonuçlarınıza nasıl ulaştığınızı izleyebilmesini sağlar. İyi yazılmış bir analiz bölümü, başka bir araştırmacının aynı veriyle aynı adımları tekrar edebileceği kadar açık olmalıdır.",
+      },
+      {
+        title: "Hangi bilgiler yer almalı?",
+        text: "Aşağıdaki sıra çoğu tez için uygun bir başlangıçtır; kendi enstitünüzün beklentisine göre uyarlayın.",
+        items: [
+          "Kullanılan program ve sürümü (ör. IBM SPSS Statistics 27).",
+          "Veri temizleme: eksik veri, aykırı değer ve ters madde işlemleri.",
+          "Varsayım kontrolleri: normallik, varyans homojenliği ve nasıl incelendiği.",
+          "Her araştırma sorusu için kullanılan test ve seçilme gerekçesi.",
+          "Anlamlılık düzeyi (çoğunlukla .05) ve raporlanan etki büyüklükleri.",
+        ],
+      },
+      {
+        title: "Gerekçeyi yazmayı unutmayın",
+        text: "\"Verilerin analizinde t-testi kullanılmıştır\" cümlesi yetersizdir. Testin neden seçildiğini, örneğin iki bağımsız grubun karşılaştırıldığını ve verinin normal dağıldığını belirtin. Parametrik olmayan testlere geçtiyseniz bunun hangi bulguya dayandığını açıklayın.",
+      },
+      {
+        title: "Planlanan ile yapılanı eşleştirin",
+        text: "Yöntem bölümünde anlattığınız her analizin bulgular bölümünde bir karşılığı olmalıdır. Analiz planınız değiştiyse yöntem bölümünü de güncelleyin; bu uyumsuzluk savunmalarda sık sorulan konulardandır.",
+      },
+    ],
+  },
+  {
+    slug: "etki-buyuklugu-raporlama",
+    title: "Etki Büyüklüğü Nedir, Tezde Nasıl Raporlanır?",
+    seoTitle: "Etki Büyüklüğü Nedir, Nasıl Raporlanır?",
+    published: "2026-11-12",
+    updated: "2026-11-12",
+    description: "Cohen's d, eta kare, r ve odds oranı gibi etki büyüklüklerinin anlamı, küçük-orta-büyük sınıflaması ve raporlama örnekleri.",
+    service: { href: "/spss-analizi", label: "SPSS analiz danışmanlığı" },
+    analysis: { href: "/analiz/t-testi-ve-anova", label: "t-Testi ve ANOVA danışmanlığı" },
+    sections: [
+      {
+        title: "p değeri yetmez mi?",
+        text: "p değeri, gözlenen farkın tesadüfle açıklanıp açıklanamayacağını gösterir; farkın ne kadar büyük olduğunu göstermez. Örneklem büyüdükçe çok küçük farklar bile anlamlı çıkabilir. Etki büyüklüğü, bulgunun pratik önemini anlatır ve APA 7 raporlamasında beklenir.",
+      },
+      {
+        title: "Sık kullanılan etki büyüklükleri",
+        text: "Hangi ölçünün raporlanacağı yapılan analize bağlıdır.",
+        items: [
+          "t-testi: Cohen's d.",
+          "ANOVA: eta kare (η²) veya kısmi eta kare (ηp²).",
+          "Korelasyon: r katsayısının kendisi.",
+          "Regresyon: R² ve f².",
+          "Ki-kare: phi veya Cramer's V.",
+          "Lojistik regresyon: odds oranı.",
+        ],
+      },
+      {
+        title: "Küçük, orta, büyük",
+        text: "Cohen (1992), d için yaklaşık 0,20'yi küçük, 0,50'yi orta, 0,80'i büyük; r için .10, .30 ve .50 değerlerini benzer biçimde sınıflandırmıştır. Cohen bu sınırların genel bir yol gösterici olduğunu, alanın kendi bulgularıyla birlikte yorumlanması gerektiğini de vurgular.",
+        source: { label: "Cohen (1992), Psychological Bulletin", href: "https://doi.org/10.1037/0033-2909.112.1.155" },
+      },
+      {
+        title: "Raporlama örneği",
+        text: "Aşağıdaki cümle temsilî bir örnektir; değerler gerçek bir çalışmaya ait değildir.",
+        items: ["\"Deney grubunun son test puanları kontrol grubundan anlamlı düzeyde yüksektir, t(58) = 2.84, p = .006, d = 0.73. Bu fark orta-büyük düzeyde bir etkiye karşılık gelmektedir.\""],
+      },
+    ],
+  },
+  {
+    slug: "orneklem-buyuklugu-hesaplama",
+    title: "Tezde Örneklem Büyüklüğü Nasıl Hesaplanır? G*Power Rehberi",
+    seoTitle: "Örneklem Büyüklüğü Nasıl Hesaplanır?",
+    published: "2026-11-12",
+    updated: "2026-11-12",
+    description: "G*Power ile güç analizi: etki büyüklüğü, alfa ve güç değerlerinin seçimi, a priori hesaplama ve yöntem bölümünde raporlama.",
+    service: { href: "/tez-danismanligi", label: "Tez danışmanlığı" },
+    analysis: { href: "/analiz/orneklem-buyuklugu-guc-analizi", label: "Örneklem büyüklüğü ve güç analizi" },
+    sections: [
+      {
+        title: "Neden güç analizi?",
+        text: "Küçük bir örneklem gerçek bir etkiyi yakalayamayabilir; gereğinden büyük bir örneklem ise zaman ve kaynak kaybıdır. Güç analizi, planladığınız analiz için yeterli örneklemi önceden hesaplamanızı sağlar. Etik kurullar ve tez izleme komiteleri bu hesabı giderek daha sık soruyor.",
+      },
+      {
+        title: "G*Power'da a priori hesaplama",
+        text: "G*Power, Heinrich Heine Üniversitesi tarafından ücretsiz dağıtılan bir programdır (Faul vd., 2007). Hesaplama için şu adımlar izlenir:",
+        items: [
+          "Test ailesini seçin (t tests, F tests, χ² tests gibi).",
+          "Planladığınız analizi seçin (ör. iki bağımsız grubun ortalamalarının farkı).",
+          "Güç analizi türü olarak \"A priori\" seçin.",
+          "Etki büyüklüğünü, alfa düzeyini (.05) ve gücü (.80 veya .90) girin.",
+          "Program toplam örneklem büyüklüğünü verir.",
+        ],
+        source: { label: "Heinrich-Heine-Universität Düsseldorf — G*Power", href: "https://www.psychologie.hhu.de/arbeitsgruppen/allgemeine-psychologie-und-arbeitspsychologie/gpower" },
+      },
+      {
+        title: "Etki büyüklüğünü nereden alacağım?",
+        text: "En savunulabilir yol, benzer çalışmaların bulgularından hesaplanan etki büyüklüğüdür. Bulunamıyorsa Cohen'in küçük-orta-büyük sınıflaması gerekçesiyle kullanılabilir. Etki büyüklüğünü küçük seçmek gereken örneklemi hızla büyütür.",
+        source: { label: "Faul vd. (2007), Behavior Research Methods", href: "https://doi.org/10.3758/BF03193146" },
+      },
+      {
+        title: "Yöntem bölümüne nasıl yazılır?",
+        text: "Aşağıdaki cümle temsilî bir örnektir.",
+        items: ["\"Örneklem büyüklüğü G*Power 3.1 programıyla hesaplanmıştır. Bağımsız örneklemler t-testi için orta düzey etki büyüklüğü (d = 0.50), .05 anlamlılık düzeyi ve .80 güç ile gereken toplam örneklem 128 kişi olarak bulunmuştur.\""],
+      },
+    ],
+  },
+  {
+    slug: "aykiri-deger-veri-temizleme",
+    title: "SPSS'te Aykırı Değer ve Veri Temizleme Adımları",
+    seoTitle: "SPSS'te Aykırı Değer ve Veri Temizleme",
+    published: "2026-11-12",
+    updated: "2026-11-12",
+    description: "Analizden önce hatalı girişler, eksik veriler, tek ve çok değişkenli aykırı değerler (z puanı, Mahalanobis) nasıl kontrol edilir?",
+    service: { href: "/spss-analizi", label: "SPSS analiz danışmanlığı" },
+    analysis: { href: "/analiz/regresyon-analizi", label: "Regresyon analizi danışmanlığı" },
+    sections: [
+      {
+        title: "Önce giriş hatalarını bulun",
+        text: "Frekans tabloları, değer aralığı dışında kalan girişleri hızlıca gösterir. Örneğin 1-5 arası puanlanan bir maddede 55 değeri görüyorsanız bu bir giriş hatasıdır ve aykırı değer gibi değil, kaynak forma bakılarak düzeltilmelidir.",
+      },
+      {
+        title: "Eksik verileri inceleyin",
+        text: "Eksik verinin oranına ve rastgele olup olmadığına bakın. Az sayıda ve rastgele dağılan eksiklikler farklı yollarla ele alınabilir; belirli bir soruda ya da grupta yoğunlaşan eksiklikler ise yorumlanması gereken bir bulgudur. Hangi yolu seçtiğinizi yöntem bölümünde yazın.",
+      },
+      {
+        title: "Tek değişkenli aykırı değerler",
+        text: "Bir değişkende diğer gözlemlerden belirgin biçimde uzak duran değerlerdir. Kutu grafiği ve standartlaştırılmış z puanları sık kullanılır; kaynaklarda z puanı için ±3 ya da ±3,29 gibi sınırlar önerilir.",
+        source: { label: "NIST/SEMATECH — What are outliers in the data?", href: "https://www.itl.nist.gov/div898/handbook/prc/section1/prc16.htm" },
+      },
+      {
+        title: "Çok değişkenli aykırı değerler",
+        text: "Tek başına olağan görünen ama değişkenlerin birleşimi açısından olağan dışı olan gözlemlerdir. Regresyon ve faktör analizi gibi çok değişkenli analizlerden önce Mahalanobis uzaklığı ile incelenir; değer, değişken sayısı kadar serbestlik dereceli ki-kare tablosundaki kritik değerle karşılaştırılır.",
+        source: { label: "NIST/SEMATECH — Critical Values of the Chi-Square", href: "https://www.itl.nist.gov/div898/handbook/eda/section3/eda3674.htm" },
+      },
+      {
+        title: "Aykırı değeri silmek zorunda mıyım?",
+        text: "Hayır. Aykırı değer gerçek bir gözlem olabilir. Silme, dönüştürme ya da olduğu gibi bırakma kararını gerekçesiyle verin ve kaç gözlemin etkilendiğini raporlayın. Sonuçlar aykırı değerlerle ve onlarsız çok farklıysa bunu da belirtmek dürüst bir raporlamadır.",
+      },
+    ],
+  },
+  {
+    slug: "amos-mu-spss-mi",
+    title: "Tezim İçin AMOS mu, SPSS mi, PROCESS mi Kullanmalıyım?",
+    seoTitle: "AMOS mu SPSS mi PROCESS mi? Program Seçimi",
+    published: "2026-11-12",
+    updated: "2026-11-12",
+    description: "SPSS, PROCESS makrosu ve AMOS'un hangi analizler için uygun olduğu, araştırma modeline göre program seçimi ve sık karışıklıklar.",
+    service: { href: "/spss-analizi", label: "SPSS analiz danışmanlığı" },
+    analysis: { href: "/analiz/amos-yapisal-esitlik-modeli", label: "AMOS ve yapısal eşitlik modeli" },
+    sections: [
+      {
+        title: "Program değil, araştırma sorusu belirler",
+        text: "Hangi programın kullanılacağı, araştırma modelinizin yapısına bağlıdır. Önce hipotezlerinizi ve değişkenler arasındaki ilişkileri çizin; ardından bu modeli sınamaya uygun aracı seçin.",
+      },
+      {
+        title: "SPSS",
+        text: "Betimsel istatistikler, güvenirlik analizi, t-testi, ANOVA, korelasyon, regresyon ve açımlayıcı faktör analizi gibi analizlerin çoğu SPSS'te yapılır. Tez çalışmalarının büyük bölümü için yeterlidir.",
+      },
+      {
+        title: "PROCESS makrosu",
+        text: "SPSS'e eklenen PROCESS, aracı ve düzenleyici etki modellerini gözlenen değişkenlerle (ölçek toplam veya ortalama puanlarıyla) sınar. Dolaylı etkiler için bootstrap güven aralığı üretir. Modeliniz \"X, M aracılığıyla Y'yi etkiler\" biçimindeyse ve ölçüm modeli kurmanız beklenmiyorsa PROCESS uygun bir seçimdir.",
+      },
+      {
+        title: "AMOS",
+        text: "AMOS, gizil değişkenlerle çalışan yapısal eşitlik modelleri için kullanılır. Doğrulayıcı faktör analizi, ölçüm modeli ve birden fazla bağımlı değişkenin aynı modelde sınandığı yol analizleri AMOS'un güçlü olduğu alanlardır.",
+      },
+      {
+        title: "Kısa karar listesi",
+        text: "Aşağıdaki eşleştirmeler genel bir yol göstericidir; danışmanınızın ve kurumunuzun beklentisi her zaman önce gelir.",
+        items: [
+          "Grup karşılaştırması, ilişki, basit/çoklu regresyon → SPSS.",
+          "Ölçek puanlarıyla aracı veya düzenleyici etki → SPSS + PROCESS.",
+          "Ölçeğin yapısını doğrulamak (DFA) → AMOS.",
+          "Gizil değişkenlerle birden çok yolu birlikte sınamak → AMOS.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "ahp-topsis-nedir",
+    title: "AHP ve TOPSIS Nedir? Çok Kriterli Karar Vermeye Giriş",
+    seoTitle: "AHP ve TOPSIS Nedir? Adım Adım Giriş",
+    published: "2026-11-12",
+    updated: "2026-11-12",
+    description: "AHP ile kriter ağırlıklandırma, tutarlılık oranı ve TOPSIS ile alternatif sıralamanın mantığı; tezlerde birlikte kullanımı.",
+    service: { href: "/tez-danismanligi", label: "Tez danışmanlığı" },
+    analysis: { href: "/analiz/cok-kriterli-karar-verme-ahp-topsis", label: "Çok kriterli karar verme danışmanlığı" },
+    sections: [
+      {
+        title: "Çok kriterli karar verme nedir?",
+        text: "Bir kararı birden fazla ve çoğu zaman birbiriyle çelişen ölçüte göre vermeniz gerektiğinde (ör. maliyet düşük ama kalite de yüksek olsun) çok kriterli karar verme yöntemleri kullanılır. Bu yöntemler kararı şeffaf ve tekrar edilebilir hâle getirir.",
+      },
+      {
+        title: "AHP: Kriterleri ağırlıklandırma",
+        text: "Saaty'nin geliştirdiği Analitik Hiyerarşi Süreci, kriterleri ikişer ikişer karşılaştırarak her birinin göreli önemini hesaplar. Karşılaştırmalarda 1-9 ölçeği kullanılır. Yanıtların kendi içinde tutarlı olup olmadığı tutarlılık oranıyla (CR) kontrol edilir; .10'un altındaki değerler genellikle kabul edilebilir sayılır.",
+        source: { label: "Saaty (2008), International Journal of Services Sciences", href: "https://doi.org/10.1504/IJSSCI.2008.017590" },
+      },
+      {
+        title: "TOPSIS: Alternatifleri sıralama",
+        text: "TOPSIS, her alternatifin en iyi (ideal) çözüme yakınlığını ve en kötü çözüme uzaklığını birlikte hesaplar. Adımlar şöyledir:",
+        items: [
+          "Karar matrisinin oluşturulması.",
+          "Matrisin normalize edilmesi.",
+          "Kriter ağırlıklarıyla çarpılması (ağırlıklar AHP, ENTROPİ veya CRITIC ile bulunabilir).",
+          "İdeal ve negatif ideal çözümlerin belirlenmesi.",
+          "Her alternatif için yakınlık katsayısının hesaplanması ve sıralama.",
+        ],
+      },
+      {
+        title: "Tezlerde birlikte kullanımı",
+        text: "Sık kullanılan bir tasarım, ağırlıkları AHP (uzman görüşü) ya da ENTROPİ (veri) ile bulup sıralamayı TOPSIS ile yapmaktır. Yöntem bölümünde neden bu kombinasyonu seçtiğinizi ve sonuçların farklı ağırlıklarla nasıl değiştiğini (duyarlılık analizi) göstermek çalışmayı güçlendirir.",
+      },
+    ],
+  },
+  {
+    slug: "bibliyometrik-analiz-adimlari",
+    title: "Bibliyometrik Analiz Nasıl Yapılır? VOSviewer ve Biblioshiny",
+    seoTitle: "Bibliyometrik Analiz Nasıl Yapılır?",
+    published: "2026-11-12",
+    updated: "2026-11-12",
+    description: "Arama sorgusu, Web of Science/Scopus verisi, veri temizleme, VOSviewer ağ haritaları ve Biblioshiny analizleriyle bibliyometri adımları.",
+    service: { href: "/makale-danismanligi", label: "Makale danışmanlığı" },
+    analysis: { href: "/analiz/bibliyometrik-analiz", label: "Bibliyometrik analiz danışmanlığı" },
+    sections: [
+      {
+        title: "Bibliyometrik analiz ne işe yarar?",
+        text: "Bir alandaki yayınların sayısal özelliklerini inceleyerek alanın gelişimini, öne çıkan yazar ve dergileri, araştırma kümelerini ve yükselen konuları ortaya koyar. Literatür taramasını tamamlayan, nicel bir bakış sağlar.",
+        source: { label: "Zupic ve Čater (2015), Organizational Research Methods", href: "https://doi.org/10.1177/1094428114562629" },
+      },
+      {
+        title: "1. Arama stratejisi",
+        text: "Anahtar kelimeleri, eşanlamlıları ve mantıksal bağlaçları (AND, OR) içeren bir sorgu yazın. Yıl aralığını, belge türlerini ve dili belirleyin. Sorguyu ve arama tarihini raporlayın; böylece analiz tekrar edilebilir olur.",
+      },
+      {
+        title: "2. Veri derleme ve temizleme",
+        text: "Web of Science veya Scopus'tan kayıtları tam kayıt ve atıflarla birlikte indirin. Aynı yazarın farklı yazımlarını ve eş anlamlı anahtar kelimeleri birleştirmek sonuçların doğruluğu için önemlidir.",
+      },
+      {
+        title: "3. Analiz ve görselleştirme",
+        text: "Performans analizi ile bilim haritalama birlikte kullanılır.",
+        items: [
+          "Yıllara göre yayın ve atıf sayıları.",
+          "En etkili yazarlar, dergiler, kurumlar ve ülkeler.",
+          "Ortak yazarlık ağları (iş birlikleri).",
+          "Ortak atıf ve bibliyografik eşleşme (entelektüel yapı).",
+          "Anahtar kelime birlikte görülme ağları ve tematik haritalar.",
+        ],
+        source: { label: "VOSviewer", href: "https://www.vosviewer.com/" },
+      },
+      {
+        title: "4. Yorum",
+        text: "Haritadaki her kümenin hangi temayı temsil ettiğini, zaman içindeki değişimi ve az çalışılmış konuları açıklayın. Bibliometrix (Biblioshiny) paketi tematik evrim ve stratejik diyagram gibi ek analizler sunar.",
+        source: { label: "Bibliometrix", href: "https://www.bibliometrix.org/" },
+      },
+    ],
+  },
+  {
+    slug: "benzerlik-orani-kac-olmali",
+    title: "Tezde Benzerlik Oranı Kaç Olmalı?",
+    seoTitle: "Tezde Benzerlik Oranı Kaç Olmalı?",
+    published: "2026-11-12",
+    updated: "2026-11-12",
+    description: "Benzerlik oranı için tek bir ulusal sınır yoktur; enstitü yönergeleri, filtreler, tek kaynak sınırı ve yüksek oranın nedenleri.",
+    service: { href: "/akademik-editorluk", label: "Akademik editörlük ve kaynak gösterme" },
+    analysis: { href: "/#rapor-hizmeti", label: "Benzerlik raporu hizmeti" },
+    sections: [
+      {
+        title: "Herkes için geçerli bir sınır yok",
+        text: "Benzerlik oranı için tüm üniversitelerde geçerli tek bir sınır bulunmuyor. Sınırları her üniversite ya da enstitü kendi yönergesinde belirliyor ve bu sınırlar tez türüne göre de değişebiliyor. Bu yüzden ilk adım, kendi enstitünüzün güncel benzerlik yönergesini okumaktır.",
+      },
+      {
+        title: "Yönergede nelere bakmalısınız?",
+        text: "Oranın kendisi kadar raporun hangi ayarlarla alındığı da önemlidir.",
+        items: [
+          "Toplam benzerlik oranı için belirlenen üst sınır.",
+          "Tek bir kaynaktan gelen benzerlik için ayrı bir sınır olup olmadığı.",
+          "Kaynakça ve alıntıların rapordan çıkarılıp çıkarılmadığı.",
+          "Küçük eşleşmelerin (belirli kelime sayısının altındakiler) hariç tutulup tutulmadığı.",
+          "Raporun hangi bölümleri kapsaması gerektiği (ör. giriş-sonuç arası).",
+        ],
+      },
+      {
+        title: "Oran neden yüksek çıkar?",
+        text: "Yüksek oran her zaman intihal anlamına gelmez. Sık görülen nedenler şunlardır:",
+        items: [
+          "Rapor filtreleri uygulanmadan alınmış olması.",
+          "Ölçek maddeleri, yasal metinler, standart tanımlar gibi değiştirilemeyecek ifadeler.",
+          "Doğrudan alıntıların tırnak içine alınmamış olması.",
+          "Kendi yayımlanmış çalışmanızdan veya önceki tez taslaklarınızdan gelen eşleşmeler.",
+          "Kaynağa atıf yapılmadan yeniden ifade edilmiş paragraflar.",
+        ],
+      },
+      {
+        title: "Oran değil, kaynak gösterme önemli",
+        text: "Benzerlik raporu bir intihal kararı değil, inceleme aracıdır. Danışmanlar ve jüri yalnız yüzdeye değil, eşleşmelerin nerede olduğuna ve doğru atıf yapılıp yapılmadığına bakar. Alıntıları kurallara uygun göstermek ve yararlandığınız her kaynağa atıf yapmak, oranı tartışmalı olmaktan çıkarır.",
+      },
+    ],
+  },
+  {
+    slug: "benzerlik-raporu-nasil-okunur",
+    title: "Benzerlik Raporu Nasıl Okunur?",
+    seoTitle: "Benzerlik Raporu Nasıl Okunur?",
+    published: "2026-11-12",
+    updated: "2026-11-12",
+    description: "Benzerlik raporunda genel oran, kaynak listesi, renkli eşleşmeler ve filtrelerin anlamı; hangi eşleşmenin sorun olduğunu ayırt etme.",
+    service: { href: "/akademik-editorluk", label: "Akademik editörlük ve kaynak gösterme" },
+    analysis: { href: "/#rapor-hizmeti", label: "Benzerlik raporu hizmeti" },
+    sections: [
+      {
+        title: "Raporun üç temel parçası",
+        text: "Benzerlik raporlarının çoğu benzer bir düzen kullanır.",
+        items: [
+          "Genel benzerlik oranı: Metnin ne kadarının başka kaynaklarla eşleştiğini gösteren yüzde.",
+          "Kaynak listesi: Eşleşmelerin hangi kaynaklardan geldiği ve her kaynağın oranı.",
+          "Renkli işaretlemeler: Metinde hangi cümlenin hangi kaynakla eşleştiğini gösteren vurgular.",
+        ],
+      },
+      {
+        title: "Önce kaynak listesine bakın",
+        text: "Genel oran yerine kaynak listesinden başlayın. Tek bir kaynaktan yüksek oranda eşleşme varsa o bölüm öncelikli olarak incelenmelidir. Çok sayıda kaynaktan küçük eşleşmeler ise çoğu zaman ortak terimler ve kalıp ifadelerden gelir.",
+      },
+      {
+        title: "Filtreleri kontrol edin",
+        text: "Kaynakçanın, tırnak içindeki alıntıların ve küçük eşleşmelerin hariç tutulup tutulmadığı oranı önemli ölçüde değiştirir. Raporu, enstitünüzün yönergesinde belirtilen ayarlarla alıp almadığınızı kontrol edin.",
+      },
+      {
+        title: "Hangi eşleşme sorun?",
+        text: "Her eşleşme aynı ağırlıkta değildir.",
+        items: [
+          "Genellikle sorun değil: Atıf yapılmış ve tırnak içine alınmış doğrudan alıntılar, ölçek maddeleri, yerleşik terimler, kaynakça satırları.",
+          "İncelenmeli: Atıf yapılmadan bir kaynaktan aktarılmış paragraflar, tırnak işareti unutulmuş alıntılar.",
+          "Kendi eşleşmeleriniz: Daha önce yayımlanmış kendi çalışmanızdan gelen eşleşmeler de atıf gerektirebilir.",
+        ],
+      },
+      {
+        title: "Ne yapmalısınız?",
+        text: "İncelenmesi gereken bölümlerde kaynağı doğru gösterin, doğrudan alıntıyı kurallara uygun işaretleyin ya da konuyu kendi cümlelerinizle ve atıfla yeniden anlatın. Amaç oranı düşürmek değil, yararlandığınız kaynakları dürüstçe göstermektir.",
+      },
+    ],
+  },
 ];

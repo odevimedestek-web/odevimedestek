@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     { url: `${base}/hakkimizda`, changeFrequency: "yearly", priority: 0.5 },
     { url: `${base}/iletisim`, changeFrequency: "yearly", priority: 0.5 },
+    { url: `${base}/etik-ilkeler`, changeFrequency: "yearly", priority: 0.5 },
     { url: `${base}/ornek-calismalar`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/rehber`, changeFrequency: "monthly", priority: 0.7 },
     ...rehberler.map((guide) => ({

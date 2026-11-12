@@ -38,7 +38,7 @@ export default function Page() {
 
       <h2>Ne yapmıyoruz?</h2>
       <p>
-        Hizmetimiz danışmanlık, eğitim ve editörlük niteliğindedir. Çalışmanın yazarı her zaman öğrencidir; öğrencinin yerine tez, makale veya ödev hazırlanmaz. Anket uygulama ya da veri toplama hizmeti de vermiyoruz. İstatistik desteği, sizin topladığınız veri üzerinde analiz, raporlama ve yorumlama ile sınırlıdır.
+        Hizmetimiz danışmanlık, eğitim ve editörlük niteliğindedir. Çalışmanın yazarı her zaman öğrencidir; öğrencinin yerine tez, makale veya ödev hazırlanmaz. Anket uygulama ya da veri toplama hizmeti de vermiyoruz. İstatistik desteği, sizin topladığınız veri üzerinde analiz, raporlama ve yorumlama ile sınırlıdır. Ayrıntılar <Link href="/etik-ilkeler" className="text-gold-400 underline">etik ilkelerimizde</Link>.
       </p>
 
       <h2>Nasıl çalışıyoruz?</h2>

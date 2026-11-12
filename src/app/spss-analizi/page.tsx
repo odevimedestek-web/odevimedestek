@@ -114,7 +114,10 @@ export default function Page() {
         <li><Link href="/analiz/olcek-gecerlik-guvenirlik" className="text-gold-400 underline">Ölçek geçerlik ve güvenirlik</Link></li>
         <li><Link href="/analiz/korelasyon-ve-ki-kare-analizi" className="text-gold-400 underline">Korelasyon ve ki-kare</Link></li>
         <li><Link href="/analiz/nitel-veri-analizi" className="text-gold-400 underline">Nitel veri analizi</Link></li>
+        <li><Link href="/analiz/biyoistatistik-roc-sagkalim" className="text-gold-400 underline">Biyoistatistik: ROC ve sağkalım analizi</Link></li>
+        <li><Link href="/analiz/orneklem-buyuklugu-guc-analizi" className="text-gold-400 underline">Örneklem büyüklüğü ve güç analizi</Link></li>
       </ul>
+      <p>Ekonometri, çok kriterli karar verme, veri zarflama, bibliyometri ve meta-analiz için <Link href="/analiz" className="text-gold-400 underline">tüm analiz türlerine</Link> bakabilirsiniz.</p>
       <QuoteBuilder />
     </ServiceLanding>
   );

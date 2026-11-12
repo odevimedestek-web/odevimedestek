@@ -19,15 +19,16 @@ Hizmetler danışmanlık ve eğitim niteliğindedir: çalışmanın yazarı her 
 
 ## Analiz türleri
 
-- [Analiz türleri](https://www.odevimedestek.com/analiz): Faktör analizi (AFA/DFA), AMOS ve yapısal eşitlik modeli, regresyon, aracı ve düzenleyici etki, t-testi ve ANOVA, ölçek geçerlik-güvenirlik, korelasyon ve ki-kare, nitel veri analizi. Analiz, öğrencinin topladığı veri üzerinde yapılır; veri toplama hizmeti verilmez.
+- [Analiz türleri](https://www.odevimedestek.com/analiz): Faktör analizi (AFA/DFA), AMOS ve yapısal eşitlik modeli, regresyon, aracı ve düzenleyici etki, t-testi ve ANOVA, ölçek geçerlik-güvenirlik, korelasyon ve ki-kare, nitel veri analizi, çok kriterli karar verme (AHP, TOPSIS, DEMATEL, ENTROPİ, CRITIC), veri zarflama analizi, panel veri, zaman serisi ve ARDL, biyoistatistik (ROC, sağkalım), örneklem büyüklüğü ve G*Power, bibliyometrik analiz, meta-analiz ve sistematik derleme. Analiz, öğrencinin topladığı veri üzerinde yapılır; veri toplama hizmeti verilmez.
 
 ## Rehberler
 
-- [Akademik rehberler](https://www.odevimedestek.com/rehber): SPSS veri hazırlama, normallik testi, Cronbach alfa, AFA'da KMO ve Bartlett, DFA uyum indeksleri, aracı etki (PROCESS), SPSS çıktılarını APA 7'ye göre raporlama, tematik analiz, tez öneri formu, APA 7 kaynakça, tez savunma sunumu.
+- [Akademik rehberler](https://www.odevimedestek.com/rehber): SPSS veri hazırlama, normallik testi, Cronbach alfa, AFA'da KMO ve Bartlett, DFA uyum indeksleri, aracı etki (PROCESS), SPSS çıktılarını APA 7'ye göre raporlama, tematik analiz, bulgular bölümü, yöntem bölümünde analiz yazımı, etki büyüklüğü, örneklem büyüklüğü, aykırı değer, AMOS mu SPSS mi, AHP ve TOPSIS, bibliyometrik analiz, benzerlik oranı ve benzerlik raporu okuma, tez öneri formu, APA 7 kaynakça, tez savunma sunumu.
 
 ## Diğer
 
 - [Hakkımızda](https://www.odevimedestek.com/hakkimizda)
+- [Etik İlkeler](https://www.odevimedestek.com/etik-ilkeler)
 - [İletişim](https://www.odevimedestek.com/iletisim)
 - [SPSS analiz ücretleri](https://www.odevimedestek.com/spss-analiz-ucretleri) · [Tez danışmanlığı ücretleri](https://www.odevimedestek.com/tez-danismanligi-ucretleri)
 
