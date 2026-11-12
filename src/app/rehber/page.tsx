@@ -18,7 +18,7 @@ export default function GuidesPage() {
           <article key={guide.slug} className="rounded-xl border border-slate-700 p-6">
             <h2 className="!mt-0"><Link href={`/rehber/${guide.slug}`} className="text-gold-400 hover:underline">{guide.title}</Link></h2>
             <p>{guide.description}</p>
-            <Link href={`/rehber/${guide.slug}`} className="inline-block mt-4 text-gold-400 underline" aria-label={`${guide.title} — rehberi oku`}>Rehberi oku →</Link>
+            <Link href={`/rehber/${guide.slug}`} className="inline-block mt-4 text-gold-400 underline" aria-label={`${guide.title}: rehberi oku`}>Rehberi oku →</Link>
           </article>
         ))}
       </div>

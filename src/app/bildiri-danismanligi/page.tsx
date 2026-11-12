@@ -10,7 +10,7 @@ export const metadata = pageMetadata(
 const faqs = [
   {
     q: "Bildiri danışmanlığı neleri kapsıyor?",
-    a: "Uygun kongre seçimi, bildiri özetinin kelime sınırına göre düzenlenmesi, tam metin bildirinin kongre yazım kurallarına uyumu ve sözlü ya da poster sunumun hazırlanması konularında rehberlik ediyoruz.",
+    a: "Uygun kongre seçimi, bildiri özetinin kelime sınırına göre düzenlenmesi, tam metin bildirinin kongre yazım kurallarına uyumu ve sözlü ya da poster sunumun hazırlanması görüşmelerde ele aldığımız konular.",
   },
   {
     q: "Tezimden bildiri hazırlayabilir miyim?",
@@ -30,7 +30,7 @@ export default function Page() {
   return (
     <ServiceLanding path="/bildiri-danismanligi"
       title="Bildiri Danışmanlığı"
-      intro="Ulusal ve uluslararası kongrelerde sunacağınız bildirinin özetinden sunumuna kadar birebir danışmanlık veriyoruz. Çalışmanızı kongre kurallarına uygun ve etkili biçimde sunmanız için yanınızdayız."
+      intro="Ulusal veya uluslararası bir kongreye bildiri göndermeyi düşünüyorsanız özetten sunuma kadar her adımda birebir danışmanlık alabilirsiniz. Ölçüt, kongrenin kendi yazım ve sunum kurallarıdır."
       waText="Merhaba, bildiri danışmanlığı almak istiyorum."
       faqs={faqs}
     >

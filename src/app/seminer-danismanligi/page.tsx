@@ -10,7 +10,7 @@ export const metadata = pageMetadata(
 const faqs = [
   {
     q: "Seminer danışmanlığı neleri kapsıyor?",
-    a: "Seminer konusunun belirlenmesi, literatür tarama yöntemi, seminer metninin enstitü yazım kurallarına uyumu, APA ile kaynak gösterme ve seminer sunumunun hazırlanması konularında rehberlik ediyoruz.",
+    a: "Seminer konusunun belirlenmesi, literatür tarama yöntemi, seminer metninin enstitü yazım kurallarına uyumu, APA ile kaynak gösterme ve sunum hazırlığı.",
   },
   {
     q: "Seminer konusu tezimle ilişkili olmalı mı?",
@@ -26,7 +26,7 @@ export default function Page() {
   return (
     <ServiceLanding path="/seminer-danismanligi"
       title="Seminer Danışmanlığı"
-      intro="Yüksek lisans ve doktora seminer dersinizde konu seçiminden sunuma kadar birebir rehberlik veriyoruz. Seminerinizi enstitü kurallarına uygun hazırlamanız ve rahatça sunmanız için yanınızdayız."
+      intro="Seminer dersi çoğu öğrenci için tezin ilk provasıdır: konu seçilir, literatür taranır, metin yazılır ve sunulur. Bu adımların her birinde, enstitünüzün kurallarına göre birebir danışmanlık alabilirsiniz."
       waText="Merhaba, seminer danışmanlığı almak istiyorum."
       faqs={faqs}
     >

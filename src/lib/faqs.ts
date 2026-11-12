@@ -37,7 +37,7 @@ export const faqs = [
   {
     "category": "Hizmet seçimi",
     "q": "Tez danışmanlığı ile tez biçimlendirme arasındaki fark nedir?",
-    "a": "Tez danışmanlığı araştırma sorusu, yöntem ve bölüm içeriği üzerinde rehberlik sunar. Biçimlendirme ise başlık, dizin, tablo, kaynakça ve sayfa düzenini kurum kılavuzuna göre ele alır. İki hizmetin kapsamı ön görüşmede ayrı ayrı belirlenir.",
+    "a": "Tez danışmanlığı araştırma sorusu, yöntem ve bölüm içeriğiyle ilgilenir. Biçimlendirme ise başlık, dizin, tablo, kaynakça ve sayfa düzenini kurum kılavuzuna göre ele alır. İki hizmetin kapsamı ön görüşmede ayrı ayrı belirlenir.",
     "href": "/tez-bicimlendirme",
     "label": "Biçimlendirme kapsamını inceleyin"
   },
@@ -58,7 +58,7 @@ export const faqs = [
   {
     "category": "Hizmet seçimi",
     "q": "Tezimden makale veya bildiri hazırlamak için destek alabilir miyim?",
-    "a": "Makale için derginin, bildiri için kongrenin kurallarını esas alarak içerik seçimi ve düzeni konusunda rehberlik alabilirsiniz. Başvuruda hedef yayını veya etkinliği ve mevcut metninizi belirtin.",
+    "a": "Makale için derginin, bildiri için kongrenin kurallarını esas alarak içerik seçimi ve düzeni için destek alabilirsiniz. Başvuruda hedef yayını veya etkinliği ve mevcut metninizi belirtin.",
     "href": "/makale-danismanligi",
     "label": "Makale danışmanlığını inceleyin"
   },
@@ -79,7 +79,7 @@ export const faqs = [
   {
     "category": "Ücret ve süreç",
     "q": "Çalışma ne kadar sürer? Acil bir tarihim varsa ne yapmalıyım?",
-    "a": "Çalışmanızın son durumu, birlikte belirlenen teslim tarihinden 1–2 gün önce incelemeniz için paylaşılır. Böylece beğenmediğiniz noktaları belirtebilir ve değişiklik taleplerinizi iletebilirsiniz. Teslim tarihini ilk görüşmede birlikte belirleriz.",
+    "a": "Çalışmanızın son durumu, birlikte belirlenen teslim tarihinden 1–2 gün önce incelemeniz için paylaşılır. Böylece beğenmediğiniz noktaları belirtebilir ve değişiklik taleplerinizi iletebilirsiniz. Teslim tarihi ilk görüşmede kararlaştırılır.",
     "href": "/#surec",
     "label": "Çalışma sürecini inceleyin"
   },
@@ -107,7 +107,7 @@ export const faqs = [
   {
     "category": "Gizlilik ve çalışma ilkeleri",
     "q": "Benim yerime tez veya ödev yazıyor musunuz?",
-    "a": "Hizmetimiz danışmanlık, eğitim ve editörlük niteliğindedir. Çalışmanın yazarı sizsiniz. Araştırmanızı geliştirmeniz, analizleri anlamanız ve kendi metninizi düzenlemeniz için rehberlik sunuyoruz.",
+    "a": "Hizmetimiz danışmanlık, eğitim ve editörlük niteliğindedir. Çalışmanın yazarı sizsiniz. Amacımız araştırmanızı geliştirmeniz, analizleri anlamanız ve kendi metninizi düzenleyebilmeniz.",
     "href": "/kullanim-sartlari",
     "label": "Çalışma ilkelerini okuyun"
   },

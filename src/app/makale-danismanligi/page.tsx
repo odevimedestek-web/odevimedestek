@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     q: "Tezimden makale üretmek için destek alabilir miyim?",
-    a: "Evet. Tezinizi derginin kelime sınırı ve yapısına uygun bir makaleye nasıl dönüştüreceğiniz konusunda rehberlik ediyoruz.",
+    a: "Evet. Tezinizi derginin kelime sınırına ve yapısına uyan bir makaleye nasıl dönüştüreceğinizi adım adım konuşuyoruz.",
   },
   {
     q: "İngilizce makalelerde destek veriyor musunuz?",
@@ -30,7 +30,7 @@ export default function Page() {
   return (
     <ServiceLanding path="/makale-danismanligi"
       title="Makale Danışmanlığı"
-      intro="Akademik makalenizin dergiye hazırlanmasından yayın sürecine kadar birebir rehberlik veriyoruz. Ulusal ve uluslararası dergilerin beklentilerine uygun bir makale için yanınızdayız."
+      intro="Makalenizi hangi dergiye göndereceğinize karar verdiğiniz andan hakem notlarına kadar birebir danışmanlık alabilirsiniz. Yol haritasını derginin kendi yazım kuralları belirler."
       waText="Merhaba, makale danışmanlığı almak istiyorum."
       faqs={faqs}
     >
@@ -48,10 +48,9 @@ export default function Page() {
       <h2>Makale Danışmanlığı Nasıl İlerliyor?</h2>
       <p>
         Ücretsiz ön görüşmede makalenizin durumunu ve hedef dergiyi konuşuyoruz.
-        Ardından derginin kurallarına göre eksikleri belirliyor, yöntem ve
-        analiz kısmında rehberlik ediyor ve gönderim öncesi son kontrolü
-        birlikte yapıyoruz. Hakem değerlendirmesinden sonra gelen notlarda da
-        yanınızdayız.
+        Ardından derginin kurallarına göre eksikleri çıkarıyor, yöntem ve
+        analiz kısmı üzerinde çalışıyor, göndermeden önce son kontrolü
+        yapıyoruz. Hakem notları geldiğinde süreç oradan devam eder.
       </p>
 
       <h2>Kimler İçin?</h2>

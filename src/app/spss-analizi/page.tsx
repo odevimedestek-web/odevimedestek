@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: "SPSS tablolarını APA formatında hazırlamayı öğretiyor musunuz?",
-    a: "Evet. SPSS çıktılarının APA 7 kurallarına uygun tablo haline getirilmesi ve bulgular bölümünde nasıl raporlanacağı konusunda rehberlik ediyoruz.",
+    a: "Evet. SPSS çıktılarının APA 7 kurallarına uygun tablo haline getirilmesi ve bulgular bölümünde nasıl raporlanacağını örnekler üzerinden gösteriyoruz.",
   },
   {
     q: "Ücret nasıl belirleniyor?",
@@ -32,7 +32,7 @@ export default function Page() {
   return (
     <ServiceLanding path="/spss-analizi"
       title="SPSS Analiz Danışmanlığı"
-      intro="Tez, makale veya proje verileriniz için doğru istatistiksel testi seçmekten SPSS çıktılarını yorumlamaya kadar her aşamada yanınızdayız. Lisans, yüksek lisans ve doktora öğrencilerine birebir SPSS danışmanlığı veriyoruz."
+      intro="Veriniz toplandı ama hangi testi seçeceğinizden ya da SPSS çıktısının ne söylediğinden emin değilseniz buradan başlayabilirsiniz. Lisans, yüksek lisans ve doktora öğrencilerine test seçiminden çıktı yorumuna kadar birebir SPSS danışmanlığı veriyoruz."
       waText="Merhaba, SPSS analiz danışmanlığı almak istiyorum."
       faqs={faqs}
     >

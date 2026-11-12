@@ -2,7 +2,7 @@ export type ServiceExperience = { title: string; description: string; related: s
 export const serviceExperience: Record<string, ServiceExperience> = {
   "/tez-danismanligi": {
     "title": "Tez Danışmanlığı",
-    "description": "Konu, araştırma sorusu ve bölüm içeriği için rehberlik.",
+    "description": "Konu, araştırma sorusu ve bölüm içeriği üzerinde danışmanlık.",
     "related": [
       "/spss-analizi",
       "/tez-bicimlendirme",

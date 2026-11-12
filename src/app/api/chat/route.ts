@@ -29,21 +29,21 @@ function getReply(messages: Message[], userName?: string, selectedService?: stri
     if (/ne.*yapıyor|nasıl|nedir/.test(lastMsg)) {
       return "SPSS danışmanlığında frekans, güvenilirlik, korelasyon, regresyon, t-testi, ANOVA ve faktör analizi gibi testlerin seçimini ve yorumlanmasını adım adım anlatıyoruz. Hangi seviyede bir çalışma bu, lisans mı yüksek lisans mı?";
     }
-    return "SPSS analizi konusunda size yardımcı olabiliriz. Çalışmanız hangi seviyede — lisans, yüksek lisans yoksa doktora mı?";
+    return "SPSS analizi konusunda size yardımcı olabiliriz. Çalışmanız hangi seviyede: lisans, yüksek lisans, doktora?";
   }
 
   if (/tez/.test(lastMsg)) {
     if (/doktora/.test(allUserText)) {
-      return "Doktora tezi konusunda konu belirleme, literatür tarama, yöntem planlama ve analiz konusunda rehberlik ediyoruz. Detaylı bilgi için WhatsApp üzerinden görüşelim mi?\n\nhttps://wa.me/905384164676";
+      return "Doktora tezinde konu belirleme, literatür tarama, yöntem ve analiz aşamalarında destek alabilirsiniz. Ayrıntıları WhatsApp'tan konuşalım mı?\n\nhttps://wa.me/905384164676";
     }
     if (/yüksek.*lisans|yükseklisans|yl/.test(allUserText)) {
-      return "Yüksek lisans tezi için konu belirleme, literatür, yöntem ve analiz konularında rehberlik ediyoruz. Konunuz belli mi, hangi alanda çalışıyorsunuz?";
+      return "Yüksek lisans tezinde konu, literatür, yöntem ve analiz aşamalarında destek veriyoruz. Konunuz belli mi, hangi alanda çalışıyorsunuz?";
     }
     return "Tez danışmanlığı hizmetimiz var. Ön lisanstan doktoraya kadar her seviyede destek veriyoruz. Hangi seviyede bir tez çalışmanız var?";
   }
 
   if (/makale|yayın|dergi|article/.test(lastMsg)) {
-    return "Dergi seçimi, yazım kuralları ve yayın süreci konusunda rehberlik ediyoruz. Hangi alanda bir makale düşünüyorsunuz?";
+    return "Dergi seçimi, yazım kuralları ve hakem süreci için destek alabilirsiniz. Hangi alanda bir makale düşünüyorsunuz?";
   }
 
   if (/editör|düzelt|düzenle|yazım|dil\s*bilgisi|biçim/.test(lastMsg)) {
@@ -51,7 +51,7 @@ function getReply(messages: Message[], userName?: string, selectedService?: stri
   }
 
   if (/intihal|turnitin|benzerlik|özgünlük|plagiarism/.test(lastMsg)) {
-    return "Doğru atıf yapma, alıntı kuralları ve kaynakça düzenleme konusunda rehberlik ediyoruz. Akademik dürüstlük kurallarına aykırı talepleri kabul etmiyoruz. Hangi yazım kılavuzunu kullanıyorsunuz?";
+    return "Atıf, alıntı kuralları ve kaynakça düzeninde yardımcı oluyoruz. Akademik dürüstlük kurallarına aykırı talepleri kabul etmiyoruz. Hangi yazım kılavuzunu kullanıyorsunuz?";
   }
 
   if (/sunum|powerpoint|ppt|slayt|savunma/.test(lastMsg)) {
@@ -59,15 +59,15 @@ function getReply(messages: Message[], userName?: string, selectedService?: stri
   }
 
   if (/lisans|ön\s*lisans|önlisans/.test(lastMsg)) {
-    return "Ön lisans ve lisans düzeyinde proje ve bitirme tezi süreçlerinde rehberlik ediyoruz. Ne tür bir çalışmanız var?";
+    return "Ön lisans ve lisans düzeyinde proje ve bitirme tezi için de destek veriyoruz. Ne tür bir çalışmanız var?";
   }
 
   if (/doktora/.test(lastMsg)) {
-    return "Doktora düzeyinde tez, makale ve analiz süreçlerinde rehberlik ediyoruz. Hangi aşamadasınız — konu mu belirliyorsunuz yoksa yazım aşamasında mısınız?";
+    return "Doktorada tez, makale ve analiz için destek alabilirsiniz. Şu an hangi aşamadasınız, konu mu belirliyorsunuz yoksa yazıyor musunuz?";
   }
 
   if (/yüksek.*lisans|yl|master/.test(lastMsg)) {
-    return "Yüksek lisans düzeyinde tez, makale ve SPSS konularında rehberlik ediyoruz. Tezli mi tezsiz mi yüksek lisans yapıyorsunuz?";
+    return "Yüksek lisansta tez, makale ve SPSS için destek veriyoruz. Tezli mi tezsiz mi yüksek lisans yapıyorsunuz?";
   }
 
   if (/süre|ne.*zaman|teslim|deadline|acil/.test(lastMsg)) {
@@ -87,7 +87,7 @@ function getReply(messages: Message[], userName?: string, selectedService?: stri
   }
 
   if (/hizmet|ne.*yapıyor|neler/.test(lastMsg)) {
-    return "Hizmetlerimiz:\n• SPSS ve veri analizi\n• Tez danışmanlığı (ön lisans — doktora)\n• Makale danışmanlığı\n• Akademik editörlük\n• Kaynak gösterme ve APA\n• Sunum desteği\n\nLinkedIn sayfamız: https://www.linkedin.com/company/akademik-danismanlik-merkezi\n\nHangi konuda destek almak istiyorsunuz?";
+    return "Hizmetlerimiz:\n• SPSS ve veri analizi\n• Tez danışmanlığı (ön lisanstan doktoraya)\n• Makale danışmanlığı\n• Akademik editörlük\n• Kaynak gösterme ve APA\n• Sunum desteği\n\nLinkedIn sayfamız: https://www.linkedin.com/company/akademik-danismanlik-merkezi\n\nHangi konuda destek almak istiyorsunuz?";
   }
 
 

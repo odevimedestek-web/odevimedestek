@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     q: "Proje danışmanlığı hangi bölümleri kapsıyor?",
-    a: "Özgün değer, amaç ve hedefler, yöntem, iş-zaman çizelgesi, risk yönetimi, bütçe gerekçesi ve yaygın etki bölümlerinin başvuru formuna uygun kurgulanmasında rehberlik ediyoruz.",
+    a: "Özgün değer, amaç ve hedefler, yöntem, iş-zaman çizelgesi, risk yönetimi, bütçe gerekçesi ve yaygın etki bölümlerinin başvuru formuna göre kurgulanması.",
   },
   {
     q: "Proje önerimi benim yerime yazıyor musunuz?",
@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: "Proje sonuç raporunda da destek alabilir miyim?",
-    a: "Evet. Ara rapor, sonuç raporu ve projeden üretilecek bildiri veya makale aşamasında da rehberlik veriyoruz.",
+    a: "Evet. Ara rapor, sonuç raporu ve projeden çıkacak bildiri veya makale için de destek alabilirsiniz.",
   },
 ];
 
@@ -30,7 +30,7 @@ export default function Page() {
   return (
     <ServiceLanding path="/tubitak-proje-danismanligi"
       title="TÜBİTAK Proje Danışmanlığı"
-      intro="TÜBİTAK ve BAP proje başvurunuzu değerlendirme ölçütlerine uygun, güçlü bir öneriye dönüştürmeniz için birebir proje danışmanlığı veriyoruz. Fikir aşamasından sonuç raporuna kadar yanınızdayız."
+      intro="TÜBİTAK ya da BAP başvurusunda hakemler öneriyi belirli ölçütlerle puanlar. Fikrinizi bu ölçütlere göre yazılmış bir öneriye dönüştürmek için birebir danışmanlık alabilirsiniz; ara ve sonuç raporları da kapsamın içinde."
       waText="Merhaba, TÜBİTAK proje danışmanlığı almak istiyorum."
       faqs={faqs}
     >

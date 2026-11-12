@@ -34,8 +34,8 @@ export default function GuvenlikPage() {
       <h2>Akademik Etik</h2>
       <p>
         Hizmetlerimiz akademik etik kuralları çerçevesinde sunuluyor.
-        Öğrencinin yerine çalışma hazırlamıyoruz; yalnızca danışmanlık ve
-        rehberlik veriyoruz.
+        Öğrencinin yerine çalışma hazırlamıyoruz; verdiğimiz hizmet
+        danışmanlık ve eğitimdir.
       </p>
 
       <h2>Bir Sorun Olursa</h2>

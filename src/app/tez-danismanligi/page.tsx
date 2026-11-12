@@ -11,11 +11,11 @@ export const metadata = pageMetadata(
 const faqs = [
   {
     q: "Tez danışmanlığı hangi aşamaları kapsıyor?",
-    a: "Konu belirleme, tez önerisi hazırlığı, literatür tarama yöntemi, araştırma tasarımı, veri analizi, üniversite tez yazım kılavuzuna göre biçimlendirme ve savunma sunumu hazırlığı aşamalarında rehberlik veriyoruz.",
+    a: "Konu belirleme, tez önerisi hazırlığı, literatür tarama yöntemi, araştırma tasarımı, veri analizi, üniversite tez yazım kılavuzuna göre biçimlendirme ve savunma sunumu hazırlığı. İhtiyacınız olan aşamayı seçebilirsiniz.",
   },
   {
     q: "Benim yerime tez yazıyor musunuz?",
-    a: "Hayır. Hizmetimiz danışmanlık ve eğitim niteliğindedir. Tezin yazarı sizsiniz; biz her aşamada yol gösteriyor ve geri bildirim veriyoruz.",
+    a: "Hayır. Hizmetimiz danışmanlık ve eğitim niteliğindedir. Tezin yazarı sizsiniz; biz yol gösteriyor ve geri bildirim veriyoruz.",
   },
   {
     q: "Tezimi üniversitemin şablonuna uygun hale getirmede destek veriyor musunuz?",
@@ -72,7 +72,7 @@ export default function Page() {
 
       <h2>Bulunduğunuz Aşamaya Göre Destek</h2>
       <ul>
-        <li>Öneri aşaması: konuyu daraltma, araştırma sorusu ve yöntem planlama konusunda rehberlik.</li>
+        <li>Öneri aşaması: konuyu daraltma, araştırma sorusunu ve yöntemi planlama.</li>
         <li>Yazım aşaması: hazırladığınız bölümler için geri bildirim ve kaynak gösterme desteği.</li>
         <li>Analiz aşaması: <Link href="/spss-analizi" className="text-gold-400 underline">SPSS analiz danışmanlığı</Link> ile çıktıları anlama ve raporlama.</li>
         <li>Teslim ve savunma aşaması: enstitü kılavuzuna göre biçimlendirme ve <Link href="/rehber/tez-savunma-sunumu" className="text-gold-400 underline">savunma sunumunu planlama</Link>.</li>

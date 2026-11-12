@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     q: "Sunum provası yapıyor musunuz?",
-    a: "Evet. Sunum öncesi online prova yapıyor, jürinin sorabileceği sorulara nasıl hazırlanacağınız konusunda rehberlik ediyoruz.",
+    a: "Evet. Sunum öncesi online prova yapıyor, jürinin sorabileceği sorular üzerine konuşuyoruz.",
   },
 ];
 
@@ -26,7 +26,7 @@ export default function Page() {
   return (
     <ServiceLanding path="/sunum-hazirlama"
       title="Sunum Hazırlama Desteği"
-      intro="Tez savunması, seminer, kongre ve proje sunumlarınızın sade, düzenli ve akılda kalıcı olması için sunum hazırlama desteği veriyoruz. Slayt düzeninden provaya kadar yanınızdayız."
+      intro="Tez savunması, seminer, kongre ya da proje sunumu için slayt düzeninden provaya kadar destek alabilirsiniz. Hedef, dinleyicinin takip edebileceği sade bir sunum."
       waText="Merhaba, sunum hazırlama desteği almak istiyorum."
       faqs={faqs}
     >
