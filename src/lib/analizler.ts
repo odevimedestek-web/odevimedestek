@@ -19,8 +19,8 @@ export const analizler: AnalysisPage[] = [
     slug: "faktor-analizi",
     title: "Faktör Analizi Danışmanlığı (AFA ve DFA)",
     seoTitle: "Faktör Analizi Danışmanlığı: AFA ve DFA",
-    description: "Açımlayıcı ve doğrulayıcı faktör analizinde KMO, Bartlett, faktör sayısı, yük değerleri ve uyum indekslerini birlikte yorumluyoruz.",
-    intro: "Ölçek geliştiriyor, uyarlıyor ya da hazır bir ölçeğin yapısını kendi örnekleminizde sınıyorsanız faktör analizi çalışmanızın en çok soru getiren bölümü olabilir. Hangi analizin gerektiğini, çıktıda hangi değerlere bakılacağını ve sonuçların tabloya nasıl aktarılacağını birlikte ele alıyoruz.",
+    description: "Açımlayıcı ve doğrulayıcı faktör analizinde KMO, Bartlett, faktör sayısı, yük değerleri ve uyum indekslerinin yorumu.",
+    intro: "Ölçek geliştiriyor, uyarlıyor ya da hazır bir ölçeğin yapısını kendi örnekleminizde sınıyorsanız faktör analizi çalışmanızın en çok soru getiren bölümü olabilir. Hangi analizin gerektiği, çıktıda nereye bakılacağı ve sonucun tabloya nasıl geçeceği görüşmemizin konusu.",
     waText: "Merhaba, faktör analizi (AFA/DFA) hakkında ön görüşme istiyorum.",
     sections: [
       {
@@ -28,8 +28,8 @@ export const analizler: AnalysisPage[] = [
         text: "Açımlayıcı faktör analizi (AFA), maddelerin kaç boyut altında toplandığını bilmediğiniz ya da yapıyı ilk kez incelediğiniz durumlarda kullanılır. Doğrulayıcı faktör analizi (DFA) ise önceden tanımlanmış bir yapının verinize uyup uymadığını sınar. Uyarlama çalışmalarında çoğu zaman DFA beklenir; yeni geliştirilen ölçeklerde AFA ile başlanıp farklı bir örneklemde DFA yapılması yaygındır. Hangisinin sizin çalışmanıza uyduğunu araştırma deseniniz ve danışmanınızın beklentisi belirler.",
       },
       {
-        title: "AFA çıktısında birlikte baktığımız değerler",
-        text: "SPSS çıktısı uzun olduğu için hangi tablonun neyi söylediğini sırayla ele alıyoruz.",
+        title: "AFA çıktısında nereye bakılır?",
+        text: "SPSS çıktısı uzun; tabloları şu sırayla okumak işi kolaylaştırır.",
         items: [
           "KMO örneklem yeterliliği ve Bartlett küresellik testi.",
           "Faktör sayısına karar vermek için öz değerler, yamaç grafiği ve gerekirse paralel analiz.",
@@ -40,7 +40,7 @@ export const analizler: AnalysisPage[] = [
       },
       {
         title: "DFA'da modeli ve uyumu yorumlama",
-        text: "DFA'da yalnız uyum indekslerini listelemek yetmez; standartlaştırılmış yüklerin, hata varyanslarının ve varsa modifikasyon önerilerinin kuramsal olarak savunulabilir olması gerekir. χ²/sd, CFI, TLI, RMSEA ve SRMR değerlerini hangi ölçütlere göre yorumladığınızı kaynağıyla birlikte yazmanız, jüri sorularına da hazırlık sağlar.",
+        text: "DFA'da yalnız uyum indekslerini listelemek yetmez; standartlaştırılmış yüklerin, hata varyanslarının ve varsa modifikasyon önerilerinin kuramsal olarak savunulabilir olması gerekir. χ²/sd, CFI, TLI, RMSEA ve SRMR değerlerini hangi ölçüte göre yorumladığınızı kaynağıyla yazarsanız jüride gelecek sorunun cevabı da hazır olur.",
       },
       {
         title: "Ön görüşmeye hazırlamanız gerekenler",
@@ -56,7 +56,7 @@ export const analizler: AnalysisPage[] = [
     faqs: [
       { q: "Örneklemim faktör analizi için yeterli mi?", a: "Kaynaklarda madde başına katılımcı oranı ve mutlak örneklem büyüklüğü için farklı ölçütler önerilir. Ölçeğinizdeki madde sayısını ve veri dosyanızı görerek bu ölçütlerin sizin çalışmanızda nasıl gerekçelendirileceğini konuşuruz." },
       { q: "DFA için hangi program kullanılıyor?", a: "DFA genellikle AMOS gibi yapısal eşitlik modeli programlarında yapılır. Kurumunuzun veya danışmanınızın tercih ettiği programı ön görüşmede belirleriz." },
-      { q: "Madde çıkarmak zorunda kalırsam ne yapmalıyım?", a: "Madde çıkarma kararı istatistiksel değerlerle birlikte kuramsal yapıyı da gözetmelidir. Hangi maddelerin neden sorun çıkardığını çıktınız üzerinden birlikte inceleyip kararın raporda nasıl açıklanacağını ele alırız." },
+      { q: "Madde çıkarmak zorunda kalırsam ne yapmalıyım?", a: "Bu karar yalnız istatistiğe bakılarak verilmez, kuramsal yapı da hesaba katılır. Çıktınızda hangi maddenin neden sorun çıkardığına bakıp kararın raporda nasıl anlatılacağını konuşuruz." },
     ],
     guides: ["afa-kmo-bartlett", "dfa-uyum-indeksleri"],
   },
@@ -65,7 +65,7 @@ export const analizler: AnalysisPage[] = [
     title: "AMOS ve Yapısal Eşitlik Modeli (YEM) Danışmanlığı",
     seoTitle: "AMOS ve Yapısal Eşitlik Modeli Danışmanlığı",
     description: "AMOS ile ölçüm modeli, yapısal model, uyum indeksleri ve dolaylı etkilerin yorumlanması için danışmanlık. İlk görüşme ücretsiz.",
-    intro: "Yapısal eşitlik modeli, birden fazla gizil değişken arasındaki ilişkileri aynı model içinde sınamanızı sağlar. Model çiziminden uyum değerlerinin yorumuna kadar her adımın bir gerekçesi olması gerekir. Modelinizi kuramsal çerçevenizle birlikte ele alıyoruz.",
+    intro: "Yapısal eşitlik modeli, birden fazla gizil değişken arasındaki ilişkileri aynı model içinde sınamanızı sağlar. Model çiziminden uyum değerlerine kadar her adımı gerekçesiyle yazmanız beklenir. Modeli kuramsal çerçevenizden kopmadan kuruyoruz.",
     waText: "Merhaba, AMOS ve yapısal eşitlik modeli hakkında ön görüşme istiyorum.",
     sections: [
       {
@@ -73,8 +73,8 @@ export const analizler: AnalysisPage[] = [
         text: "YEM çalışmalarında yaygın yaklaşım, önce her ölçeğin ölçüm modelini (DFA) sınamak, ardından değişkenler arası yolları içeren yapısal modele geçmektir. Ölçüm modeli kabul edilebilir değilse yapısal modelden elde edilen katsayılar da güvenilir yorumlanamaz. Bu sırayı raporunuzda açıkça göstermeniz önemlidir.",
       },
       {
-        title: "Model üzerinde birlikte çalıştığımız konular",
-        text: "Danışmanlık kapsamını çalışmanızın aşamasına göre belirliyoruz.",
+        title: "Hangi konularda destek alabilirsiniz?",
+        text: "Kapsam, çalışmanızın hangi aşamada olduğuna göre değişir.",
         items: [
           "Hipotezlerin yol diyagramına dönüştürülmesi.",
           "Uyum indekslerinin (χ²/sd, CFI, TLI, RMSEA, SRMR) yorumu.",
@@ -108,8 +108,8 @@ export const analizler: AnalysisPage[] = [
         text: "Bağımlı değişken sürekli ise doğrusal (basit veya çoklu) regresyon, iki kategorili ise lojistik regresyon düşünülür. Değişkenleri aşamalı olarak eklemek istiyorsanız hiyerarşik regresyon uygun olabilir. Model seçimi; değişkenlerin ölçek türüne, hipotezlerinize ve örneklem büyüklüğünüze göre yapılır.",
       },
       {
-        title: "Çıktıda birlikte incelediğimiz noktalar",
-        text: "Raporunuza geçmeden önce aşağıdaki başlıkları tek tek kontrol ediyoruz.",
+        title: "Çıktıda kontrol edilenler",
+        text: "Bulguları yazmaya geçmeden önce şunlara bakılır:",
         items: [
           "Doğrusallık, artıkların normalliği ve eşit varyans varsayımları.",
           "Çoklu bağlantı (VIF ve tolerans değerleri).",
@@ -125,7 +125,7 @@ export const analizler: AnalysisPage[] = [
       },
     ],
     faqs: [
-      { q: "Kategorik değişkenleri regresyona nasıl eklerim?", a: "İkiden fazla kategorili değişkenler genellikle kukla (dummy) değişkenlere dönüştürülür. Hangi kategorinin referans alınacağı yorumu değiştirir; bunu hipotezinize göre birlikte belirleriz." },
+      { q: "Kategorik değişkenleri regresyona nasıl eklerim?", a: "İkiden fazla kategorili değişkenler genellikle kukla (dummy) değişkenlere dönüştürülür. Hangi kategorinin referans alınacağı yorumu değiştirir; seçimi hipotezinize göre yaparız." },
       { q: "R² değerim düşük çıktı, analiz geçersiz mi?", a: "Düşük R² tek başına analizin geçersiz olduğu anlamına gelmez; alanın doğasına ve araştırma sorusuna göre yorumlanır. Bulguyu nasıl raporlayacağınızı ve sınırlılıklarda nasıl ele alacağınızı konuşuruz." },
     ],
     guides: ["normallik-testi-parametrik-secim", "spss-tablolari-apa-raporlama"],
@@ -159,8 +159,8 @@ export const analizler: AnalysisPage[] = [
       },
     ],
     faqs: [
-      { q: "Birden fazla aracı değişkenim var, aynı modelde sınanabilir mi?", a: "Paralel ya da sıralı aracılık modelleriyle sınanabilir. Hangi modelin hipotezlerinize uyduğunu araştırma modelinizin şekli üzerinden birlikte belirleriz." },
-      { q: "Dolaylı etki anlamlı, doğrudan etki anlamsız çıktı. Bu ne demek?", a: "Bu tablo genellikle tam aracılık olarak yorumlanır. Ancak yorumun örneklem büyüklüğü ve kuramsal beklentiyle birlikte yapılması gerekir; raporda nasıl ifade edileceğini konuşuruz." },
+      { q: "Birden fazla aracı değişkenim var, aynı modelde sınanabilir mi?", a: "Paralel ya da sıralı aracılık modelleriyle sınanabilir. Hangisinin uygun olduğu araştırma modelinizin şeklinden anlaşılır." },
+      { q: "Dolaylı etki anlamlı, doğrudan etki anlamsız çıktı. Bu ne demek?", a: "Bu tablo genellikle tam aracılık olarak yorumlanır. Yine de örneklem büyüklüğünü ve kuramsal beklentiyi hesaba katmadan bu sonuca varılmaz. Raporda nasıl ifade edeceğinizi görüşmede konuşuruz." },
     ],
     guides: ["araci-etki-process"],
   },
@@ -169,7 +169,7 @@ export const analizler: AnalysisPage[] = [
     title: "t-Testi, ANOVA ve Fark Testleri Danışmanlığı",
     seoTitle: "t-Testi ve ANOVA Danışmanlığı (SPSS)",
     description: "Bağımsız ve eşleştirilmiş t-testi, ANOVA, Mann-Whitney U ve Kruskal-Wallis testlerinde seçim, varsayım ve post hoc yorumu.",
-    intro: "Gruplar arasında fark olup olmadığını sınamak tez ve makalelerde en sık yapılan analizlerdendir. Ancak doğru testi seçmek; grup sayısına, ölçümün türüne ve verinin dağılımına bağlıdır. Hangi testi neden seçtiğinizi gerekçesiyle yazabilmeniz için birlikte çalışıyoruz.",
+    intro: "Gruplar arasında fark olup olmadığını sınamak tez ve makalelerde en sık yapılan analizlerdendir. Doğru test ise grup sayısına, ölçümün türüne ve verinin dağılımına göre değişir. Amaç, seçtiğiniz testi gerekçesiyle anlatabilmeniz.",
     waText: "Merhaba, t-testi/ANOVA analizleri hakkında ön görüşme istiyorum.",
     sections: [
       {
@@ -188,12 +188,12 @@ export const analizler: AnalysisPage[] = [
       },
       {
         title: "Bulguyu yazarken",
-        text: "Tabloda grup ortalamaları ve standart sapmalarla birlikte test istatistiği, serbestlik derecesi ve p değeri yer almalıdır. Metinde ise yalnız anlamlılığı değil, farkın yönünü de belirtin: hangi grubun ortalaması daha yüksek?",
+        text: "Tabloda grup ortalamaları ve standart sapmaların yanında test istatistiği, serbestlik derecesi ve p değeri yer almalıdır. Metinde ise yalnız anlamlılığı değil, farkın yönünü de belirtin: hangi grubun ortalaması daha yüksek?",
       },
     ],
     faqs: [
-      { q: "Örneklemim küçük, parametrik test kullanabilir miyim?", a: "Küçük örneklemlerde normallik varsayımını dikkatle incelemek gerekir. Varsayım karşılanmıyorsa parametrik olmayan karşılığını kullanmak daha savunulabilir olur; kararı verinize bakarak birlikte veririz." },
-      { q: "ANOVA anlamlı, post hoc testte fark çıkmadı. Ne yazmalıyım?", a: "Bu durum özellikle sınırda p değerlerinde görülebilir. Bulguyu olduğu gibi raporlayıp yorumunu temkinli yapmak gerekir; ifadeyi çıktınıza göre birlikte netleştiririz." },
+      { q: "Örneklemim küçük, parametrik test kullanabilir miyim?", a: "Küçük örneklemlerde normallik varsayımını dikkatle incelemek gerekir. Varsayım karşılanmıyorsa parametrik olmayan karşılığı daha kolay savunulur. Kararı verinize bakarak veririz." },
+      { q: "ANOVA anlamlı, post hoc testte fark çıkmadı. Ne yazmalıyım?", a: "Bu durum özellikle sınırda p değerlerinde görülebilir. Bulguyu olduğu gibi raporlayıp temkinli yorumlamak gerekir. Cümlenin nasıl kurulacağı çıktınıza bağlı." },
     ],
     guides: ["normallik-testi-parametrik-secim", "spss-tablolari-apa-raporlama"],
   },
@@ -225,7 +225,7 @@ export const analizler: AnalysisPage[] = [
       },
     ],
     faqs: [
-      { q: "Alfa değerim .60 çıktı, ölçeği kullanabilir miyim?", a: "Kabul sınırları alana ve ölçeğin amacına göre tartışılır; madde sayısı da alfayı etkiler. Değeri nasıl yorumlayacağınızı ve sınırlılıklarda nasıl ele alacağınızı birlikte değerlendiririz." },
+      { q: "Alfa değerim .60 çıktı, ölçeği kullanabilir miyim?", a: "Kabul sınırları alana ve ölçeğin amacına göre tartışılır; madde sayısı da alfayı etkiler. Değerin nasıl yorumlanacağı ve sınırlılıklarda nasıl yazılacağı çalışmanıza göre değişir." },
       { q: "Ölçek kullanım izni gerekli mi?", a: "Birçok ölçek için geliştiren ya da uyarlayan yazardan izin istenir. İzin süreci size aittir; ön görüşmede hangi belgelerin gerektiğini hatırlatırız." },
     ],
     guides: ["cronbach-alfa-yorumlama", "afa-kmo-bartlett"],
@@ -249,7 +249,7 @@ export const analizler: AnalysisPage[] = [
           "Beklenen değeri 5'in altında kalan hücre oranı kontrol edilmelidir.",
           "2x2 tablolarda gerekirse Fisher'in kesin testi kullanılır.",
           "İlişkinin gücü için phi ya da Cramer's V raporlanır.",
-          "Tabloda sayılarla birlikte satır veya sütun yüzdeleri verilir.",
+          "Tabloda sayıların yanında satır veya sütun yüzdeleri verilir.",
         ],
       },
       {
@@ -258,8 +258,8 @@ export const analizler: AnalysisPage[] = [
       },
     ],
     faqs: [
-      { q: "Çok sayıda korelasyonu tek tabloda verebilir miyim?", a: "Evet, korelasyon matrisi yaygın bir raporlama biçimidir. Tabloda ortalama ve standart sapmaları da vermek okuru rahatlatır; düzeni APA'ya göre birlikte kurarız." },
-      { q: "Beklenen değer koşulu sağlanmıyorsa ne yapılır?", a: "Kategorileri anlamlı biçimde birleştirmek ya da kesin test kullanmak seçenekler arasındadır. Hangisinin araştırma sorunuzu bozmadan uygulanabileceğini birlikte değerlendiririz." },
+      { q: "Çok sayıda korelasyonu tek tabloda verebilir miyim?", a: "Evet, korelasyon matrisi yaygın bir raporlama biçimidir. Ortalama ve standart sapmaları da aynı tabloya koymak okuru rahatlatır. Düzen APA'ya göre kurulur." },
+      { q: "Beklenen değer koşulu sağlanmıyorsa ne yapılır?", a: "Kategorileri anlamlı biçimde birleştirmek ya da kesin test kullanmak seçenekler arasındadır. Hangisinin araştırma sorunuzu bozmadığına verinize bakarak karar veririz." },
     ],
     guides: ["normallik-testi-parametrik-secim", "spss-tablolari-apa-raporlama"],
   },
@@ -268,7 +268,7 @@ export const analizler: AnalysisPage[] = [
     title: "Nitel Veri Analizi Danışmanlığı",
     seoTitle: "Nitel Veri Analizi: Tematik ve İçerik Analizi",
     description: "Görüşme ve doküman verilerinde kodlama, tema oluşturma, tematik ve içerik analizi ile bulguların raporlanması için danışmanlık.",
-    intro: "Görüşme, odak grup ya da doküman verisiyle çalışıyorsanız analiz sürecinin şeffaf ve izlenebilir olması gerekir. Kodların nasıl oluştuğunu, temalara nasıl ulaşıldığını ve alıntıların nasıl seçildiğini gerekçesiyle anlatabilmeniz için birlikte çalışıyoruz.",
+    intro: "Görüşme, odak grup ya da doküman verisiyle çalışıyorsanız analiz sürecinin şeffaf ve izlenebilir olması gerekir. Kodların nereden çıktığını, temalara nasıl varıldığını ve alıntıları neden seçtiğinizi anlatabilmeniz gerekir.",
     waText: "Merhaba, nitel veri analizi hakkında ön görüşme istiyorum.",
     sections: [
       {
@@ -276,7 +276,7 @@ export const analizler: AnalysisPage[] = [
         text: "Tematik analiz, verideki anlam örüntülerini temalar hâlinde ortaya koyar. İçerik analizi ise belirli kategorilerin veride ne sıklıkla ve nasıl yer aldığına odaklanabilir. Hangi yaklaşımın seçildiği araştırma sorusuna ve nitel desene (olgubilim, durum çalışması vb.) bağlıdır.",
       },
       {
-        title: "Birlikte ele aldığımız adımlar",
+        title: "Analiz süreci",
         text: "Veriler toplanmış ve yazıya geçirilmiş olmalıdır; görüşme yapmak ya da veri toplamak hizmet kapsamında değildir.",
         items: [
           "Dökümlerin okunması ve ilk kodlama planı.",
@@ -293,7 +293,7 @@ export const analizler: AnalysisPage[] = [
     ],
     faqs: [
       { q: "Nitel analiz için program kullanmak zorunlu mu?", a: "Zorunlu değildir; MAXQDA veya NVivo gibi programlar kodlamayı düzenli tutmaya yardım eder. Hangi yolu izleyeceğinizi veri miktarınıza ve kurumunuzun beklentisine göre belirleriz." },
-      { q: "Kaç görüşme yeterli?", a: "Nitel çalışmalarda yeterlilik, veri doygunluğu ve desenin gereklerine göre tartışılır. Kendi çalışmanız için bunun yöntem bölümünde nasıl gerekçelendirileceğini birlikte ele alırız." },
+      { q: "Kaç görüşme yeterli?", a: "Nitel çalışmalarda yeterlilik, veri doygunluğu ve desenin gereklerine göre tartışılır. Kendi çalışmanızda bunu yöntem bölümünde nasıl gerekçelendireceğinizi görüşmede konuşuruz." },
     ],
     guides: ["tematik-analiz-adimlari"],
     need: "Kapsamı birlikte belirleyelim",
@@ -303,12 +303,12 @@ export const analizler: AnalysisPage[] = [
     title: "Çok Kriterli Karar Verme Danışmanlığı (AHP, TOPSIS, DEMATEL)",
     seoTitle: "AHP, TOPSIS ve DEMATEL Analizi Danışmanlığı",
     description: "AHP, TOPSIS, DEMATEL, ENTROPİ ve CRITIC yöntemlerinde kriter ağırlıkları, tutarlılık oranı, sıralama ve raporlama için danışmanlık.",
-    intro: "Birden fazla kritere göre alternatifleri karşılaştırdığınız çalışmalarda (tedarikçi seçimi, yer seçimi, performans sıralaması gibi) çok kriterli karar verme yöntemleri kullanılır. Hangi yöntemin araştırma sorunuza uyduğunu, ağırlıkların nasıl belirleneceğini ve sonuçların nasıl yorumlanacağını birlikte planlıyoruz.",
+    intro: "Birden fazla kritere göre alternatifleri karşılaştırdığınız çalışmalarda (tedarikçi seçimi, yer seçimi, performans sıralaması gibi) çok kriterli karar verme yöntemleri kullanılır. Yöntem seçimi, ağırlıkların belirlenmesi ve sonuçların yorumu planlamanın ana başlıkları.",
     waText: "Merhaba, AHP/TOPSIS gibi çok kriterli karar verme analizleri hakkında ön görüşme istiyorum.",
     sections: [
       {
         title: "Hangi yöntem neye cevap verir?",
-        text: "Bu yöntemlerin bir kısmı kriterlerin ağırlığını belirler, bir kısmı alternatifleri sıralar. Çalışmalarda çoğu zaman bir ağırlıklandırma yöntemi ile bir sıralama yöntemi birlikte kullanılır.",
+        text: "Bu yöntemlerin bir kısmı kriterlerin ağırlığını belirler, bir kısmı alternatifleri sıralar. Tezlerde çoğu zaman ikisi bir arada kullanılır: biri ağırlığı bulur, diğeri sıralar.",
         items: [
           "AHP: Uzman ikili karşılaştırmalarıyla kriter ağırlıklarını belirler; tutarlılık oranı hesaplanır.",
           "ENTROPİ ve CRITIC: Ağırlıkları uzman görüşü yerine verinin kendisinden hesaplar.",
@@ -317,8 +317,8 @@ export const analizler: AnalysisPage[] = [
         ],
       },
       {
-        title: "Birlikte ele aldığımız adımlar",
-        text: "Kapsamı çalışmanızın aşamasına göre belirliyoruz.",
+        title: "Hangi adımlarda destek alabilirsiniz?",
+        text: "Kapsam çalışmanın aşamasına göre belirlenir.",
         items: [
           "Kriterlerin ve alternatiflerin literatüre dayanarak tanımlanması.",
           "Uzman görüşü gerekiyorsa karşılaştırma formunun yapısı (formu uzmanlara siz uygularsınız).",
@@ -329,12 +329,12 @@ export const analizler: AnalysisPage[] = [
       },
       {
         title: "Raporda dikkat edilmesi gerekenler",
-        text: "Hakemler bu çalışmalarda en çok yöntem seçiminin gerekçesini ve hesaplamaların izlenebilirliğini sorar. Karar matrisini, normalizasyon yöntemini ve ağırlıkları tablo hâlinde vermek, okurun sonuca nasıl ulaşıldığını görmesini sağlar.",
+        text: "Hakemler bu çalışmalarda en çok yöntem seçiminin gerekçesini ve hesaplamaların izlenebilirliğini sorar. Karar matrisini, normalizasyon yöntemini ve ağırlıkları tablo olarak verirseniz okur sonuca nasıl varıldığını adım adım görebilir.",
       },
     ],
     faqs: [
-      { q: "Kaç uzman görüşü gerekir?", a: "Kesin bir sayı yoktur; alanyazında farklı uygulamalar bulunur. Uzman sayısını ve seçim ölçütlerini yöntem bölümünde nasıl gerekçelendireceğinizi birlikte konuşuruz." },
-      { q: "Farklı yöntemler farklı sıralama verirse ne olur?", a: "Bu durum sık görülür. Sonuçları karşılaştırıp farkın nereden kaynaklandığını açıklamak, çalışmanın değerini artırır." },
+      { q: "Kaç uzman görüşü gerekir?", a: "Kesin bir sayı yoktur; alanyazında farklı uygulamalar bulunur. Uzman sayısını ve seçim ölçütlerini yöntem bölümünde nasıl gerekçelendireceğinizi konuşuruz." },
+      { q: "Farklı yöntemler farklı sıralama verirse ne olur?", a: "Bu durum sık görülür. Farkın nereden geldiğini açıklarsanız tartışma bölümüne de malzeme çıkar." },
     ],
     guides: ["ahp-topsis-nedir"],
     need: "Kapsamı birlikte belirleyelim",
@@ -344,7 +344,7 @@ export const analizler: AnalysisPage[] = [
     title: "Veri Zarflama Analizi (VZA) Danışmanlığı",
     seoTitle: "Veri Zarflama Analizi (VZA/DEA) Danışmanlığı",
     description: "VZA (DEA) ile etkinlik ölçümü: girdi-çıktı seçimi, CCR ve BCC modelleri, ölçek etkinliği, Malmquist endeksi ve raporlama.",
-    intro: "Veri zarflama analizi, benzer işi yapan birimlerin (hastane, okul, banka şubesi, belediye gibi) birden fazla girdi ve çıktıyı birlikte dikkate alarak ne kadar etkin çalıştığını ölçer. Girdi ve çıktıların seçimi sonucu doğrudan belirlediği için bu adımı birlikte planlıyoruz.",
+    intro: "Veri zarflama analizi, benzer işi yapan birimlerin (hastane, okul, banka şubesi, belediye gibi) birden fazla girdi ve çıktıyı aynı anda hesaba katarak ne kadar etkin çalıştığını ölçer. Sonucu en çok etkileyen şey girdi ve çıktıların seçimi, bu yüzden işe oradan başlıyoruz.",
     waText: "Merhaba, veri zarflama analizi (VZA) hakkında ön görüşme istiyorum.",
     sections: [
       {
@@ -363,12 +363,12 @@ export const analizler: AnalysisPage[] = [
       },
       {
         title: "Sonuçların raporlanması",
-        text: "Etkinlik skorlarıyla birlikte etkin olmayan birimler için referans kümeleri ve hedef değerler raporlanır. Ölçek etkinliği, toplam etkinliğin teknik ve ölçek kaynaklı bölümlerini ayırmaya yardım eder.",
+        text: "Etkinlik skorlarının yanında etkin olmayan birimler için referans kümeleri ve hedef değerler raporlanır. Ölçek etkinliği, toplam etkinliğin teknik ve ölçek kaynaklı bölümlerini ayırmaya yardım eder.",
       },
     ],
     faqs: [
-      { q: "Verileri ben mi toplamalıyım?", a: "Evet. Analiz, sizin derlediğiniz veya kamuya açık kaynaklardan aldığınız veri üzerinde yapılır. Hangi değişkenlerin uygun olduğunu ön görüşmede konuşuruz." },
-      { q: "Negatif değerli değişkenler kullanılabilir mi?", a: "Klasik VZA modelleri pozitif değer ister. Negatif değerler için farklı yaklaşımlar vardır; verinize göre birlikte değerlendiririz." },
+      { q: "Verileri ben mi toplamalıyım?", a: "Evet. Analiz, sizin derlediğiniz veya kamuya açık kaynaklardan aldığınız veri üzerinde yapılır. Hangi değişkenlerin uygun olduğuna ön görüşmede bakarız." },
+      { q: "Negatif değerli değişkenler kullanılabilir mi?", a: "Klasik VZA modelleri pozitif değer ister. Negatif değerler için başka yaklaşımlar var; hangisinin uygun olduğu verinize bağlı." },
     ],
     guides: [],
     note: "Analiz, sizin derlediğiniz veri üzerinde yürütülür; veri toplama hizmeti verilmez. Çalışmanın yazarı sizsiniz.",
@@ -387,8 +387,8 @@ export const analizler: AnalysisPage[] = [
         text: "Havuzlanmış, sabit etkiler ve rassal etkiler modelleri arasındaki seçim F testi, Breusch-Pagan LM testi ve Hausman testi gibi sınamalarla yapılır. Ardından değişen varyans, otokorelasyon ve yatay kesit bağımlılığı incelenir; bu sorunlar varsa dirençli tahmin yöntemleri kullanılır.",
       },
       {
-        title: "Birlikte ele aldığımız konular",
-        text: "Çalışmanızın sorusuna göre aşağıdaki adımları planlıyoruz.",
+        title: "Model seçiminden sonra",
+        text: "Araştırma sorunuza göre şu analizler de gerekebilir:",
         items: [
           "Yatay kesit bağımlılığı ve eğim homojenliği testleri.",
           "Birinci ve ikinci kuşak panel birim kök testleri.",
@@ -403,7 +403,7 @@ export const analizler: AnalysisPage[] = [
       },
     ],
     faqs: [
-      { q: "Dengesiz panel verisi kullanılabilir mi?", a: "Birçok yöntem dengesiz panelle çalışabilir; bazı testler ise dengeli panel ister. Verinizin yapısına göre uygun testleri birlikte seçeriz." },
+      { q: "Dengesiz panel verisi kullanılabilir mi?", a: "Birçok yöntem dengesiz panelle çalışabilir; bazı testler ise dengeli panel ister. Testler verinizin yapısına göre seçilir." },
       { q: "Kaç dönem ve kaç birim gerekir?", a: "Gereken büyüklük, kullanılacak yönteme bağlıdır. Zaman boyutu kısa ve birim sayısı fazla olan paneller ile tersi farklı yöntemler gerektirir." },
     ],
     guides: [],
@@ -423,8 +423,8 @@ export const analizler: AnalysisPage[] = [
         text: "Birim kök testleri (ADF, PP, KPSS gibi) serilerin düzeyde mi yoksa farkı alındığında mı durağan olduğunu gösterir. Seriler farklı düzeylerde durağansa Pesaran, Shin ve Smith'in (2001) ARDL sınır testi yaklaşımı sık tercih edilir. Tüm seriler birinci farkta durağansa Johansen eşbütünleşme testi de seçenekler arasındadır.",
       },
       {
-        title: "Birlikte ele aldığımız konular",
-        text: "Analiz planını hipotezlerinize göre kuruyoruz.",
+        title: "Analiz planında neler var?",
+        text: "Plan hipotezlerinize göre kurulur; çoğu çalışmada şu başlıklar yer alır:",
         items: [
           "Birim kök testleri ve yapısal kırılmalı birim kök testleri.",
           "ARDL sınır testi, uzun ve kısa dönem katsayıları, hata düzeltme terimi.",
@@ -435,11 +435,11 @@ export const analizler: AnalysisPage[] = [
       },
       {
         title: "Raporlama",
-        text: "Test sonuçlarını tablo hâlinde verip her kararın hangi teste dayandığını yöntem bölümünde açıklamak, okurun ve hakemin analizi izlemesini kolaylaştırır.",
+        text: "Test sonuçlarını tablo olarak verin ve her kararın hangi teste dayandığını yöntem bölümünde yazın. Hakem bir adımı sorarsa cevabı metinde bulur.",
       },
     ],
     faqs: [
-      { q: "Kaç gözlem gerekir?", a: "Yöntem ve değişken sayısına göre değişir; kısa serilerde bazı testlerin gücü düşer. Veri aralığınızı görerek uygun yaklaşımı konuşuruz." },
+      { q: "Kaç gözlem gerekir?", a: "Yöntem ve değişken sayısına göre değişir; kısa serilerde bazı testlerin gücü düşer. Uygun yaklaşım, elinizdeki veri aralığına göre seçilir." },
       { q: "Verileri nereden almalıyım?", a: "Veriyi siz derlersiniz; çoğu çalışmada resmî istatistik kurumlarının ve uluslararası kuruluşların açık veri tabanları kullanılır." },
     ],
     guides: [],
@@ -456,7 +456,7 @@ export const analizler: AnalysisPage[] = [
     sections: [
       {
         title: "ROC analizi ve kesim noktası",
-        text: "ROC eğrisi, bir testin veya ölçümün hastayı hasta olmayandan ayırma başarısını gösterir. Eğri altındaki alan (AUC) bu başarının özetidir (Hanley ve McNeil, 1982). Kesim noktası belirlenirken duyarlılık ve özgüllük birlikte değerlendirilir; Youden indeksi sık kullanılan ölçütlerdendir.",
+        text: "ROC eğrisi, bir testin veya ölçümün hastayı hasta olmayandan ayırma başarısını gösterir. Eğri altındaki alan (AUC) bu başarının özetidir (Hanley ve McNeil, 1982). Kesim noktası belirlenirken duyarlılığa ve özgüllüğe aynı anda bakılır; Youden indeksi sık kullanılan ölçütlerdendir.",
       },
       {
         title: "Sağkalım analizi",
@@ -474,7 +474,7 @@ export const analizler: AnalysisPage[] = [
       },
     ],
     faqs: [
-      { q: "Retrospektif dosya verisiyle çalışıyorum, uygun mu?", a: "Evet, retrospektif verilerle de bu analizler yapılabilir. Eksik veri ve izlem süresi bilgilerinin nasıl kodlandığını ön görüşmede birlikte kontrol ederiz." },
+      { q: "Retrospektif dosya verisiyle çalışıyorum, uygun mu?", a: "Evet, retrospektif verilerle de bu analizler yapılabilir. Eksik verinin ve izlem süresinin nasıl kodlandığına ön görüşmede bakarız." },
       { q: "Örneklem büyüklüğünü nasıl hesaplarım?", a: "Güç analiziyle hesaplanır. Ayrıntılar için örneklem büyüklüğü ve güç analizi sayfamıza bakabilirsiniz." },
     ],
     guides: ["orneklem-buyuklugu-hesaplama"],
@@ -484,7 +484,7 @@ export const analizler: AnalysisPage[] = [
     title: "Örneklem Büyüklüğü ve G*Power Güç Analizi",
     seoTitle: "Örneklem Büyüklüğü ve G*Power Güç Analizi",
     description: "Tez önerisi ve etik kurul başvurusu için G*Power ile örneklem büyüklüğü hesabı: etki büyüklüğü, alfa, güç ve raporlama.",
-    intro: "Tez önerisi ve etik kurul başvurusunda örneklem büyüklüğünün nasıl belirlendiği sorulur. Güç analizi bu sorunun en savunulabilir cevabıdır. Planladığınız analize göre doğru hesaplama türünü seçip sonucu nasıl yazacağınızı birlikte ele alıyoruz.",
+    intro: "Tez önerisi ve etik kurul başvurusunda örneklem büyüklüğünün nasıl belirlendiği sorulur. Güç analizi bu sorunun en savunulabilir cevabıdır. Hesaplama türü planladığınız analize göre seçilir; sonucun yöntem bölümüne nasıl yazılacağı da en az hesap kadar önemli.",
     waText: "Merhaba, örneklem büyüklüğü/güç analizi hakkında ön görüşme istiyorum.",
     sections: [
       {
@@ -499,7 +499,7 @@ export const analizler: AnalysisPage[] = [
       },
       {
         title: "G*Power ile hesaplama",
-        text: "G*Power, Faul ve arkadaşlarının (2007) tanıttığı ücretsiz bir programdır ve tez çalışmalarında en sık kullanılan araçtır. Doğru test ailesini ve analiz türünü seçmek sonucu doğrudan değiştirir; bu yüzden hesaplamayı analiz planınızla birlikte yapıyoruz.",
+        text: "G*Power, Faul ve arkadaşlarının (2007) tanıttığı ücretsiz bir programdır ve tez çalışmalarında en sık kullanılan araçtır. Yanlış test ailesi ya da analiz türü seçilirse çıkan sayı da yanlış olur. Bu yüzden hesap, analiz planınıza bakılarak yapılır.",
       },
       {
         title: "Yöntem bölümünde yazımı",
@@ -507,7 +507,7 @@ export const analizler: AnalysisPage[] = [
       },
     ],
     faqs: [
-      { q: "Etki büyüklüğünü bilmiyorsam ne yapmalıyım?", a: "Benzer çalışmalardan hesaplanabilir ya da Cohen'in küçük-orta-büyük sınıflaması gerekçesiyle kullanılabilir. Hangisinin savunulabilir olduğunu çalışmanıza göre birlikte değerlendiririz." },
+      { q: "Etki büyüklüğünü bilmiyorsam ne yapmalıyım?", a: "Benzer çalışmalardan hesaplanabilir ya da Cohen'in küçük-orta-büyük sınıflaması gerekçesiyle kullanılabilir. Hangisinin daha kolay savunulacağı çalışmanıza göre değişir." },
       { q: "Ölçek geliştirme çalışmasında da güç analizi gerekir mi?", a: "Faktör analizi çalışmalarında örneklem genellikle farklı ölçütlerle gerekçelendirilir. Yöntem bölümünde hangi ölçütü kullanacağınızı konuşuruz." },
     ],
     guides: ["orneklem-buyuklugu-hesaplama", "etki-buyuklugu-raporlama"],
@@ -534,16 +534,16 @@ export const analizler: AnalysisPage[] = [
       },
       {
         title: "Kullanılan araçlar",
-        text: "VOSviewer ağ haritaları için, R tabanlı Bibliometrix paketi ve arayüzü Biblioshiny ise performans analizi ve tematik haritalar için yaygın olarak kullanılır. Hangi aracın kullanılacağını sorularınız belirler.",
+        text: "VOSviewer ağ haritaları için, R tabanlı Bibliometrix paketi ve arayüzü Biblioshiny ise performans analizi ve tematik haritalar için yaygın olarak kullanılır. Hangisinin kullanılacağı sorularınıza bağlı.",
       },
       {
         title: "Yorumlama",
-        text: "Ağ haritası tek başına bulgu değildir. Kümelerin hangi araştırma temalarını temsil ettiğini, zaman içinde nasıl değiştiğini ve alandaki boşlukları açıklamak, çalışmanın asıl katkısını oluşturur.",
+        text: "Haritayı koymak yetmez. Kümelerin hangi araştırma temalarına karşılık geldiğini, zamanla nasıl değiştiğini ve alanda nelerin az çalışıldığını anlatmak gerekir; çalışmanın katkısı bu yorumdan çıkar.",
       },
     ],
     faqs: [
-      { q: "Web of Science ve Scopus verisi birleştirilebilir mi?", a: "Birleştirilebilir, ancak alan biçimleri farklı olduğu için dikkatli temizlik gerekir. Tek veri tabanıyla mı, ikisiyle mi ilerleyeceğinizi sorularınıza göre belirleriz." },
-      { q: "Veri tabanına erişimim yoksa ne yapmalıyım?", a: "Kayıtlar genellikle üniversite erişimiyle indirilir. Erişim ve indirme sizin tarafınızda yapılır; dosyaların biçimini ön görüşmede konuşuruz." },
+      { q: "Web of Science ve Scopus verisi birleştirilebilir mi?", a: "Birleştirilebilir, ancak alan biçimleri farklı olduğu için dikkatli temizlik gerekir. Tek veri tabanıyla mı, ikisiyle mi ilerleneceği sorularınıza bağlı." },
+      { q: "Veri tabanına erişimim yoksa ne yapmalıyım?", a: "Kayıtlar genellikle üniversite erişimiyle indirilir. Erişim ve indirme sizde; hangi dosya biçiminin gerektiğini ön görüşmede söyleriz." },
     ],
     guides: ["bibliyometrik-analiz-adimlari"],
     note: "Analiz, sizin indirdiğiniz yayın kayıtları üzerinde yürütülür. Çalışmanın yazarı sizsiniz.",
@@ -554,7 +554,7 @@ export const analizler: AnalysisPage[] = [
     title: "Meta-Analiz ve Sistematik Derleme Danışmanlığı",
     seoTitle: "Meta-Analiz ve Sistematik Derleme Desteği",
     description: "PRISMA 2020'ye uygun sistematik derleme, etki büyüklüğü hesabı, heterojenlik, yayın yanlılığı ve orman grafiği yorumu.",
-    intro: "Meta-analiz, aynı soruyu inceleyen çalışmaların sonuçlarını istatistiksel olarak birleştirir. Sistematik derleme ise bu çalışmaların şeffaf ve tekrar edilebilir biçimde bulunup seçilmesini sağlar. İki aşamanın da raporlama standartlarına uygun yürütülmesi gerekir.",
+    intro: "Meta-analiz, aynı soruyu inceleyen çalışmaların sonuçlarını istatistiksel olarak birleştirir. Sistematik derleme ise bu çalışmaların şeffaf ve tekrar edilebilir biçimde bulunup seçilmesini sağlar. Hakemler iki aşamanın da raporlama standartlarına uygun olmasını bekler.",
     waText: "Merhaba, meta-analiz/sistematik derleme hakkında ön görüşme istiyorum.",
     sections: [
       {
@@ -585,8 +585,8 @@ export const analizler: AnalysisPage[] = [
       },
     ],
     faqs: [
-      { q: "Kaç çalışma gerekir?", a: "Meta-analiz teknik olarak az sayıda çalışmayla yapılabilir, ancak heterojenlik ve yayın yanlılığı analizleri için daha fazla çalışma gerekir. Alanınızdaki çalışma sayısını ön görüşmede birlikte değerlendiririz." },
-      { q: "Tarama ve veri çıkarmayı kim yapar?", a: "Tarama ve veri çıkarma sizin tarafınızda yapılır; ölçütleri, formu ve analizi birlikte planlarız." },
+      { q: "Kaç çalışma gerekir?", a: "Meta-analiz teknik olarak az sayıda çalışmayla yapılabilir, ancak heterojenlik ve yayın yanlılığı analizleri için daha fazla çalışma gerekir. Alanınızda kaç çalışma olduğuna ön görüşmede bakarız." },
+      { q: "Tarama ve veri çıkarmayı kim yapar?", a: "Tarama ve veri çıkarmayı siz yaparsınız. Ölçütler, veri çıkarma formu ve analiz planı danışmanlığın konusudur." },
     ],
     guides: ["etki-buyuklugu-raporlama"],
     note: "Analiz, sizin taradığınız ve seçtiğiniz yayımlanmış çalışmalar üzerinde yürütülür. Çalışmanın yazarı sizsiniz.",

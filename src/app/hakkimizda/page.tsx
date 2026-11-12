@@ -27,7 +27,7 @@ export default function Page() {
 
       <h2>Ne yapıyoruz?</h2>
       <p>
-        Öğrencinin kendi çalışmasını geliştirmesine yardımcı oluyoruz. Araştırma sorusunu netleştirmek, yöntemi planlamak, toplanmış veriyi analiz edip yorumlamak, metni kılavuza göre düzenlemek ve savunmaya hazırlanmak bu işlerin başında geliyor. Tüm akademik alanlardan çalışmalarla ilgileniyoruz.
+        Bütün süreç için de, yalnız takıldığınız bir aşama için de başvurabilirsiniz: araştırma sorusunu netleştirmek, toplanmış veriyi analiz edip yorumlamak, metni kılavuza uydurmak ya da savunmaya hazırlanmak gibi. Her durumda sizin çalışmanız üzerinden ilerliyoruz. Tüm akademik alanlardan çalışmalarla ilgileniyoruz.
       </p>
       <ul>
         <li><Link href="/tez-danismanligi" className="text-gold-400 underline">Tez danışmanlığı</Link> ve <Link href="/makale-danismanligi" className="text-gold-400 underline">makale danışmanlığı</Link></li>
@@ -36,7 +36,7 @@ export default function Page() {
         <li><Link href="/tubitak-proje-danismanligi" className="text-gold-400 underline">TÜBİTAK proje</Link>, bildiri, seminer ve sunum hazırlığı</li>
       </ul>
 
-      <h2>Ne yapmıyoruz?</h2>
+      <h2>Sınırlarımız</h2>
       <p>
         Hizmetimiz danışmanlık, eğitim ve editörlük niteliğindedir. Çalışmanın yazarı her zaman öğrencidir; öğrencinin yerine tez, makale veya ödev hazırlanmaz. Anket uygulama ya da veri toplama hizmeti de vermiyoruz. İstatistik desteği, sizin topladığınız veri üzerinde analiz, raporlama ve yorumlama ile sınırlıdır. Ayrıntılar <Link href="/etik-ilkeler" className="text-gold-400 underline">etik ilkelerimizde</Link>.
       </p>

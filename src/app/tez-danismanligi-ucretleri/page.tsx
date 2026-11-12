@@ -52,7 +52,7 @@ export default function Page() {
 
       <h2>Teklifleri karşılaştırırken</h2>
       <p>
-        Yalnız rakama bakmak yerine o rakamın neleri kapsadığını sorun. Kaç görüşme yapılacağı, revizyon taleplerinin nasıl karşılanacağı, dosyalarınızın nasıl saklanıp silineceği ve memnun kalmazsanız ne olacağı en az ücret kadar önemlidir. Bizim yaklaşımımızda aynı çalışma için ek revizyon talepleri ücretlendirilmez ve memnun kalmadığınızda ücretin tamamı iade edilir.
+        Yalnız rakama bakmak yerine o rakamın neleri kapsadığını sorun. Kaç görüşme yapılacağı, revizyon taleplerinin nasıl karşılanacağı, dosyalarınızın nasıl saklanıp silineceği ve memnun kalmazsanız ne olacağı da teklifin parçasıdır. Bizim yaklaşımımızda aynı çalışma için ek revizyon talepleri ücretlendirilmez ve memnun kalmadığınızda ücretin tamamı iade edilir.
       </p>
       <p>
         Hizmetimiz danışmanlık ve eğitim niteliğindedir; tezin yazarı sizsiniz. Kapsamın ayrıntıları için <Link href="/tez-danismanligi" className="text-gold-400 underline">tez danışmanlığı</Link> sayfasına bakabilirsiniz.

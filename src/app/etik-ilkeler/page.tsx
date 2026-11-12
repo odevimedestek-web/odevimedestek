@@ -13,7 +13,7 @@ export default function Page() {
   return (
     <PolicyLayout title="Etik İlkeler" crumbs={[{ name: "Etik İlkeler", path: "/etik-ilkeler" }]}>
       <p className="text-lg">
-        Akademik danışmanlıkta neyin yapılıp neyin yapılmadığı baştan açık olmalıdır. Aşağıdaki ilkeler, her çalışmada uyguladığımız sınırları anlatır.
+        Danışmanlığa başlamadan önce neyi yapıp neyi yapmadığımızı bilmeniz gerekir. Aşağıdaki ilkeler her çalışmada geçerli.
       </p>
 
       <h2>1. Çalışmanın yazarı sizsiniz</h2>

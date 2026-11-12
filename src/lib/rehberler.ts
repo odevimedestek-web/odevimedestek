@@ -24,12 +24,12 @@ export const rehberler: Guide[] = [
         title: "Dosyayla birlikte değişkenleri de açıklayın",
         text: "Analize hazırlıkta yalnızca sayıların bulunduğu dosyayı göndermek yerine, her değişkenin neyi temsil ettiğini açıklayan bir liste hazırlayın. IBM’in değişken özellikleri araçları; açıklayıcı etiketleri, değer etiketlerini ve eksik değer tanımlarını düzenlemeye imkân verir. Kullandığınız kodların anlamını baştan açık hale getirin.",
         items: ["Değişken adı ile anket sorusunun eşleşmesini yazın.", "Sayısal kategorilerin karşılığını belirtin; örneğin eğitim düzeyi için kullandığınız kodları açıklayın.", "Kullandığınız ölçeğin puanlama yönergesini dosyaya eşlik eden belgeler arasında tutun."],
-        source: { label: "IBM — Variable properties", href: "https://www.ibm.com/docs/en/spss-statistics/32.0.0?topic=preparation-variable-properties" },
+        source: { label: "IBM: Variable properties", href: "https://www.ibm.com/docs/en/spss-statistics/32.0.0?topic=preparation-variable-properties" },
       },
       {
         title: "Eksik yanıtları gerçek değerlerden ayırın",
         text: "IBM SPSS, sistem eksik değerleri ile kullanıcı tarafından tanımlanan eksik değerleri ayırır. Sayısal bir hücrede değer bulunmaması sistem eksik değeri oluşturur. Yanıtsız sorular için özel bir kod kullandıysanız bunu ayrıca belirtin; örneğin 99 kodunun gerçek bir ölçüm mü, yanıtsızlık mı olduğunu analizden önce netleştirin.",
-        source: { label: "IBM — Missing values", href: "https://www.ibm.com/docs/en/spss-statistics/30.0.0?topic=tables-missing-values" },
+        source: { label: "IBM: Missing values", href: "https://www.ibm.com/docs/en/spss-statistics/30.0.0?topic=tables-missing-values" },
       },
       {
         title: "Ön görüşmeye hazırlık listeniz",
@@ -50,13 +50,13 @@ export const rehberler: Guide[] = [
       {
         title: "Konu başlığını araştırma sorusuna dönüştürün",
         text: "Bir konu adı, neyi araştıracağınızı tek başına açıklamaz. Önerinizde hangi soruya cevap aradığınızı, bu sorunun neden araştırılmaya değer olduğunu ve nasıl cevaplanacağını anlatın. ANU’nun öneri rehberi de odağı bu üç soru üzerinden kurar. Konuyu daraltırken araştırmanın kapsamını ve ulaşabileceğiniz kaynakları birlikte değerlendirin.",
-        source: { label: "Australian National University — Focusing", href: "https://www.anu.edu.au/students/academic-skills/research-writing/research-proposals/focusing" },
+        source: { label: "Australian National University: Focusing", href: "https://www.anu.edu.au/students/academic-skills/research-writing/research-proposals/focusing" },
       },
       {
         title: "Kendi enstitünüzün formunu esas alın",
         text: "Öneri başlıkları disipline ve kurumun beklentilerine göre değişir. ANU’nun örnek yapısında araştırma soruları, literatür, yöntem, takvim ve kaynakça gibi bölümler bulunur. Bu başlıkları başka bir üniversitenin formuna aynen taşımak yerine, kendi formunuzun hangi bilgiyi istediğini kontrol edin.",
         items: ["Amaç bölümünde yanıtlanacak soruyu açıkça belirtin.", "Yöntemde hangi veriyi nasıl toplayacağınızı ve inceleyeceğinizi açıklayın.", "Takvimde kaynak tarama, veri toplama, analiz ve yazım aşamalarını planlayın."],
-        source: { label: "Australian National University — Structuring", href: "https://www.anu.edu.au/students/academic-skills/research-writing/research-proposals/structuring" },
+        source: { label: "Australian National University: Structuring", href: "https://www.anu.edu.au/students/academic-skills/research-writing/research-proposals/structuring" },
       },
       {
         title: "Teslim öncesinde kendinize sorun",
@@ -77,18 +77,18 @@ export const rehberler: Guide[] = [
       {
         title: "Önce kaynak türünü belirleyin",
         text: "Makale, kitap ve kitap bölümü aynı kaynakça düzeniyle yazılmaz. APA’nın resmî örnekleri kaynak türlerine göre ayrılır. Elinizdeki eserin türünü belirleyip ona uygun örneği kullanın; yalnız başlığa bakarak yayın bilgilerini tamamlamayın.",
-        source: { label: "APA Style — Reference examples", href: "https://apastyle.apa.org/style-grammar-guidelines/references/examples" },
+        source: { label: "APA Style: Reference examples", href: "https://apastyle.apa.org/style-grammar-guidelines/references/examples" },
       },
       {
         title: "Dergi makalesinde kontrol edilecek bilgiler",
         text: "Yazar, yıl, makale başlığı, dergi adı, cilt, sayı, sayfa aralığı veya makale numarası ve varsa DOI bilgisini yayının kendisinden kontrol edin. Dergi adı ve cilt numarası italik yazılır. DOI varsa bağlantı biçimi kullanılır. Aşağıdaki sıra bir alan şemasıdır; gerçek bir eser künyesi değildir.",
         items: ["Yazar → yıl → makale başlığı → dergi adı → cilt ve sayı → sayfalar veya makale numarası → varsa DOI."],
-        source: { label: "APA Style — Journal article references", href: "https://apastyle.apa.org/style-grammar-guidelines/references/examples/journal-article-references" },
+        source: { label: "APA Style: Journal article references", href: "https://apastyle.apa.org/style-grammar-guidelines/references/examples/journal-article-references" },
       },
       {
         title: "Kitapta yayınevi ve baskı bilgisi",
         text: "Yazarlı bir kitabın temel kaydı yazar, yıl, kitap adı ve yayınevinden oluşur. Kitap adı italik yazılır; varsa baskı bilgisi başlıktan sonra parantez içinde verilir. Yayınevinin bulunduğu şehir eklenmez. Kitabın DOI’si varsa kaydın sonunda yer alır. Editörlü kitap veya kitap bölümü için ilgili ayrı örneğe bakın.",
-        source: { label: "APA Style — Book/ebook references", href: "https://apastyle.apa.org/style-grammar-guidelines/references/examples/book-references" },
+        source: { label: "APA Style: Book/ebook references", href: "https://apastyle.apa.org/style-grammar-guidelines/references/examples/book-references" },
       },
       {
         title: "Son kontrolü belgeniz üzerinden yapın",
@@ -107,7 +107,7 @@ export const rehberler: Guide[] = [
       {
         title: "Dinleyicinin takip edeceği bir anlatım kurun",
         text: "MIT Communication Lab, savunma sunumlarında araştırmayı farklı bilgi düzeyindeki dinleyicilere anlaşılır biçimde aktarmaya dikkat çeker. Sunumunuzu hazırlarken çalışmanın neden yapıldığını açıklayın; ardından soruyu, kullandığınız yaklaşımı ve ulaştığınız bulguları birbirine bağlayın. Slaytları bu anlatımı destekleyen araçlar olarak kullanın.",
-        source: { label: "MIT Communication Lab — What makes a thesis defense great?", href: "https://mitcommlab.mit.edu/be/2026/02/25/defense-season-wrapped-what-makes-a-thesis-defense-great/" },
+        source: { label: "MIT Communication Lab: What makes a thesis defense great?", href: "https://mitcommlab.mit.edu/be/2026/02/25/defense-season-wrapped-what-makes-a-thesis-defense-great/" },
       },
       {
         title: "İlk taslak için önerdiğimiz akış",
@@ -118,7 +118,7 @@ export const rehberler: Guide[] = [
         title: "Provayı slayt kontrolüyle birlikte yapın",
         text: "MIT’nin savunma rehberi sunumu önceden düzenlemeyi ve prova etmeyi önerir. Provada yalnız süreyi ölçmekle kalmayın; bir başlıktan diğerine geçişinizi de sesli anlatın. Anlatmakta zorlandığınız slaytı yeniden düzenleyin.",
         items: ["Tablo ve grafiklerin yazılarını sunum yapılacak boyutta kontrol edin.", "Slayttaki sayıların tezdeki son sürümle aynı olduğunu karşılaştırın.", "Yönteminizi neden seçtiğinizi ve bulgularınızın sınırlarını açıklamaya hazırlanın."],
-        source: { label: "MIT — Thesis Defense", href: "https://www.mit.edu/course/21/21.guide/th-defen.htm" },
+        source: { label: "MIT: Thesis Defense", href: "https://www.mit.edu/course/21/21.guide/th-defen.htm" },
       },
     ],
   },
@@ -133,13 +133,13 @@ export const rehberler: Guide[] = [
     analysis: { href: "/analiz/t-testi-ve-anova", label: "t-Testi ve ANOVA danışmanlığı" },
     sections: [
       {
-        title: "Normallik neden önemli?",
+        title: "Normallik neden sorulur?",
         text: "t-testi, ANOVA ve Pearson korelasyonu gibi parametrik testler, verinin (ya da artıkların) yaklaşık normal dağıldığını varsayar. Bu varsayım ciddi biçimde bozulduğunda test sonuçları yanıltıcı olabilir. Bu yüzden analiz bölümünde test seçiminizi gerekçelendirirken normallik incelemesini de raporlamanız beklenir.",
       },
       {
         title: "SPSS'te iki test birlikte gelir",
         text: "SPSS'in Explore (Keşfet) menüsündeki Tests of Normality tablosu Kolmogorov-Smirnov ve Shapiro-Wilk sonuçlarını yan yana verir. Her iki testte de sıfır hipotezi verinin normal dağıldığıdır; p değeri .05'ten küçükse normallikten anlamlı sapma olduğu sonucuna varılır. Shapiro-Wilk testi özellikle küçük ve orta büyüklükteki örneklemlerde daha sık tercih edilir.",
-        source: { label: "NIST/SEMATECH — Anderson-Darling and Shapiro-Wilk tests", href: "https://www.itl.nist.gov/div898/handbook/prc/section2/prc213.htm" },
+        source: { label: "NIST/SEMATECH: Anderson-Darling and Shapiro-Wilk tests", href: "https://www.itl.nist.gov/div898/handbook/prc/section2/prc213.htm" },
       },
       {
         title: "Büyük örneklemde testlere tek başına güvenmeyin",
@@ -149,7 +149,7 @@ export const rehberler: Guide[] = [
           "Histogramın genel şekli ve uç değerler.",
           "Çarpıklık ve basıklık değerleri; kaynaklarda ±1, ±1,5 ya da ±2 gibi farklı sınırlar önerilir. Hangi sınırı kullandığınızı kaynağıyla birlikte yazın.",
         ],
-        source: { label: "NIST/SEMATECH — Quantile-Quantile Plot", href: "https://www.itl.nist.gov/div898/handbook/eda/section3/eda33o.htm" },
+        source: { label: "NIST/SEMATECH: Quantile-Quantile Plot", href: "https://www.itl.nist.gov/div898/handbook/eda/section3/eda33o.htm" },
       },
       {
         title: "Karar tablosu",
@@ -202,9 +202,9 @@ export const rehberler: Guide[] = [
       },
       {
         title: "Raporlama örneği",
-        text: "APA 7'de değeri 1'i aşamayan istatistikler başta sıfır olmadan yazılır. Aşağıdaki cümle temsilî bir örnektir; değerler gerçek bir çalışmaya ait değildir.",
+        text: "APA 7'de değeri 1'i aşamayan istatistikler başta sıfır olmadan yazılır. Örnek cümledeki değerler uydurmadır, yalnız yazım biçimini göstermek için verildi.",
         items: ["\"Ölçeğin bu çalışmadaki Cronbach alfa iç tutarlılık katsayısı toplam puan için .87, alt boyutlar için .74 ile .82 arasında bulunmuştur.\""],
-        source: { label: "APA Style — Numbers and Statistics Guide", href: "https://apastyle.apa.org/instructional-aids/numbers-statistics-guide.pdf" },
+        source: { label: "APA Style: Numbers and Statistics Guide", href: "https://apastyle.apa.org/instructional-aids/numbers-statistics-guide.pdf" },
       },
     ],
   },
@@ -308,7 +308,7 @@ export const rehberler: Guide[] = [
       {
         title: "PROCESS ile bootstrap",
         text: "Andrew F. Hayes'in geliştirdiği PROCESS makrosu SPSS'e eklenerek kullanılır. Basit aracılık için Model 4, basit düzenleyicilik için Model 1 kullanılır. Bootstrap yöntemi örneklemden çok sayıda (ör. 5000) yeniden örneklem çekerek dolaylı etki için bir güven aralığı üretir.",
-        source: { label: "Hayes — The PROCESS macro for SPSS, SAS, and R", href: "https://www.processmacro.org/index.html" },
+        source: { label: "Hayes: The PROCESS macro for SPSS, SAS, and R", href: "https://www.processmacro.org/index.html" },
       },
       {
         title: "Çıktı nasıl okunur?",
@@ -342,7 +342,7 @@ export const rehberler: Guide[] = [
       {
         title: "Tablo düzeni",
         text: "APA 7'de tablo numarası kalın yazılır (Tablo 1), başlık bir alt satırda italik ve başlık düzeninde verilir. Tabloda yalnız yatay çizgiler kullanılır; dikey çizgi kullanılmaz. Kısaltma ve açıklamalar tablonun altındaki Not bölümünde yer alır.",
-        source: { label: "APA Style — Sample tables", href: "https://apastyle.apa.org/style-grammar-guidelines/tables-figures/sample-tables" },
+        source: { label: "APA Style: Sample tables", href: "https://apastyle.apa.org/style-grammar-guidelines/tables-figures/sample-tables" },
       },
       {
         title: "Sayı ve simge yazımı",
@@ -354,11 +354,11 @@ export const rehberler: Guide[] = [
           "Çok küçük p: p = .000 yazılmaz, p < .001 olarak raporlanır.",
           "Kesin değer: Mümkün olduğunda p < .05 yerine kesin p değeri verilir.",
         ],
-        source: { label: "APA Style — Numbers and Statistics Guide", href: "https://apastyle.apa.org/instructional-aids/numbers-statistics-guide.pdf" },
+        source: { label: "APA Style: Numbers and Statistics Guide", href: "https://apastyle.apa.org/instructional-aids/numbers-statistics-guide.pdf" },
       },
       {
         title: "Metin içinde raporlama",
-        text: "Metinde testi, serbestlik derecesini, test istatistiğini, p değerini ve etki büyüklüğünü birlikte verin. Aşağıdaki cümleler temsilî örnektir; değerler gerçek bir çalışmaya ait değildir.",
+        text: "Metinde testi, serbestlik derecesini, test istatistiğini, p değerini ve etki büyüklüğünü birlikte verin. Örneklerdeki sayılar gerçek bir çalışmadan alınmadı, yalnız biçimi gösteriyor.",
         items: [
           "t-testi: \"Kadın katılımcıların puanları (M = 3.84, SD = 0.61) erkek katılımcılardan (M = 3.52, SD = 0.70) anlamlı düzeyde yüksektir, t(198) = 3.45, p = .001, d = 0.49.\"",
           "ANOVA: \"Gruplar arasında anlamlı fark bulunmuştur, F(2, 147) = 5.12, p = .007, η² = .07.\"",
@@ -403,7 +403,7 @@ export const rehberler: Guide[] = [
       },
       {
         title: "Analizin inandırıcılığı",
-        text: "Nitel çalışmalarda okurun analiz sürecini izleyebilmesi önemlidir. Kod listesini ve tema şemasını ekte vermek, kodlayıcılar arası uyumu ya da uzman görüşünü anlatmak, katılımcı alıntılarını kod numarasıyla göstermek sık kullanılan yollardır.",
+        text: "Nitel çalışmada okur, analizin nasıl yürüdüğünü izleyebilmek ister. Kod listesini ve tema şemasını ekte vermek, kodlayıcılar arası uyumu ya da uzman görüşünü anlatmak, katılımcı alıntılarını kod numarasıyla göstermek sık kullanılan yollardır.",
       },
       {
         title: "Bulguları yazarken",
@@ -467,8 +467,8 @@ export const rehberler: Guide[] = [
     analysis: { href: "/analiz", label: "Analiz türleri" },
     sections: [
       {
-        title: "Bu kısım neden önemli?",
-        text: "Verilerin analizi kısmı, okurun sonuçlarınıza nasıl ulaştığınızı izleyebilmesini sağlar. İyi yazılmış bir analiz bölümü, başka bir araştırmacının aynı veriyle aynı adımları tekrar edebileceği kadar açık olmalıdır.",
+        title: "Bu kısım ne işe yarar?",
+        text: "Verilerin analizi kısmını okuyan biri, sonuçlarınıza nasıl ulaştığınızı adım adım görebilmeli. İyi yazılmış bir analiz bölümü, başka bir araştırmacının aynı veriyle aynı adımları tekrar edebileceği kadar açık olmalıdır.",
       },
       {
         title: "Hangi bilgiler yer almalı?",
@@ -482,7 +482,7 @@ export const rehberler: Guide[] = [
         ],
       },
       {
-        title: "Gerekçeyi yazmayı unutmayın",
+        title: "Testi neden seçtiğinizi yazın",
         text: "\"Verilerin analizinde t-testi kullanılmıştır\" cümlesi yetersizdir. Testin neden seçildiğini, örneğin iki bağımsız grubun karşılaştırıldığını ve verinin normal dağıldığını belirtin. Parametrik olmayan testlere geçtiyseniz bunun hangi bulguya dayandığını açıklayın.",
       },
       {
@@ -524,7 +524,7 @@ export const rehberler: Guide[] = [
       },
       {
         title: "Raporlama örneği",
-        text: "Aşağıdaki cümle temsilî bir örnektir; değerler gerçek bir çalışmaya ait değildir.",
+        text: "Aşağıdaki cümle yalnız biçim örneği; sayılar gerçek değil.",
         items: ["\"Deney grubunun son test puanları kontrol grubundan anlamlı düzeyde yüksektir, t(58) = 2.84, p = .006, d = 0.73. Bu fark orta-büyük düzeyde bir etkiye karşılık gelmektedir.\""],
       },
     ],
@@ -541,7 +541,7 @@ export const rehberler: Guide[] = [
     sections: [
       {
         title: "Neden güç analizi?",
-        text: "Küçük bir örneklem gerçek bir etkiyi yakalayamayabilir; gereğinden büyük bir örneklem ise zaman ve kaynak kaybıdır. Güç analizi, planladığınız analiz için yeterli örneklemi önceden hesaplamanızı sağlar. Etik kurullar ve tez izleme komiteleri bu hesabı giderek daha sık soruyor.",
+        text: "Küçük bir örneklem gerçek bir etkiyi yakalayamayabilir; gereğinden büyük bir örneklem ise zaman ve kaynak kaybıdır. Güç analiziyle, planladığınız analiz için kaç kişiye ulaşmanız gerektiğini baştan hesaplarsınız. Etik kurullar ve tez izleme komiteleri bu hesabı giderek daha sık soruyor.",
       },
       {
         title: "G*Power'da a priori hesaplama",
@@ -553,7 +553,7 @@ export const rehberler: Guide[] = [
           "Etki büyüklüğünü, alfa düzeyini (.05) ve gücü (.80 veya .90) girin.",
           "Program toplam örneklem büyüklüğünü verir.",
         ],
-        source: { label: "Heinrich-Heine-Universität Düsseldorf — G*Power", href: "https://www.psychologie.hhu.de/arbeitsgruppen/allgemeine-psychologie-und-arbeitspsychologie/gpower" },
+        source: { label: "Heinrich-Heine-Universität Düsseldorf: G*Power", href: "https://www.psychologie.hhu.de/arbeitsgruppen/allgemeine-psychologie-und-arbeitspsychologie/gpower" },
       },
       {
         title: "Etki büyüklüğünü nereden alacağım?",
@@ -562,7 +562,7 @@ export const rehberler: Guide[] = [
       },
       {
         title: "Yöntem bölümüne nasıl yazılır?",
-        text: "Aşağıdaki cümle temsilî bir örnektir.",
+        text: "Biçim örneği (sayılar gerçek bir çalışmadan değil):",
         items: ["\"Örneklem büyüklüğü G*Power 3.1 programıyla hesaplanmıştır. Bağımsız örneklemler t-testi için orta düzey etki büyüklüğü (d = 0.50), .05 anlamlılık düzeyi ve .80 güç ile gereken toplam örneklem 128 kişi olarak bulunmuştur.\""],
       },
     ],
@@ -588,12 +588,12 @@ export const rehberler: Guide[] = [
       {
         title: "Tek değişkenli aykırı değerler",
         text: "Bir değişkende diğer gözlemlerden belirgin biçimde uzak duran değerlerdir. Kutu grafiği ve standartlaştırılmış z puanları sık kullanılır; kaynaklarda z puanı için ±3 ya da ±3,29 gibi sınırlar önerilir.",
-        source: { label: "NIST/SEMATECH — What are outliers in the data?", href: "https://www.itl.nist.gov/div898/handbook/prc/section1/prc16.htm" },
+        source: { label: "NIST/SEMATECH: What are outliers in the data?", href: "https://www.itl.nist.gov/div898/handbook/prc/section1/prc16.htm" },
       },
       {
         title: "Çok değişkenli aykırı değerler",
         text: "Tek başına olağan görünen ama değişkenlerin birleşimi açısından olağan dışı olan gözlemlerdir. Regresyon ve faktör analizi gibi çok değişkenli analizlerden önce Mahalanobis uzaklığı ile incelenir; değer, değişken sayısı kadar serbestlik dereceli ki-kare tablosundaki kritik değerle karşılaştırılır.",
-        source: { label: "NIST/SEMATECH — Critical Values of the Chi-Square", href: "https://www.itl.nist.gov/div898/handbook/eda/section3/eda3674.htm" },
+        source: { label: "NIST/SEMATECH: Critical Values of the Chi-Square", href: "https://www.itl.nist.gov/div898/handbook/eda/section3/eda3674.htm" },
       },
       {
         title: "Aykırı değeri silmek zorunda mıyım?",
@@ -612,7 +612,7 @@ export const rehberler: Guide[] = [
     analysis: { href: "/analiz/amos-yapisal-esitlik-modeli", label: "AMOS ve yapısal eşitlik modeli" },
     sections: [
       {
-        title: "Program değil, araştırma sorusu belirler",
+        title: "Seçimi araştırma modeli belirler",
         text: "Hangi programın kullanılacağı, araştırma modelinizin yapısına bağlıdır. Önce hipotezlerinizi ve değişkenler arasındaki ilişkileri çizin; ardından bu modeli sınamaya uygun aracı seçin.",
       },
       {
@@ -687,7 +687,7 @@ export const rehberler: Guide[] = [
     sections: [
       {
         title: "Bibliyometrik analiz ne işe yarar?",
-        text: "Bir alandaki yayınların sayısal özelliklerini inceleyerek alanın gelişimini, öne çıkan yazar ve dergileri, araştırma kümelerini ve yükselen konuları ortaya koyar. Literatür taramasını tamamlayan, nicel bir bakış sağlar.",
+        text: "Bir alandaki yayınların sayısal özelliklerini inceleyerek alanın gelişimini, öne çıkan yazar ve dergileri, araştırma kümelerini ve yükselen konuları ortaya koyar. Klasik literatür taramasının yanına sayılarla desteklenen bir harita koyar.",
         source: { label: "Zupic ve Čater (2015), Organizational Research Methods", href: "https://doi.org/10.1177/1094428114562629" },
       },
       {
@@ -696,7 +696,7 @@ export const rehberler: Guide[] = [
       },
       {
         title: "2. Veri derleme ve temizleme",
-        text: "Web of Science veya Scopus'tan kayıtları tam kayıt ve atıflarla birlikte indirin. Aynı yazarın farklı yazımlarını ve eş anlamlı anahtar kelimeleri birleştirmek sonuçların doğruluğu için önemlidir.",
+        text: "Web of Science veya Scopus'tan kayıtları tam kayıt ve atıflarla birlikte indirin. Aynı yazarın farklı yazımlarını ve eş anlamlı anahtar kelimeleri birleştirmezseniz aynı kişi ya da kavram haritada iki ayrı nokta olarak görünür.",
       },
       {
         title: "3. Analiz ve görselleştirme",
@@ -733,7 +733,7 @@ export const rehberler: Guide[] = [
       },
       {
         title: "Yönergede nelere bakmalısınız?",
-        text: "Oranın kendisi kadar raporun hangi ayarlarla alındığı da önemlidir.",
+        text: "Yüzdeye bakmadan önce raporun hangi ayarlarla alındığını kontrol edin.",
         items: [
           "Toplam benzerlik oranı için belirlenen üst sınır.",
           "Tek bir kaynaktan gelen benzerlik için ayrı bir sınır olup olmadığı.",
@@ -754,8 +754,8 @@ export const rehberler: Guide[] = [
         ],
       },
       {
-        title: "Oran değil, kaynak gösterme önemli",
-        text: "Benzerlik raporu bir intihal kararı değil, inceleme aracıdır. Danışmanlar ve jüri yalnız yüzdeye değil, eşleşmelerin nerede olduğuna ve doğru atıf yapılıp yapılmadığına bakar. Alıntıları kurallara uygun göstermek ve yararlandığınız her kaynağa atıf yapmak, oranı tartışmalı olmaktan çıkarır.",
+        title: "Jüri rapora nasıl bakar?",
+        text: "Benzerlik raporu intihal kararı vermez, yalnız eşleşmeleri gösterir. Danışmanlar ve jüri yüzdenin yanında eşleşmelerin nerede olduğuna ve atıf yapılıp yapılmadığına da bakar. Alıntıları kurallara uygun göstermek ve yararlandığınız her kaynağa atıf yapmak, oranı tartışmalı olmaktan çıkarır.",
       },
     ],
   },
@@ -784,7 +784,7 @@ export const rehberler: Guide[] = [
       },
       {
         title: "Filtreleri kontrol edin",
-        text: "Kaynakçanın, tırnak içindeki alıntıların ve küçük eşleşmelerin hariç tutulup tutulmadığı oranı önemli ölçüde değiştirir. Raporu, enstitünüzün yönergesinde belirtilen ayarlarla alıp almadığınızı kontrol edin.",
+        text: "Kaynakça, tırnak içindeki alıntılar ve küçük eşleşmeler rapora dahil mi değil mi, oran buna göre epey değişir. Raporu, enstitünüzün yönergesinde belirtilen ayarlarla alıp almadığınızı kontrol edin.",
       },
       {
         title: "Hangi eşleşme sorun?",
@@ -797,7 +797,7 @@ export const rehberler: Guide[] = [
       },
       {
         title: "Ne yapmalısınız?",
-        text: "İncelenmesi gereken bölümlerde kaynağı doğru gösterin, doğrudan alıntıyı kurallara uygun işaretleyin ya da konuyu kendi cümlelerinizle ve atıfla yeniden anlatın. Amaç oranı düşürmek değil, yararlandığınız kaynakları dürüstçe göstermektir.",
+        text: "İncelenmesi gereken bölümlerde kaynağı doğru gösterin, doğrudan alıntıyı kurallara uygun işaretleyin ya da konuyu kendi cümlelerinizle ve atıfla yeniden anlatın. Asıl iş, yararlandığınız kaynakları açıkça göstermek.",
       },
     ],
   },
