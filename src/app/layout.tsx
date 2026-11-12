@@ -5,7 +5,7 @@ import GoogleAds from "@/components/GoogleAds";
 const SITE_URL = "https://www.odevimedestek.com";
 const LINKEDIN_URL = "https://www.linkedin.com/company/akademik-danismanlik-merkezi";
 const DESCRIPTION =
-  "Tez, makale, SPSS analizi, TÜBİTAK proje, bildiri, seminer ve sunum hazırlamada akademik danışmanlık. Editörlük, APA ve şablon biçimlendirme. İlk görüşme ücretsiz.";
+  "Tez, makale, SPSS analizi, TÜBİTAK proje, bildiri, seminer ve sunum için akademik danışmanlık. Editörlük ve APA biçimlendirme. İlk görüşme ücretsiz.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -74,6 +74,10 @@ const jsonLd = [
     areaServed: "TR",
     knowsAbout: [
       "SPSS",
+      "Faktör analizi",
+      "Regresyon analizi",
+      "Yapısal eşitlik modeli",
+      "Nitel veri analizi",
       "İstatistik",
       "Araştırma yöntemleri",
       "Akademik editörlük",

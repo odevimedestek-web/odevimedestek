@@ -2,8 +2,8 @@ import { pageMetadata } from "@/lib/seo";
 import ServiceLanding from "@/components/ServiceLanding";
 
 export const metadata = pageMetadata(
-  "Seminer Danışmanlığı – Yüksek Lisans ve Doktora Seminer Desteği",
-  "Yüksek lisans ve doktora seminer dersleri için konu seçimi, literatür tarama, seminer metninin enstitü kurallarına uyumu, APA kaynak gösterme ve seminer sunumu hazırlığında danışmanlık.",
+  "Seminer Danışmanlığı: Yüksek Lisans, Doktora",
+  "Seminer dersi için konu seçimi, literatür tarama, enstitü kurallarına uyum, APA kaynak gösterme ve sunum hazırlığında danışmanlık.",
   "/seminer-danismanligi",
 );
 

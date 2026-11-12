@@ -2,7 +2,9 @@ import Link from "next/link";
 import ServiceLanding from "@/components/ServiceLanding";
 import QuoteBuilder from "@/components/QuoteBuilder";
 import { pageMetadata } from "@/lib/seo";
-export const metadata = pageMetadata("Tez Biçimlendirme ve Kılavuza Uygun Düzenleme", "Tez yazım kılavuzuna göre başlıklar, içindekiler, tablo ve şekil düzeni, kaynakça ve sayfa biçimi için destek. Ön görüşmeye hazırlanma ve kapsam rehberi.", "/tez-bicimlendirme");
+export const metadata = pageMetadata(
+  "Tez Biçimlendirme ve Kılavuza Uyum",
+  "Enstitü yazım kılavuzuna göre başlık, içindekiler, tablo-şekil numaraları, kaynakça ve sayfa düzeni desteği. Kapsamı ön görüşmede belirleyelim.", "/tez-bicimlendirme");
 const faqs=[
   {q:"Tez biçimlendirme hangi konuları kapsıyor?",a:"Üniversitenizin yazım kılavuzuna göre kenar boşlukları, başlık düzeni, içindekiler, tablo ve şekil numaralandırma ile kaynakça biçimi konularında destek veriyoruz. İhtiyacınıza uygun kapsamı ön görüşmede belirliyoruz."},
   {q:"Hangi dosyaları hazırlamalıyım?",a:"Çalışmanızın güncel dosyasını, enstitünüzün yazım kılavuzunu, varsa şablonunu ve danışmanınızın biçimle ilgili notlarını hazırlamanızı öneriyoruz."},

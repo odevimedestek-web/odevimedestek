@@ -5,7 +5,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata("Temsili Akademik Değerlendirme Örnekleri", "Müşteri verisi içermeyen analiz tablosu, gerekçeli paragraf geri bildirimi ve tez biçimlendirme örnekleri. Danışmanlık yaklaşımımızı inceleyin.", "/ornek-calismalar");
 
 export default function ExamplesPage() {
-  return <PolicyLayout title="Danışmanlıkta Nasıl Geri Bildirim Veriyoruz?">
+  return <PolicyLayout title="Danışmanlıkta Nasıl Geri Bildirim Veriyoruz?" crumbs={[{ name: "Örnek Çalışmalar", path: "/ornek-calismalar" }]}>
     <p className="text-lg">Bir tabloya, bir paragrafa ve bir belgenin başlıklarına nasıl yaklaştığımızı aşağıdaki üç örnekle inceleyebilirsiniz.</p>
     <aside className="border-l-2 border-gold-300 pl-5 py-2"><p className="text-white font-semibold">Tamamı temsili örnektir.</p><p className="mt-2">Bu sayfa için hazırlanmıştır; gerçek müşteri dosyası, katılımcı bilgisi, araştırma bulgusu veya müşteri yorumu içermez. Örnekler hizmet yaklaşımını gösterir; gerçek çalışmadaki kapsam dosyalarınız üzerinden belirlenir.</p></aside>
     <nav aria-label="Örnekler" className="flex flex-wrap gap-3 text-sm"><a href="#analiz-ornegi" className="border border-slate-600 rounded-lg px-4 py-3 text-gold-300">Analiz tablosu</a><a href="#paragraf-ornegi" className="border border-slate-600 rounded-lg px-4 py-3 text-gold-300">Paragraf geri bildirimi</a><a href="#bicim-ornegi" className="border border-slate-600 rounded-lg px-4 py-3 text-gold-300">Biçimlendirme</a></nav>

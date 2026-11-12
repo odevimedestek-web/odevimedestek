@@ -9,7 +9,7 @@ export const metadata = pageMetadata(
 
 export default function IadePolitikasiPage() {
   return (
-    <PolicyLayout title="İade Politikası">
+    <PolicyLayout title="İade Politikası" crumbs={[{ name: "İade Politikası", path: "/iade-politikasi" }]}>
       <p>Son güncelleme: Ekim 2026</p>
 
       <h2>%100 Memnuniyet, %100 İade</h2>

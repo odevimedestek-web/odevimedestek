@@ -10,7 +10,7 @@ export const metadata = pageMetadata(
 
 export default function GizlilikPage() {
   return (
-    <PolicyLayout title="Gizlilik Politikası">
+    <PolicyLayout title="Gizlilik Politikası" crumbs={[{ name: "Gizlilik Politikası", path: "/gizlilik" }]}>
       <p>Son güncelleme: Kasım 2026</p>
 
       <p>

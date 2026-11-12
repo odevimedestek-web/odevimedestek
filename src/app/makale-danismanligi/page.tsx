@@ -2,8 +2,8 @@ import { pageMetadata } from "@/lib/seo";
 import ServiceLanding from "@/components/ServiceLanding";
 
 export const metadata = pageMetadata(
-  "Makale Danışmanlığı – Akademik Makale Yayın Desteği",
-  "Akademik makaleniz için dergi seçimi, dergi yazım kurallarına uyum, SPSS analizi, akademik editörlük, çeviri ve hakem notlarına yanıt konusunda makale danışmanlığı. İlk görüşme ücretsiz.",
+  "Makale Danışmanlığı ve Yayın Süreci Desteği",
+  "Dergi seçimi, yazım kurallarına uyum, SPSS analizi, akademik editörlük, çeviri ve hakem notlarına yanıt için makale danışmanlığı.",
   "/makale-danismanligi",
 );
 

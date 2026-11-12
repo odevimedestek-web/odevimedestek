@@ -2,8 +2,8 @@ import { pageMetadata } from "@/lib/seo";
 import ServiceLanding from "@/components/ServiceLanding";
 
 export const metadata = pageMetadata(
-  "Sunum Hazırlama Desteği – Tez Savunma, Seminer ve Kongre Sunumu",
-  "Tez savunma sunumu, seminer, kongre bildirisi ve proje sunumları için PowerPoint sunum hazırlama desteği: slayt düzeni, tasarım, tablo-grafik yerleşimi ve sunum provası. İlk görüşme ücretsiz.",
+  "Tez Savunma ve Seminer Sunumu Hazırlama",
+  "Tez savunması, seminer, kongre ve proje sunumları için slayt düzeni, tablo-grafik yerleşimi ve prova desteği. İlk görüşme ücretsiz.",
   "/sunum-hazirlama",
 );
 

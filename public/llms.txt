@@ -14,9 +14,22 @@ Hizmetler danışmanlık ve eğitim niteliğindedir: çalışmanın yazarı her 
 - [TÜBİTAK Proje Danışmanlığı](https://www.odevimedestek.com/tubitak-proje-danismanligi): 2209-A, 2209-B, 1001, 1002 ve BAP başvurularında amaç, yöntem, iş-zaman planı, bütçe ve yaygın etki bölümleri; ara ve sonuç raporu.
 - [Bildiri Danışmanlığı](https://www.odevimedestek.com/bildiri-danismanligi): Ulusal ve uluslararası kongreler için bildiri özeti, tam metin, poster ve sözlü sunum hazırlığı.
 - [Seminer Danışmanlığı](https://www.odevimedestek.com/seminer-danismanligi): Yüksek lisans ve doktora seminer dersleri için konu, literatür, APA ve sunum.
+- [Akademik Editörlük ve APA](https://www.odevimedestek.com/akademik-editorluk): Dil ve anlatım düzeltmesi, kılavuza uygun biçim, APA 7 atıf ve kaynakça kontrolü.
 - [Sunum Hazırlama Desteği](https://www.odevimedestek.com/sunum-hazirlama): Tez savunma, seminer, kongre ve proje sunumları; slayt düzeni ve prova.
 
+## Analiz türleri
+
+- [Analiz türleri](https://www.odevimedestek.com/analiz): Faktör analizi (AFA/DFA), AMOS ve yapısal eşitlik modeli, regresyon, aracı ve düzenleyici etki, t-testi ve ANOVA, ölçek geçerlik-güvenirlik, korelasyon ve ki-kare, nitel veri analizi. Analiz, öğrencinin topladığı veri üzerinde yapılır; veri toplama hizmeti verilmez.
+
+## Rehberler
+
+- [Akademik rehberler](https://www.odevimedestek.com/rehber): SPSS veri hazırlama, normallik testi, Cronbach alfa, AFA'da KMO ve Bartlett, DFA uyum indeksleri, aracı etki (PROCESS), SPSS çıktılarını APA 7'ye göre raporlama, tematik analiz, tez öneri formu, APA 7 kaynakça, tez savunma sunumu.
+
 ## Diğer
+
+- [Hakkımızda](https://www.odevimedestek.com/hakkimizda)
+- [İletişim](https://www.odevimedestek.com/iletisim)
+- [SPSS analiz ücretleri](https://www.odevimedestek.com/spss-analiz-ucretleri) · [Tez danışmanlığı ücretleri](https://www.odevimedestek.com/tez-danismanligi-ucretleri)
 
 - [LinkedIn – Akademik Danışmanlık Merkezi](https://www.linkedin.com/company/akademik-danismanlik-merkezi)
 - [İade Politikası](https://www.odevimedestek.com/iade-politikasi): Danışmanlıktan memnun kalınmazsa ücretin tamamı iade edilir.

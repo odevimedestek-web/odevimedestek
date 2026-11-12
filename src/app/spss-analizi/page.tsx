@@ -4,8 +4,8 @@ import { pageMetadata } from "@/lib/seo";
 import ServiceLanding from "@/components/ServiceLanding";
 
 export const metadata = pageMetadata(
-  "SPSS Analiz Danışmanlığı – Tez ve Makale İçin İstatistik Desteği",
-  "Tez ve makaleniz için SPSS analiz danışmanlığı: doğru test seçimi, güvenilirlik, t-testi, ANOVA, korelasyon, regresyon ve faktör analizi çıktılarını birlikte yorumluyoruz. İlk görüşme ücretsiz.",
+  "SPSS Analiz Danışmanlığı: Tez ve Makale",
+  "Tez ve makale verileriniz için test seçimi, güvenirlik, t-testi, ANOVA, korelasyon, regresyon ve faktör analizi çıktılarını birlikte yorumluyoruz.",
   "/spss-analizi",
 );
 
@@ -100,9 +100,21 @@ export default function Page() {
       <p>
         Yüksek lisans ve doktora tezinin bulgular bölümüne gelen, makalesi için
         istatistik desteğine ihtiyaç duyan ya da hakem/danışman notlarına göre
-        analizlerini yenilemesi gereken herkes için uygundur. Eğitim, sağlık,
-        psikoloji, işletme ve sosyal bilimler alanlarında çalışıyoruz.
+        analizlerini yenilemesi gereken herkes için uygundur. Tüm akademik
+        alanlardan çalışmalarla ilgileniyoruz.
       </p>
+
+      <h2>Analiz türlerine göre ayrıntılı sayfalar</h2>
+      <ul>
+        <li><Link href="/analiz/faktor-analizi" className="text-gold-400 underline">Faktör analizi (AFA ve DFA)</Link></li>
+        <li><Link href="/analiz/amos-yapisal-esitlik-modeli" className="text-gold-400 underline">AMOS ve yapısal eşitlik modeli</Link></li>
+        <li><Link href="/analiz/regresyon-analizi" className="text-gold-400 underline">Regresyon analizi</Link></li>
+        <li><Link href="/analiz/araci-ve-duzenleyici-etki-analizi" className="text-gold-400 underline">Aracı ve düzenleyici etki analizi</Link></li>
+        <li><Link href="/analiz/t-testi-ve-anova" className="text-gold-400 underline">t-Testi, ANOVA ve fark testleri</Link></li>
+        <li><Link href="/analiz/olcek-gecerlik-guvenirlik" className="text-gold-400 underline">Ölçek geçerlik ve güvenirlik</Link></li>
+        <li><Link href="/analiz/korelasyon-ve-ki-kare-analizi" className="text-gold-400 underline">Korelasyon ve ki-kare</Link></li>
+        <li><Link href="/analiz/nitel-veri-analizi" className="text-gold-400 underline">Nitel veri analizi</Link></li>
+      </ul>
       <QuoteBuilder />
     </ServiceLanding>
   );

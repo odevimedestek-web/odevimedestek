@@ -2,8 +2,8 @@ import { pageMetadata } from "@/lib/seo";
 import ServiceLanding from "@/components/ServiceLanding";
 
 export const metadata = pageMetadata(
-  "TÜBİTAK Proje Danışmanlığı – 2209-A, 2209-B, 1001, 1002 Proje Desteği",
-  "TÜBİTAK 2209-A, 2209-B, 1001, 1002 ve BAP proje başvurularında proje önerisi, amaç, yöntem, iş-zaman planı, bütçe ve yaygın etki bölümleri için proje danışmanlığı. İlk görüşme ücretsiz.",
+  "TÜBİTAK Proje Danışmanlığı: 2209 ve 1001",
+  "TÜBİTAK 2209-A, 2209-B, 1001, 1002 ve BAP başvurularında amaç, yöntem, iş-zaman planı, bütçe ve yaygın etki bölümleri için danışmanlık.",
   "/tubitak-proje-danismanligi",
 );
 

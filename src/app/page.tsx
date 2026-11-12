@@ -15,7 +15,7 @@ import Chatbot from "@/components/Chatbot";
 
 export const metadata = pageMetadata(
   "Tez, Makale ve SPSS Analiz Danışmanlığı",
-  "Tez, makale ve SPSS analizi için akademik danışmanlık. Araştırma planlama, akademik editörlük, APA ve tez biçimlendirme desteği. İlk görüşme ücretsiz.",
+  "Tez, makale ve SPSS analizi için akademik danışmanlık: araştırma planı, analiz yorumu, editörlük, APA ve tez biçimlendirme. İlk görüşme ücretsiz.",
   "/",
 );
 

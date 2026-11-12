@@ -10,7 +10,7 @@ export const metadata = pageMetadata(
 
 export default function KullanimSartlariPage() {
   return (
-    <PolicyLayout title="Kullanım Şartları">
+    <PolicyLayout title="Kullanım Şartları" crumbs={[{ name: "Kullanım Şartları", path: "/kullanim-sartlari" }]}>
       <p>Son güncelleme: Kasım 2026</p>
 
       <p>

@@ -32,7 +32,11 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li><Link href="/ornek-calismalar" className="text-slate-400 hover:text-gold-400">Temsili Çalışma Örnekleri</Link></li>
               <li><Link href="/spss-analiz-ucretleri" className="text-slate-400 hover:text-gold-400 transition-colors">SPSS Ücret ve Kapsam</Link></li>
+              <li><Link href="/tez-danismanligi-ucretleri" className="text-slate-400 hover:text-gold-400 transition-colors">Tez Danışmanlığı Ücretleri</Link></li>
+              <li><Link href="/analiz" className="text-slate-400 hover:text-gold-400 transition-colors">Analiz Türleri</Link></li>
               <li><Link href="/rehber" className="text-slate-400 hover:text-gold-400 transition-colors">Akademik Rehberler</Link></li>
+              <li><Link href="/hakkimizda" className="text-slate-400 hover:text-gold-400 transition-colors">Hakkımızda</Link></li>
+              <li><Link href="/iletisim" className="text-slate-400 hover:text-gold-400 transition-colors">İletişim Sayfası</Link></li>
               <li><a href="#hizmetler" className="text-slate-400 hover:text-gold-400 transition-colors">Hizmetler</a></li>
               <li><a href="#surec" className="text-slate-400 hover:text-gold-400 transition-colors">Nasıl Çalışıyoruz</a></li>
               <li><a href="#hakkimizda" className="text-slate-400 hover:text-gold-400 transition-colors">Hakkımızda</a></li>

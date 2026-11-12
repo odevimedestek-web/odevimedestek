@@ -3,6 +3,7 @@ import Link from "next/link";
 import { serviceExperience } from "@/lib/service-experience";
 import PolicyLayout from "@/components/PolicyLayout";
 import { hizmetSayfalari } from "@/lib/hizmetler";
+import type { Crumb } from "@/lib/seo";
 
 export type ServiceFaq = { q: string; a: string };
 
@@ -12,8 +13,10 @@ export default function ServiceLanding({
   intro,
   waText,
   faqs,
+  parent,
   children,
 }: {
+  parent?: Crumb;
   path: string;
   title: string;
   intro: string;
@@ -34,7 +37,7 @@ export default function ServiceLanding({
   };
 
   return (
-    <PolicyLayout title={title}>
+    <PolicyLayout title={title} crumbs={[...(parent ? [parent] : []), { name: title, path }]}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -92,7 +95,7 @@ export default function ServiceLanding({
       <section id="ilgili-hizmetler" aria-label="İlgili hizmetler">
         <h2>Çalışmanızın sonraki adımı ne?</h2>
         <p className="mb-5">Aşağıdaki hizmetler farklı ihtiyaçlara yöneliktir. Yalnız ihtiyacınız olan kapsamı seçebilirsiniz.</p>
-        <div className="grid sm:grid-cols-2 gap-4">{experience?.related.map(href => {
+        <div className="grid sm:grid-cols-2 gap-4">{(experience?.related ?? hizmetSayfalari.filter(h => h.href !== path).slice(0, 4).map(h => h.href)).filter(href => serviceExperience[href]).map(href => {
           const item = serviceExperience[href];
           return <Link key={href} href={href} className="block rounded-xl border border-slate-600 p-5 hover:border-gold-300 transition-colors no-underline">
             <h3 className="text-gold-300 font-semibold">{item.title} →</h3>

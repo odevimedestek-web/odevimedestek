@@ -26,3 +26,20 @@ export function pageMetadata(title: string, description: string, path: string): 
     },
   };
 }
+
+export type Crumb = { name: string; path: string };
+
+/** BreadcrumbList for search results; the home page is always the first step. */
+export function breadcrumbLd(crumbs: Crumb[]) {
+  const items = [{ name: "Ana sayfa", path: "/" }, ...crumbs];
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((c, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: c.name,
+      item: `${SITE_URL}${c.path === "/" ? "" : c.path}`,
+    })),
+  };
+}

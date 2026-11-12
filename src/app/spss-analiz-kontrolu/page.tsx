@@ -2,7 +2,9 @@ import Link from "next/link";
 import ServiceLanding from "@/components/ServiceLanding";
 import QuoteBuilder from "@/components/QuoteBuilder";
 import { pageMetadata } from "@/lib/seo";
-export const metadata = pageMetadata("SPSS Analiz Kontrolü ve Çıktı Yorumlama Desteği", "Mevcut SPSS çıktıları, danışman notları ve bulgular tabloları için kontrol kapsamını belirleyin. Test seçimi ve raporlama konusunda ücretsiz ön görüşme.", "/spss-analiz-kontrolu");
+export const metadata = pageMetadata(
+  "SPSS Analiz Kontrolü ve Çıktı Yorumlama",
+  "Mevcut SPSS çıktılarınızı, bulgular tablolarını ve danışman notlarını birlikte gözden geçirin. Test seçimi ve raporlama için ücretsiz ön görüşme.", "/spss-analiz-kontrolu");
 const faqs=[
   {q:"Yalnızca mevcut analizlerim için destek alabilir miyim?",a:"Mevcut çıktılarınız ve danışmanınızın notları üzerinden ihtiyaç duyduğunuz kontrol ve yorumlama desteğini ön görüşmede belirleyebiliriz."},
   {q:"Ön görüşmeye hangi belgeleri hazırlamalıyım?",a:"Varsa araştırma sorularınızı, anket veya ölçek formunu, veri dosyasını, mevcut analiz çıktılarını, bulgular metnini ve danışman notlarını bir araya getirmenizi öneriyoruz."},

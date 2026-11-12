@@ -10,7 +10,7 @@ export const metadata = pageMetadata(
 
 export default function GuvenlikPage() {
   return (
-    <PolicyLayout title="Güvenlik Koridoru">
+    <PolicyLayout title="Güvenlik Koridoru" crumbs={[{ name: "Güvenlik", path: "/guvenlik" }]}>
       <p>Son güncelleme: Kasım 2026</p>
 
       <p>

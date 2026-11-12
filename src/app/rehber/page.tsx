@@ -11,7 +11,7 @@ export const metadata = pageMetadata(
 
 export default function GuidesPage() {
   return (
-    <PolicyLayout title="Akademik Rehberler">
+    <PolicyLayout title="Akademik Rehberler" crumbs={[{ name: "Rehberler", path: "/rehber" }]}>
       <p>Çalışmanızın bulunduğu aşamaya göre bir rehber seçin. Kısa açıklamalar, kontrol listeleri ve resmî kaynak bağlantılarıyla bir sonraki adımınızı planlayın.</p>
       <div className="grid gap-5 sm:grid-cols-2">
         {rehberler.map((guide) => (

@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
   const guide = rehberler.find((item) => item.slug === slug);
   if (!guide) notFound();
-  return pageMetadata(guide.title, guide.description, `/rehber/${slug}`);
+  return pageMetadata(guide.seoTitle ?? guide.title, guide.description, `/rehber/${slug}`);
 }
 export default async function GuidePage({ params }: Props) {
   const { slug } = await params;
@@ -27,13 +27,15 @@ export default async function GuidePage({ params }: Props) {
     description: guide.description,
     mainEntityOfPage: url,
     inLanguage: "tr-TR",
+    datePublished: guide.published,
+    dateModified: guide.updated,
     author: { "@type": "Organization", name: "Ödevime Destek", url: "https://www.odevimedestek.com" },
     publisher: { "@type": "Organization", name: "Ödevime Destek", url: "https://www.odevimedestek.com" },
   };
   return (
-    <PolicyLayout title={guide.title}>
+    <PolicyLayout title={guide.title} crumbs={[{ name: "Rehberler", path: "/rehber" }, { name: guide.title, path: `/rehber/${slug}` }]}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
-      <nav aria-label="Sayfa yolu" className="text-sm"><Link href="/" className="text-gold-400 underline">Ana sayfa</Link> / <Link href="/rehber" className="text-gold-400 underline">Rehberler</Link></nav>
+      <p className="text-sm text-slate-400">Hazırlayan: Ödevime Destek akademik ekibi · Son güncelleme: <time dateTime={guide.updated}>{new Date(guide.updated).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" })}</time></p>
       <p className="text-lg">{guide.description}</p>
       <article>
         {guide.sections.map((section) => (
@@ -49,6 +51,7 @@ export default async function GuidePage({ params }: Props) {
         <h2 className="!mt-0">Çalışmanıza özel destek</h2>
         <p>Bu konuyu kendi çalışmanıza uygulamak için hizmet kapsamını inceleyebilirsiniz.</p>
         <Link href={guide.service.href} className="text-gold-400 underline">{guide.service.label} →</Link>
+        {guide.analysis && <p><Link href={guide.analysis.href} className="text-gold-400 underline">{guide.analysis.label} →</Link></p>}
       </aside>
       <h2>Diğer rehberler</h2>
       <ul>{rehberler.filter((item) => item.slug !== slug).map((item) => <li key={item.slug}><Link href={`/rehber/${item.slug}`} className="text-gold-400 underline">{item.title}</Link></li>)}</ul>

@@ -3,7 +3,9 @@ import ServiceLanding from "@/components/ServiceLanding";
 import QuoteBuilder from "@/components/QuoteBuilder";
 import { pageMetadata } from "@/lib/seo";
 
-export const metadata = pageMetadata("SPSS Analiz Ücretleri ve Teklif Kapsamı", "SPSS analiz ücreti nasıl belirlenir? Veri hazırlığı, analiz, mevcut çıktı kontrolü ve raporlama ihtiyaçlarını ayırın; ücretsiz ön görüşme talebinizi hazırlayın.", "/spss-analiz-ucretleri");
+export const metadata = pageMetadata(
+  "SPSS Analiz Ücretleri 2026 ve Teklif Kapsamı",
+  "SPSS analiz ücreti neye göre belirlenir? Veri hazırlığı, analiz, çıktı kontrolü ve raporlama kapsamını ayırın; ücretsiz ön görüşme isteyin.", "/spss-analiz-ucretleri");
 const faqs = [
   {q:"SPSS analizi için sabit bir ücret var mı?",a:"Ücret, analiz sayısı ve veri setinin büyüklüğüne göre ön görüşmede belirlenir. Bu sayfada otomatik fiyat üretilmez; ihtiyacınızı açıklayan bir görüşme talebi hazırlayabilirsiniz."},
   {q:"İlk görüşme ücretli mi?",a:"İlk görüşme ücretsizdir. Çalışmanın kapsamı, görüşme takvimi ve ödeme ayrıntıları ön görüşmede netleştirilir."},

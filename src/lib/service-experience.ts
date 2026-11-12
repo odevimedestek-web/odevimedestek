@@ -189,5 +189,17 @@ export const serviceExperience: Record<string, ServiceExperience> = {
         "a": "İki hizmeti birlikte talep edebilirsiniz; ancak analiz ve belge düzenleme farklı kapsamlarla değerlendirilir. Hangi işlerin teklife dahil olduğunu ön görüşmede ayrı ayrı netleştirelim."
       }
     ]
+  },
+  "/akademik-editorluk": {
+    "title": "Akademik Editörlük ve APA",
+    "description": "Yazdığınız metnin dilini, biçimini ve kaynaklarını kılavuza göre gözden geçirin.",
+    "related": ["/tez-bicimlendirme", "/makale-danismanligi", "/tez-danismanligi"],
+    "faqs": []
+  },
+  "/tez-danismanligi-ucretleri": {
+    "title": "Tez Danışmanlığı Ücretleri",
+    "description": "Ücreti belirleyen kapsam bilgilerini görüşmeden önce netleştirin.",
+    "related": ["/tez-danismanligi", "/spss-analiz-ucretleri", "/tez-bicimlendirme"],
+    "faqs": []
   }
 };

@@ -2,8 +2,8 @@ import { pageMetadata } from "@/lib/seo";
 import ServiceLanding from "@/components/ServiceLanding";
 
 export const metadata = pageMetadata(
-  "Bildiri Danışmanlığı – Kongre ve Sempozyum Bildiri Desteği",
-  "Ulusal ve uluslararası kongre, sempozyum ve konferanslar için bildiri özeti, tam metin bildiri, kongre yazım kurallarına uyum ve bildiri sunumu hazırlığında danışmanlık. İlk görüşme ücretsiz.",
+  "Bildiri Danışmanlığı: Kongre ve Sempozyum",
+  "Kongre ve sempozyumlar için bildiri özeti, tam metin, yazım kurallarına uyum ve sunum hazırlığında danışmanlık. İlk görüşme ücretsiz.",
   "/bildiri-danismanligi",
 );
 
