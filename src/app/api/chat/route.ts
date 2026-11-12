@@ -106,7 +106,19 @@ function getReply(messages: Message[], userName?: string, selectedService?: stri
 
 export async function POST(req: NextRequest) {
   try {
-    const { messages, userName, selectedService } = await req.json();
+    const body = await req.json();
+    // Aşırı uzun veya bozuk istekleri işlemeden reddet.
+    const messages: Message[] = Array.isArray(body?.messages)
+      ? body.messages
+          .slice(-30)
+          .filter((m: unknown): m is Message => typeof (m as Message)?.content === "string")
+          .map((m: Message) => ({ role: m.role === "assistant" ? "assistant" : "user", content: m.content.slice(0, 2000) }))
+      : [];
+    if (messages.length === 0) {
+      return NextResponse.json({ reply: "Mesajınızı alamadık. WhatsApp üzerinden bize ulaşabilirsiniz: https://wa.me/905384164676" }, { status: 400 });
+    }
+    const userName = typeof body?.userName === "string" ? body.userName.slice(0, 80) : undefined;
+    const selectedService = typeof body?.selectedService === "string" ? body.selectedService.slice(0, 120) : undefined;
     const reply = getReply(messages, userName, selectedService);
     return NextResponse.json({ reply });
   } catch {
