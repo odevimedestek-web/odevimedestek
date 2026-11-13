@@ -19,11 +19,11 @@ export default function PolicyLayout({
           <div className="flex flex-wrap items-center justify-between gap-4 py-4">
             <Link href="/" className="flex items-center gap-2">
               <Image
-                src="/logo-mark.png"
+                src="/logo-odevime-destek.png"
                 alt="Ödevime Destek"
                 width={48}
                 height={48}
-                className="w-12 h-12 object-contain rounded-xl"
+                className="w-12 h-12 object-contain rounded-xl bg-white p-1"
               />
               <span className="text-white font-semibold hidden sm:inline">Ödevime Destek</span>
             </Link>

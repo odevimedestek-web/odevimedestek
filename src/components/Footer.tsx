@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
             <div className="flex items-center gap-3 mb-5">
-              <Image src="/logo-mark.png" alt="" width={40} height={40} className="w-10 h-10 rounded-xl" />
+              <Image src="/logo-odevime-destek.png" alt="Ödevime Destek" width={40} height={40} className="w-10 h-10 object-contain rounded-xl" />
               <span className="text-xl font-bold">Ödevime Destek</span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed">
