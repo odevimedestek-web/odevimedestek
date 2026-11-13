@@ -63,7 +63,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-slate-800 mt-12 pt-8 pb-20 sm:pb-0 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="border-t border-slate-800 mt-12 pt-8 pb-24 flex flex-col sm:flex-row items-center justify-between gap-4">
           <span className="text-sm text-slate-400">
             &copy; {new Date().getFullYear()} Ödevime Destek. Tüm hakları saklıdır.
           </span>
