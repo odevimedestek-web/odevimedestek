@@ -34,3 +34,7 @@ Hizmetler danışmanlık ve eğitim niteliğindedir: çalışmanın yazarı her 
 
 - [LinkedIn – Akademik Danışmanlık Merkezi](https://www.linkedin.com/company/akademik-danismanlik-merkezi)
 - [İade Politikası](https://www.odevimedestek.com/iade-politikasi): Danışmanlıktan memnun kalınmazsa ücretin tamamı iade edilir.
+
+## Tam metin
+
+- [llms-full.txt](https://www.odevimedestek.com/llms-full.txt): Rehberlerin, analiz sayfalarının ve sık sorulan soruların tam metni.
