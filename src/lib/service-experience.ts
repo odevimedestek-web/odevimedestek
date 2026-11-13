@@ -34,7 +34,7 @@ export const serviceExperience: Record<string, ServiceExperience> = {
       },
       {
         "q": "Araştırma sorularım değişirse aynı analiz planı kullanılabilir mi?",
-        "a": "Değişen soruları ve varsa yeni verileri birlikte değerlendirmek gerekir. Önce hangi testlerin yeniden ele alınacağını ve bunun mevcut çalışma kapsamını nasıl etkileyeceğini netleştirelim."
+        "a": "Değişen soruları ve varsa yeni verileri bir arada değerlendirmek gerekir. Önce hangi testlerin yeniden ele alınacağını ve bunun mevcut çalışma kapsamını nasıl etkileyeceğini netleştirelim."
       }
     ]
   },
@@ -125,7 +125,7 @@ export const serviceExperience: Record<string, ServiceExperience> = {
     "faqs": [
       {
         "q": "Seminer konum kesinleşmediyse nereden başlayabiliriz?",
-        "a": "Dersin kapsamını, ilgi alanınızı ve öğretim üyesinin beklentilerini anlatın. Konu sınırını ve erişebildiğiniz kaynakları birlikte değerlendirerek görüşmeye başlayabiliriz."
+        "a": "Dersin kapsamını, ilgi alanınızı ve öğretim üyesinin beklentilerini anlatın. Konu sınırını ve erişebildiğiniz kaynakları konuşarak görüşmeye başlayabiliriz."
       },
       {
         "q": "Seminer metni ve sunumu için birlikte destek isteyebilir miyim?",

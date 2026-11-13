@@ -2,7 +2,7 @@ export const faqs = [
   {
     "category": "Başlarken",
     "q": "Hangi hizmete ihtiyacım olduğunu bilmiyorum. Nereden başlamalıyım?",
-    "a": "Çalışmanızın konusunu, bulunduğunuz aşamayı ve takıldığınız noktayı anlatın. Ön görüşmede tez danışmanlığı, analiz, biçimlendirme veya sunum desteğinden hangisinin ihtiyacınıza karşılık geldiğini birlikte belirleyelim.",
+    "a": "Çalışmanızın konusunu, bulunduğunuz aşamayı ve takıldığınız noktayı anlatın. Ön görüşmede tez danışmanlığı, analiz, biçimlendirme veya sunum desteğinden hangisinin ihtiyacınıza uygun olduğu ön görüşmede belirlenir.",
     "href": "/#hizmetler",
     "label": "Hizmetleri karşılaştırın"
   },
@@ -51,7 +51,7 @@ export const faqs = [
   {
     "category": "Hizmet seçimi",
     "q": "Analizlerim yapıldı; yalnızca kontrol ettirebilir miyim?",
-    "a": "Mevcut çıktılarınızı, bulgular metnini ve danışman notlarını birlikte değerlendirebiliriz. Çıktı kontrolü ile yeni analiz ihtiyacı ayrı ele alınır; gerekli kapsam dosyalarınıza göre belirlenir.",
+    "a": "Mevcut çıktılarınızı, bulgular metnini ve danışman notlarını inceleyebiliriz. Çıktı kontrolü ile yeni analiz ihtiyacı ayrı ele alınır; gerekli kapsam dosyalarınıza göre belirlenir.",
     "href": "/spss-analiz-kontrolu",
     "label": "Analiz kontrolünü inceleyin"
   },
@@ -79,7 +79,7 @@ export const faqs = [
   {
     "category": "Ücret ve süreç",
     "q": "Çalışma ne kadar sürer? Acil bir tarihim varsa ne yapmalıyım?",
-    "a": "Çalışmanızın son durumu, birlikte belirlenen teslim tarihinden 1–2 gün önce incelemeniz için paylaşılır. Böylece beğenmediğiniz noktaları belirtebilir ve değişiklik taleplerinizi iletebilirsiniz. Teslim tarihi ilk görüşmede kararlaştırılır.",
+    "a": "Çalışmanızın son durumu, ilk görüşmede belirlenen teslim tarihinden 1–2 gün önce incelemeniz için paylaşılır. Böylece beğenmediğiniz noktaları belirtebilir ve değişiklik taleplerinizi iletebilirsiniz.",
     "href": "/#surec",
     "label": "Çalışma sürecini inceleyin"
   },

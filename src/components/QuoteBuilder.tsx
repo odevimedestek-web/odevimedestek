@@ -2,14 +2,14 @@
 
 import { useId, useState } from "react";
 
-const needs = ["SPSS analiz danışmanlığı", "Mevcut analizlerin kontrolü", "Tez biçimlendirme", "Kapsamı birlikte belirleyelim"];
+const needs = ["SPSS analiz danışmanlığı", "Mevcut analizlerin kontrolü", "Tez biçimlendirme", "Henüz karar vermedim"];
 const fieldClass = "mt-2 block w-full min-w-0 rounded-lg border border-slate-500 bg-navy-900 px-3 py-3 text-white focus:outline-none focus:ring-2 focus:ring-gold-400";
 
 export default function QuoteBuilder({ initialNeed = needs[0] }: { initialNeed?: string }) {
   const id = useId();
   const [need, setNeed] = useState(initialNeed);
   const [level, setLevel] = useState("Henüz belirtmedim");
-  const [stage, setStage] = useState("Kapsamı birlikte belirleyelim");
+  const [stage, setStage] = useState("Henüz karar vermedim");
   const [timing, setTiming] = useState("Takvimim esnek");
   const [note, setNote] = useState("");
   const message = [
@@ -33,7 +33,7 @@ export default function QuoteBuilder({ initialNeed = needs[0] }: { initialNeed?:
           <select id={`${id}-level`} className={fieldClass} value={level} onChange={e=>setLevel(e.target.value)}>{["Henüz belirtmedim", "Lisans", "Yüksek lisans", "Doktora", "Uzmanlık tezi", "Makale", "Proje"].map(x=><option key={x}>{x}</option>)}</select>
         </label>
         <label htmlFor={`${id}-stage`} className="block min-w-0 font-medium text-white">Şu an hangi aşamadasınız?
-          <select id={`${id}-stage`} className={fieldClass} value={stage} onChange={e=>setStage(e.target.value)}>{["Kapsamı birlikte belirleyelim", "Araştırmamı planlıyorum", "Veri topluyorum", "Verim hazır, analiz gerekiyor", "Analizlerim var, kontrol gerekiyor", "Metnim hazır, biçimlendirme gerekiyor"].map(x=><option key={x}>{x}</option>)}</select>
+          <select id={`${id}-stage`} className={fieldClass} value={stage} onChange={e=>setStage(e.target.value)}>{["Henüz karar vermedim", "Araştırmamı planlıyorum", "Veri topluyorum", "Verim hazır, analiz gerekiyor", "Analizlerim var, kontrol gerekiyor", "Metnim hazır, biçimlendirme gerekiyor"].map(x=><option key={x}>{x}</option>)}</select>
         </label>
         <label htmlFor={`${id}-timing`} className="block min-w-0 font-medium text-white">Zamanlama ihtiyacınız
           <select id={`${id}-timing`} className={fieldClass} value={timing} onChange={e=>setTiming(e.target.value)}>{["Takvimim esnek", "Bir hafta içinde desteğe ihtiyacım var", "Bir ay içinde desteğe ihtiyacım var", "Tarihi görüşmede paylaşacağım"].map(x=><option key={x}>{x}</option>)}</select>

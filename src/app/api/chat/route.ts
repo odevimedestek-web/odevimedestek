@@ -71,7 +71,7 @@ function getReply(messages: Message[], userName?: string, selectedService?: stri
   }
 
   if (/süre|ne.*zaman|teslim|deadline|acil/.test(lastMsg)) {
-    return "Süreç çalışmanın kapsamına göre değişiyor; görüşme takvimini birlikte belirliyoruz. Detayları WhatsApp üzerinden konuşalım mı?\n\nhttps://wa.me/905384164676";
+    return "Süreç çalışmanın kapsamına göre değişiyor; görüşme takvimi ilk görüşmede belirlenir. Detayları WhatsApp üzerinden konuşalım mı?\n\nhttps://wa.me/905384164676";
   }
 
   if (/whatsapp|telefon|ara|iletişim|numara|ulaş/.test(lastMsg)) {

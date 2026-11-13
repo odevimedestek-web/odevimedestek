@@ -35,8 +35,8 @@ export const metadata: Metadata = {
   ],
   robots: { index: true, follow: true },
   icons: {
-    icon: "/logo-odevime-destek.png",
-    apple: "/logo-odevime-destek.png",
+    icon: "/logo-mark.png",
+    apple: "/logo-mark.png",
   },
   openGraph: {
     title: "Tez, Makale ve SPSS Analiz Danışmanlığı | Ödevime Destek",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "Ödevime Destek",
     type: "website",
     locale: "tr_TR",
-    images: [{ url: "/logo-odevime-destek.png", alt: "Ödevime Destek" }],
+    images: [{ url: "/logo-mark.png", alt: "Ödevime Destek" }],
   },
   twitter: {
     card: "summary",
@@ -61,8 +61,8 @@ const jsonLd = [
     name: "Ödevime Destek",
     alternateName: "Akademik Danışmanlık Merkezi",
     url: SITE_URL,
-    logo: `${SITE_URL}/logo-odevime-destek.png`,
-    image: `${SITE_URL}/logo-odevime-destek.png`,
+    logo: `${SITE_URL}/logo-mark.png`,
+    image: `${SITE_URL}/logo-mark.png`,
     description: DESCRIPTION,
     telephone: "+905384164676",
     email: "odevimedestek@gmail.com",

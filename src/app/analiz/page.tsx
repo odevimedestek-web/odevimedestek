@@ -13,7 +13,7 @@ export default function Page() {
   return (
     <PolicyLayout title="İstatistiksel Analiz Türleri" crumbs={[{ name: "Analiz Türleri", path: "/analiz" }]}>
       <p className="text-lg">
-        Tez ve makalelerde en sık kullanılan analizler için ayrı sayfalar hazırladık. Her sayfada analizin ne zaman kullanıldığını, çıktıda hangi değerlere bakıldığını ve danışmanlıkta neleri birlikte ele aldığımızı bulabilirsiniz. Hangi analize ihtiyacınız olduğundan emin değilseniz araştırma sorularınızla birlikte ön görüşme isteyebilirsiniz.
+        Tez ve makalelerde en sık kullanılan analizler için ayrı sayfalar hazırladık. Her sayfada analizin ne zaman kullanıldığını, çıktıda hangi değerlere bakıldığını ve danışmanlıkta nelerin ele alındığını bulabilirsiniz. Hangi analize ihtiyacınız olduğundan emin değilseniz araştırma sorularınızla birlikte ön görüşme isteyebilirsiniz.
       </p>
       <div className="grid sm:grid-cols-2 gap-4">
         {analizler.map((a) => (

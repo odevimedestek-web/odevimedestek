@@ -34,7 +34,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 sm:h-20">
           <Link href="/" className="group flex items-center gap-3">
             <Image
-              src="/logo-odevime-destek.png"
+              src="/logo-mark.png"
               alt="Ödevime Destek"
               width={44}
               height={44}

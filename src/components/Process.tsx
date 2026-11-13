@@ -7,11 +7,11 @@ const steps = [
   {
     num: "02",
     title: "Detayları Belirleyelim",
-    desc: "Ele alınacak bölümleri, beklenen çıktıları, takvimi ve ücretlendirmeyi birlikte belirleyelim.",
+    desc: "Ele alınacak bölümleri, beklenen çıktıları, takvim ve ücret netleşir.",
   },
   {
     num: "03",
-    title: "Rehberlik Görüşmeleri",
+    title: "Danışmanlık Görüşmeleri",
     desc: "Belirlenen kapsam içinde yöntem, analiz veya yazım sorularını mevcut çalışmanız üzerinden ele alalım.",
   },
   {
@@ -33,7 +33,7 @@ export default function Process() {
             Nasıl Çalışıyoruz?
           </h2>
           <p className="text-slate-600 mt-4 max-w-2xl mx-auto">
-            İlk görüşmeden geri bildirime kadar hangi adımda ne yapılacağını birlikte belirliyoruz.
+            İlk görüşmeden geri bildirime kadar hangi adımda ne yapılacağı baştan bellidir.
           </p>
         </div>
 

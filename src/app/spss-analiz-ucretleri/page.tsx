@@ -9,7 +9,7 @@ export const metadata = pageMetadata(
 const faqs = [
   {q:"SPSS analizi için sabit bir ücret var mı?",a:"Ücret, analiz sayısı ve veri setinin büyüklüğüne göre ön görüşmede belirlenir. Bu sayfada otomatik fiyat üretilmez; ihtiyacınızı açıklayan bir görüşme talebi hazırlayabilirsiniz."},
   {q:"İlk görüşme ücretli mi?",a:"İlk görüşme ücretsizdir. Çalışmanın kapsamı, görüşme takvimi ve ödeme ayrıntıları ön görüşmede netleştirilir."},
-  {q:"Hangi analize ihtiyacım olduğunu bilmiyorsam ne seçmeliyim?",a:"Talep alanında ‘Kapsamı birlikte belirleyelim’ seçeneğini kullanabilirsiniz. Araştırma sorularınız ve elinizdeki dosyalar üzerinden ihtiyacınızı görüşebiliriz."},
+  {q:"Hangi analize ihtiyacım olduğunu bilmiyorsam ne seçmeliyim?",a:"Talep alanında ‘Henüz karar vermedim’ seçeneğini kullanabilirsiniz. Araştırma sorularınız ve elinizdeki dosyalar üzerinden ihtiyacınızı görüşebiliriz."},
   {q:"Formu doldurunca mesaj otomatik gönderilir mi?",a:"Hayır. Düğme WhatsApp’ta bir mesaj taslağı açar. Mesajı inceleyip gönderme kararını siz verirsiniz; form alanları siteye kaydedilmez."},
 ];
 export default function Page() {

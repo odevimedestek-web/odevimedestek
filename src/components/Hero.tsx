@@ -13,7 +13,7 @@ export default function Hero() {
         <div>
           <p className="text-gold-300 text-sm font-semibold tracking-wider mb-6">AKADEMİK DANIŞMANLIK VE EDİTÖRLÜK</p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.12]">Tez, makale ve SPSS sürecinde <span className="text-gold-300">anlaşılır destek.</span></h1>
-          <p className="mt-6 text-lg text-slate-300 leading-relaxed max-w-xl">Araştırmanızı planlarken, verilerinizi yorumlarken veya metninizi düzenlerken takıldığınız noktayı birlikte ele alalım. Çalışmanızın aşamasına göre danışmanlık, analiz ve biçimlendirme desteği sunuyoruz.</p>
+          <p className="mt-6 text-lg text-slate-300 leading-relaxed max-w-xl">Araştırmanızı planlarken, verilerinizi yorumlarken veya metninizi düzenlerken takıldığınız noktayı konuşalım. Çalışmanızın aşamasına göre danışmanlık, analiz ve biçimlendirme desteği sunuyoruz.</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href="https://wa.me/905384164676" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center rounded-xl bg-gold-300 px-6 py-4 text-navy-900 font-semibold hover:bg-gold-200 transition-colors">Çalışmamı konuşalım</a>
             <a href="#hizmetler" className="inline-flex justify-center rounded-xl border border-slate-500 px-6 py-4 font-semibold hover:bg-navy-800 transition-colors">Hizmetleri incele</a>

@@ -16,13 +16,13 @@ export function pageMetadata(title: string, description: string, path: string): 
       siteName: "Ödevime Destek",
       type: "website",
       locale: "tr_TR",
-      images: [{ url: "/logo-odevime-destek.png", alt: "Ödevime Destek" }],
+      images: [{ url: "/logo-mark.png", alt: "Ödevime Destek" }],
     },
     twitter: {
       card: "summary",
       title: fullTitle,
       description,
-      images: ["/logo-odevime-destek.png"],
+      images: ["/logo-mark.png"],
     },
   };
 }

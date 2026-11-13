@@ -6,7 +6,7 @@ export default function Contact() {
       <div className="grid lg:grid-cols-2 gap-10 lg:gap-20 rounded-2xl bg-white border border-slate-200 p-6 sm:p-10 lg:p-12">
         <div><p className="text-sm font-semibold uppercase tracking-wider text-navy-600">İletişim</p>
           <h2 className="text-3xl sm:text-4xl font-bold text-navy-900 mt-3">Nerede takıldığınızı anlatın.</h2>
-          <p className="text-slate-600 mt-5 leading-relaxed">İlk mesajda konunuzu, çalışmanın aşamasını ve beklediğiniz tarihi belirtin. Hangi desteğin uygun olduğunu ön görüşmede birlikte netleştirelim.</p>
+          <p className="text-slate-600 mt-5 leading-relaxed">İlk mesajda konunuzu, çalışmanın aşamasını ve beklediğiniz tarihi belirtin. Hangi desteğin uygun olduğunu ön görüşmede netleşir.</p>
           <a href="https://wa.me/905384164676" target="_blank" rel="noopener noreferrer" className="inline-flex mt-7 bg-navy-900 text-white px-6 py-4 rounded-xl font-semibold hover:bg-navy-700">WhatsApp üzerinden görüşelim</a>
           <p className="mt-3 text-sm text-slate-600">0538 416 46 76 · İlk görüşme ücretsiz</p>
           <div className="flex flex-wrap gap-x-6 gap-y-3 mt-6 text-sm"><a href="mailto:odevimedestek@gmail.com" className="text-navy-900 underline underline-offset-4 break-all">odevimedestek@gmail.com</a><a id="linkedin" href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" className="text-navy-900 underline underline-offset-4">LinkedIn sayfamız ↗</a></div>
