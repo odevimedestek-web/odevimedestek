@@ -1,5 +1,5 @@
 export const servicePolicy = {
-  "preview": "Çalışmanızın son durumu, birlikte belirlenen teslim tarihinden 1–2 gün önce incelemeniz için paylaşılır. Böylece beğenmediğiniz noktaları belirtebilir ve değişiklik taleplerinizi iletebilirsiniz.",
+  "preview": "Çalışmanızın son durumu, ilk görüşmede belirlenen teslim tarihinden 1–2 gün önce incelemeniz için paylaşılır. Böylece beğenmediğiniz noktaları belirtebilir ve değişiklik taleplerinizi iletebilirsiniz.",
   "revision": "Aynı çalışma için talep ettiğiniz ek revizyonlardan ücret alınmaz. Değişmesini istediğiniz yerleri güncel dosya ve varsa danışman notlarıyla birlikte paylaşabilirsiniz.",
   "privacy": "Danışmanlık kapsamında paylaştığınız çalışma ve veriler, çalışmanıza danışmanlık veren uzman hoca dışında kimseyle paylaşılmaz.",
   "deletion": "Danışmanlık ve buna bağlı revizyon süreci tamamlandıktan sonra bize ilettiğiniz çalışma dosyaları ve danışmanlık verileri tarafımızdan tamamen silinir. Daha sonra yeniden destek isterseniz dosyanızı tekrar paylaşmanız gerekir.",
